@@ -365,31 +365,31 @@ The frontend is a single-page application with six distinct views:
 > **Note:** Add your screenshots to a `docs/screenshots/` folder and update the paths below.
 
 ### 1. Patient State Initialization
-![Patient Initialization](docs/screenshots/patient.png)
+![Patient Initialization](Production/docs/screenshots/patient.png)
 *Loading any patient by ID. Displays clinical state (BP, cholesterol, HR), lifestyle state (BMI, smoking, activity), and genomic context (PGS000116, variant count, top gene loci).*
 
 ### 2. Live Risk Dashboard
-![Risk Dashboard](docs/screenshots/dashboard.png)
+![Risk Dashboard](Production/docs/screenshots/dashboard.png)
 *Calibrated integrated risk probability, ACC/AHA risk band, 95% Monte Carlo confidence interval, and multi-model comparison bar chart.*
 
 ### 3. Integrated Counterfactual Twin
-![Integrated Twin](docs/screenshots/integrated_twin.png)
+![Integrated Twin](Production/docs/screenshots/integrated_twin.png)
 *The core Digital Twin view. Select any intervention scenario. The UI dynamically shows the new risk, absolute risk reduction, and mechanistic Pulse physiology explanation (SVR change, cardiac workload reduction).*
 
 ### 4. Genetic Intelligence
-![Genetic Intelligence](docs/screenshots/genetics.png)
+![Genetic Intelligence](Production/docs/screenshots/genetics.png)
 *PGS000116 gene-level contribution analysis. Top 15 gene loci bar chart (CDKN2B-AS1, LPA, APOE...), biological pathway treemap, and pharmacogenomics drug-gene interaction panel.*
 
 ### 5. TreeSHAP Explainability
-![Explainability](docs/screenshots/explainability.png)
+![Explainability](Production/docs/screenshots/explainability.png)
 *Per-patient waterfall chart. Red bars push risk above baseline; green bars pull it down. The final probability is the sum of all contributions plus the base rate.*
 
 ### 6. New Patient Screening
-![Screening Portal](docs/screenshots/screening.png)
+![Screening Portal](Production/docs/screenshots/screening.png)
 *Live screening portal. Enter new patient vitals, the backend runs the live clinical XGBoost pipeline and returns an instant risk assessment and personalized intervention plan.*
 
 ### 7. Master Integrity Gate Terminal
-![Integrity Gate](docs/screenshots/integrity_gate.png)
+![Integrity Gate](Production/docs/screenshots/integrity_gate.png)
 *NB12 terminal output showing all 26 assertions passing (100.0%), with cryptographic hash verification of all model artifacts.*
 
 ---
