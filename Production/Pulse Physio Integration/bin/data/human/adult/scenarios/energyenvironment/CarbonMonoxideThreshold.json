@@ -1,0 +1,89 @@
+{
+  "Name": "CarbonMonoxideThreshold",
+  "Description": "Exposure to carbon monoxide at 200ppm.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "PulseOximetry", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 9 }, "Category": "Physiology", "PropertyName": "CarbonMonoxideSaturation", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "GasCompartment", "CompartmentName": "LeftAlveoli", "SubstanceName": "CarbonMonoxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "GasCompartment", "CompartmentName": "RightAlveoli", "SubstanceName": "CarbonMonoxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "CarbonMonoxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "CarbonMonoxide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "CarbonMonoxide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Carboxyhemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Oxyhemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Hemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Carbaminohemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Carboxyhemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Oxyhemoglobin", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Oxygen", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "Oxygen", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "Oxygen", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "CarbonDioxide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "Oxygen", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "CarbonDioxide", "PropertyName": "Concentration", "Unit": "ug/L" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [{
+            "Name": "Nitrogen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.7894
+              }
+            }
+          }, {
+            "Name": "Oxygen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.21
+              }
+            }
+          }, {
+            "Name": "CarbonDioxide",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 4.0E-4
+              }
+            }
+          }, {
+            "Name": "CarbonMonoxide",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 2.0E-4
+              }
+            }
+          }]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 4.0,
+          "Unit": "hr"
+        }
+      }
+    }
+  }]
+}

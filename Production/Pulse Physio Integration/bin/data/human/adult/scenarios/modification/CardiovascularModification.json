@@ -1,0 +1,128 @@
+{
+  "Name": "HeartRate",
+  "Description": "Heart rate change through modifier action.",
+  "EngineStateFile":"./states/StandardMale@0s.json",
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "BaroreceptorHeartRateScale",    "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "ChemoreceptorHeartRateScale",   "Unit": "unitless" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "Pressure", "Unit": "mmHg" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "Pressure", "Unit": "mmHg" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 30.0, "Unit": "s" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "HeartRateMultiplier": { "ScalarUnsigned": { "Value": 2.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "HeartRateMultiplier": { "ScalarUnsigned": { "Value": 0.5 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "HeartRateMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "StrokeVolumeMultiplier": { "ScalarUnsigned": { "Value": 2.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "StrokeVolumeMultiplier": { "ScalarUnsigned": { "Value": 0.5 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "StrokeVolumeMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "ArterialComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "ArterialResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "PulmonaryComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "PulmonaryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "SystemicResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "SystemicComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "VenousComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }},
+          "VenousResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.8 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "ArterialComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "ArterialResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "PulmonaryComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "PulmonaryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "SystemicResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "SystemicComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "VenousComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }},
+          "VenousResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.2 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "CardiovascularMechanicsModification": {
+        "Modifiers": {
+          "ArterialComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "ArterialResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "PulmonaryComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "PulmonaryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "SystemicResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "SystemicComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "VenousComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "VenousResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  }]
+}

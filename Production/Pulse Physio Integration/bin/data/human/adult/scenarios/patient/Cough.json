@@ -1,0 +1,69 @@
+{
+  "Name": "Cough",
+  "Description": "Perform a cough using conscious breathing.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 0.25
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 0.7,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 0.25,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 0.05,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "ForcedPause": {
+            "Period": {
+              "ScalarTime": {
+                "Value": 0.5,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

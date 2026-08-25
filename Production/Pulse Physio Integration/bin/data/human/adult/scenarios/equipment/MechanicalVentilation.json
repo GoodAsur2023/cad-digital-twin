@@ -1,0 +1,241 @@
+{
+  "Name": "MechanicalVentilation",
+  "Description": "Mimic a patient with generic impaired alveolar exchange and dyspnea, then ventilated by simulating inputs as if they are from external sensors.",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "ImpairedAlveolarExchange": {
+            "ImpairedFraction": {
+              "Scalar0To1": {
+                "Value": 0.6
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json",
+    "AlbuterolDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "PatientAction": {
+     "MechanicalVentilation": {
+       "State": "On",
+       "Pressure": {
+         "ScalarPressure": {
+           "Value": 0.0,
+           "Unit": "cmH2O"
+         }
+       }
+     }
+   }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Dyspnea": {
+        "TidalVolumeSeverity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  },
+
+  { "PatientAction": { "Intubation": { "Type": "Tracheal" } } },
+
+  {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Flow": {
+          "ScalarVolumePerTime": {
+            "Value": 1.0,
+            "Unit": "L/s"
+          }
+        },
+        "Pressure": {
+          "ScalarPressure": {
+            "Value": 10.0,
+            "Unit": "cmH2O"
+          }
+        },
+        "GasFraction": [{
+          "Name": "Oxygen",
+          "Amount": {
+            "Scalar0To1": {
+              "Value": 0.21
+            }
+          }
+        }, {
+          "Name": "CarbonDioxide",
+          "Amount": {
+            "Scalar0To1": {
+              "Value": 4.0E-4
+            }
+          }
+        }, {
+          "Name": "Nitrogen",
+          "Amount": {
+            "Scalar0To1": {
+              "Value": 0.7896
+            }
+          }
+        }],
+        "Aerosol": [{
+          "Name": "Albuterol",
+          "Concentration": {
+            "ScalarMassPerVolume": {
+              "Value": 2500.0,
+              "Unit": "mg/m^3"
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Pressure": {
+          "ScalarPressure": {
+            "Unit": "cmH2O"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Pressure": {
+          "ScalarPressure": {
+            "Value": 10.0,
+            "Unit": "cmH2O"
+          }
+        },
+        "GasFraction": [{
+          "Name": "Oxygen",
+          "Amount": {
+            "Scalar0To1": {
+              "Value": 1.0
+            }
+          }
+        }, {
+          "Name": "CarbonDioxide",
+          "Amount": {
+            "Scalar0To1": {
+            }
+          }
+        }, {
+          "Name": "Nitrogen",
+          "Amount": {
+            "Scalar0To1": {
+            }
+          }
+        }],
+        "Aerosol": [{
+          "Name": "Albuterol",
+          "Concentration": {
+            "ScalarMassPerVolume": {
+              "Unit": "mg/m^3"
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Pressure": {
+          "ScalarPressure": {
+            "Value": -3.0,
+            "Unit": "cmH2O"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "Off"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,38 @@
+{
+  "Name": "Anemia30",
+  "Description": "Anemia onset, leading to 30% reduction in hemoglobin content.",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "ChronicAnemia": {
+          "ReductionFactor": {
+            "Scalar0To1": {
+              "Value": 0.3
+            }
+          }
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest": 
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "Hematocrit" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "Substance", "SubstanceName": "Hemoglobin", "PropertyName": "BloodConcentration", "Unit": "g/dL" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

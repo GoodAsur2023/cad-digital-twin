@@ -1,0 +1,134 @@
+{
+  "Name": "TensionPneumothoraxOpenVaried",
+  "Description": "Patient is afflicted with an open pneumothorax at the left lung. An occlusive dressing is applied to the wound, and then needle decompression occurs.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.3
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.6
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ChestOcclusiveDressing": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "NeedleDecompression": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,419 @@
+{
+  "Name": "HeatStroke",
+  "Description": "Showcase scenario: Heat Stroke showcase scenario.",
+    "PatientConfiguration": { "PatientFile": "Jeff.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "HeartRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "HeartStrokeVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "BloodVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "MeanArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "SystolicArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "DiastolicArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "CardiacOutput",
+      "Unit": "L/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "RespirationRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "Physiology",
+      "PropertyName": "OxygenSaturation",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "CoreTemperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "SkinTemperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "SweatRate",
+      "Unit": "mg/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "TotalMetabolicRate",
+      "Unit": "kcal/day"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "TotalWorkRateLevel",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "FatigueLevel",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "AchievedExerciseLevel",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Aorta",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Aorta",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }]
+  },
+  "AnyAction": [{
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Insult: High altitude"
+          }
+        },
+        "EnvironmentalConditionsFile": "./environments/CheyenneMountainAprilCool.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Insult: Moderate hiking"
+          }
+        },
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.1
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Insult: Increased temperature"
+          }
+        },
+        "EnvironmentalConditions": {
+          "AmbientTemperature": {
+            "ScalarTemperature": {
+              "Value": 20.0,
+              "Unit": "degC"
+            }
+          },
+          "MeanRadiantTemperature": {
+            "ScalarTemperature": {
+              "Value": 20.0,
+              "Unit": "degC"
+            }
+          },
+          "RespirationAmbientTemperature": {
+            "ScalarTemperature": {
+              "Value": 20.0,
+              "Unit": "degC"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Insult: Increased ambient temperature"
+          }
+        },
+        "EnvironmentalConditionsFile": "./environments/CheyenneMountainAprilWarm.json"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Intervention: Rest for one minute"
+          }
+        },
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Insult: Intense rock climbing"
+          }
+        },
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.45
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Intervention: Stop rock climbing"
+          }
+        },
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 0.5,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Intervention: Remove clothing"
+          }
+        },
+        "EnvironmentalConditions": {
+          "ClothingResistance": {
+            "ScalarHeatResistanceArea": {
+              "Value": 0.5,
+              "Unit": "clo"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Intervention: Cold packs"
+          }
+        },
+        "AppliedTemperature": {
+          "State": "On",
+          "Temperature": {
+            "ScalarTemperature": {
+              "Value": 36.0,
+              "Unit": "degF"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.1
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceCompoundInfusion": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Intervention: Administer IV"
+          }
+        },
+        "SubstanceCompound": "Saline",
+        "BagVolume": {
+          "ScalarVolume": {
+            "Value": 500.0,
+            "Unit": "mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+            "Value": 50.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentAction": {
+          "Action": {
+            "Comment": "Intervention: Environment change, inside an ambulance"
+          }
+        },
+        "EnvironmentalConditionsFile": "./environments/CheyenneMountainAmbulance.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Assessment": {
+        "Type": "ComprehensiveMetabolicPanel"
+      }
+    }
+  }]
+}

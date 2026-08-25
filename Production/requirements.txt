@@ -1,0 +1,34 @@
+# ==============================================================================
+# Precision Cardiology Intelligence Platform: India-Specific CAD Digital Twin
+# UE23CS320B - Capstone Phase 2 Python Dependencies
+# ==============================================================================
+
+# Core Scientific Stack
+numpy>=2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+pyarrow>=14.0.0
+
+# Machine Learning & Modeling
+scikit-learn==1.6.1
+xgboost>=2.0.0
+optuna>=3.2.0
+
+# Explainability & Model Interpretation
+shap>=0.43.0
+
+# Data Visualization & Charting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter & Interactive Computing
+jupyterlab>=4.0.0
+notebook>=7.0.0
+ipywidgets>=8.0.0
+
+# Web Framework & API (for Interactive Dashboard)
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+requests>=2.31.0

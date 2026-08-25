@@ -1,0 +1,6662 @@
+{
+  "Name": "TissueCompartments",
+  "Description": "Output everything from every tissue compartment for O2, CO2, and Succs.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BoneTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BoneTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "BrainTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "BrainTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "FatTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "FatTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "GutTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "GutTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftKidneyTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LeftLungTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "LiverTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LiverTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MuscleTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MuscleTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "MyocardiumTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "MyocardiumTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightKidneyTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightKidneyTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "RightLungTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightLungTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SkinTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SkinTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "AcidicPhospohlipidConcentration",
+      "Unit": "mg/g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "MatrixVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "NeutralLipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "NeutralPhospholipidsVolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "TissueToPlasmaAlbuminRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "TissueToPlasmaAlphaAcidGlycoproteinRatio"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "TissueToPlasmaLipoproteinRatio"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "TissueCompartment",
+      "CompartmentName": "SpleenTissue",
+      "PropertyName": "TotalMass",
+      "Unit": "g"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueExtracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Hemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Oxyhemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "OxyCarbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Carbaminohemoglobin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SpleenTissueIntracellular",
+      "SubstanceName": "Succinylcholine",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Succinylcholine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 4820.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 25.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

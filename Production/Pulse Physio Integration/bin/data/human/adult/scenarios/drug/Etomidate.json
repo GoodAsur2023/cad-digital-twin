@@ -1,0 +1,119 @@
+{
+  "Name": "Etomidate",
+  "Description": "Inject standard patient with Etomidate.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenVasculature", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueExtracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Etomidate", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Etomidate", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Etomidate", "PropertyName": "MassInBody", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftKidneyTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightKidneyTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BrainTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightLungTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftLungTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LiverTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BoneTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "FatTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SkinTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MuscleTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SpleenTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "GutTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MyocardiumTissue", "SubstanceName": "Etomidate", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Etomidate", "PropertyName": "MassExcreted", "Unit": "ug" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+        "SubstanceBolus": {
+          "Substance": "Etomidate",
+          "Concentration": {
+            "ScalarMassPerVolume": {
+              "Value": 2.0,
+              "Unit": "mg/mL"
+            }
+          },
+          "Dose": {
+            "ScalarVolume": {
+              "Value": 10.5,
+              "Unit": "mL"
+            }
+          },
+		  "AdministrationDuration":  {
+		    "ScalarTime": {
+			 "Value": 30.0,
+			 "Unit": "s"
+			}
+		  }
+        }
+      }
+    }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

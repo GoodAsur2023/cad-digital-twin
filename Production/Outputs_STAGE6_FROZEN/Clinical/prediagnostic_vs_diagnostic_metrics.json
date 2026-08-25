@@ -1,0 +1,44 @@
+{
+  "diagnostic_model": {
+    "model_name": "Diagnostic Clinical Model (XGBoost)",
+    "features": [
+      "age",
+      "sex",
+      "resting_bp",
+      "cholesterol",
+      "fasting_blood_sugar",
+      "max_heart_rate",
+      "oldpeak",
+      "resting_ecg_0.0",
+      "resting_ecg_1.0",
+      "resting_ecg_2.0"
+    ],
+    "n_features": 10,
+    "test_auc": 0.8788,
+    "test_brier": 0.1435,
+    "clinical_role": "Exercise-ST-augmented diagnostic clinical model"
+  },
+  "baseline_model": {
+    "model_name": "Baseline Clinical Model (GradientBoosting)",
+    "features": [
+      "age",
+      "sex",
+      "resting_bp",
+      "cholesterol",
+      "fasting_blood_sugar",
+      "max_heart_rate",
+      "resting_ecg_0.0",
+      "resting_ecg_1.0",
+      "resting_ecg_2.0"
+    ],
+    "n_features": 9,
+    "test_auc": 0.8595,
+    "test_brier": 0.1549,
+    "clinical_role": "Baseline clinical feature model without exercise ST-depression."
+  },
+  "comparison": {
+    "delta_auc": 0.0193,
+    "delta_brier": -0.0114,
+    "methodological_insight": "Adding exercise-induced ST-depression information improves test discrimination by \u0394AUC = +0.0193 (AUC 0.8595 -> 0.8788), validating the staged clinical ensemble hierarchy."
+  }
+}

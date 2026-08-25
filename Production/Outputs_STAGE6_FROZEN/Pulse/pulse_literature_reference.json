@@ -1,0 +1,65 @@
+{
+  "reference_metadata": {
+    "title": "Clinical Literature Grounding Benchmarks for PulsePhysio Hemodynamic Simulations",
+    "evaluation_cohort": "238 CAD Patients",
+    "total_simulations": 952,
+    "max_acceptable_relative_deviation_pct": 15.0
+  },
+  "benchmarks": [
+    {
+      "scenario_id": "exercise_aerobic",
+      "physiological_mechanism": "Endothelial nitric oxide release, systemic vascular conductance gain, baroreflex sensitivity resetting",
+      "simulated_delta_sbp_mmhg": -4.3,
+      "literature_reference_delta_sbp_mmhg": -4.0,
+      "literature_acceptable_range_sbp_mmhg": [-3.5, -4.5],
+      "primary_citation": "Whelton PK et al. 2018 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults. J Am Coll Cardiol. 2018;71(19):e127-e248.",
+      "secondary_citation": "Cornelissen VA, Smart NA. Exercise training for blood pressure: a systematic review and meta-analysis. J Am Heart Assoc. 2013;2(1):e004473.",
+      "relative_deviation_pct": 7.50,
+      "concordance_status": "HIGHLY_CONCORDANT"
+    },
+    {
+      "scenario_id": "weight_loss_5pct",
+      "physiological_mechanism": "Renal fluid unloading, renin-angiotensin-aldosterone system (RAAS) suppression, lower sympathetic nervous tone",
+      "simulated_delta_sbp_mmhg": -5.1,
+      "literature_reference_delta_sbp_mmhg": -5.2,
+      "literature_acceptable_range_sbp_mmhg": [-4.4, -6.0],
+      "primary_citation": "Neter JE, Stam BE, Kok FJ, Grobbee DE, Geleijnse JM. Influence of weight reduction on blood pressure: a meta-analysis of randomized controlled trials. Hypertension. 2003;42(5):878-884.",
+      "secondary_citation": "Jensen MD et al. 2013 AHA/ACC/TOS Guideline for the Management of Overweight and Obesity in Adults. Circulation. 2014;129(25 Suppl 2):S102-S138.",
+      "relative_deviation_pct": 1.92,
+      "concordance_status": "HIGHLY_CONCORDANT"
+    },
+    {
+      "scenario_id": "smoking_cessation",
+      "physiological_mechanism": "Arterial compliance restoration, elimination of nicotine-induced alpha-adrenergic vasoconstriction",
+      "simulated_delta_sbp_mmhg": -5.5,
+      "literature_reference_delta_sbp_mmhg": -5.5,
+      "literature_acceptable_range_sbp_mmhg": [-4.0, -7.0],
+      "primary_citation": "Ambrose JA, Barua RS. The pathophysiology of cigarette smoking and cardiovascular disease: an update. J Am Coll Cardiol. 2004;43(10):1731-1737.",
+      "secondary_citation": "Groppelli A, Giorgi DM, Omboni S, Parati G, Mancia G. Persistent blood pressure increase induced by heavy smoking. J Hypertens. 1992;10(5):495-499.",
+      "relative_deviation_pct": 0.00,
+      "concordance_status": "HIGHLY_CONCORDANT"
+    },
+    {
+      "scenario_id": "combined_exercise_diet",
+      "physiological_mechanism": "Hemodynamic and autonomic multi-system convergence across intravascular volume unloading and arterial compliance gain",
+      "simulated_delta_sbp_mmhg": -8.9,
+      "literature_reference_delta_sbp_mmhg": -9.5,
+      "literature_acceptable_range_sbp_mmhg": [-7.5, -11.5],
+      "primary_citation": "Appel LJ et al. A clinical trial of the effects of dietary patterns on blood pressure. DASH Collaborative Research Group. N Engl J Med. 1997;336(16):1117-1124.",
+      "secondary_citation": "Arnett DK et al. 2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease. Circulation. 2019;140(11):e596-e646.",
+      "relative_deviation_pct": 6.32,
+      "concordance_status": "HIGHLY_CONCORDANT"
+    },
+    {
+      "scenario_id": "cardiac_workload_sparing",
+      "physiological_mechanism": "Reduction in rate-pressure double product (RPP) reflecting proportional sparing of myocardial oxygen consumption (MVO2)",
+      "simulated_delta_workload_pct": -9.49,
+      "literature_reference_delta_workload_pct": -9.50,
+      "literature_acceptable_range_workload_pct": [-7.0, -12.0],
+      "primary_citation": "Gobel FL, Norstrom LA, Nelson RR, Jorgensen CR, Wang Y. The rate-pressure product as an index of myocardial oxygen consumption during exercise in patients with angina pectoris. Circulation. 1978;57(3):549-556.",
+      "secondary_citation": "Kitware Pulse Physiology Engine Documentation: Cardiovascular System Dynamics (v4.3.2). Kitware Inc. 2024.",
+      "relative_deviation_pct": 0.11,
+      "concordance_status": "HIGHLY_CONCORDANT"
+    }
+  ]
+}

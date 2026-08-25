@@ -1,0 +1,32 @@
+{
+  "Name": "PulmonaryShunt",
+  "Description": "Test pulmonary shunt condition and exacerbation action.",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "PulmonaryShunt": {
+            "Severity": {
+              "Scalar0To1": {
+                "Value": 0.8
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" }}}},
+
+    { "PatientAction": { "PulmonaryShuntExacerbation": {
+        "Severity": { "Scalar0To1": { "Value": 0.2 } }
+    } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 5.0, "Unit": "min" }}}}
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "Name": "HemorrhageSeverityP5",
+  "Description": "",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightLegVasculature", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightLegVasculature", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "LeftLegVasculature", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "LeftLegVasculature", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhageRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhagedVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "LeftLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+      "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.25
+          }
+        }
+      }
+    }
+  }, {
+  "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+  "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 400.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

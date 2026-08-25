@@ -1,0 +1,73 @@
+{
+  "Name": "LymphCompartments",
+  "Description": "Output everything from every lymph compartment.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Lymph",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Lymph",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Lymph",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Lymph",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Succinylcholine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 4820.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 25.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

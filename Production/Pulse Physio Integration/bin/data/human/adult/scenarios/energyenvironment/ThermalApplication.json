@@ -1,0 +1,228 @@
+{
+  "Name": "ThermalApplication",
+  "Description": "Tests various combinations of applied heat and cold.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TotalMetabolicRate", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SweatRate", "Unit": "mg/min" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 50.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 500.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.5
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Unit": "BTU/hr"
+            }
+          }
+        },
+        "ActiveCooling": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 500.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceArea": {
+            "ScalarArea": {
+              "Value": 0.75,
+              "Unit": "m^2"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "AppliedTemperature": {
+          "State": "On",
+          "Temperature": {
+            "ScalarTemperature": {
+              "Value": 140.0,
+              "Unit": "degF"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.9
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 500.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.2
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 500.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.2
+            }
+          }
+        },
+        "ActiveCooling": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 500.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceArea": {
+            "ScalarArea": {
+              "Value": 0.1,
+              "Unit": "m^2"
+            }
+          }
+        },
+        "AppliedTemperature": {
+          "State": "On",
+          "Temperature": {
+            "ScalarTemperature": {
+              "Value": 30.0,
+              "Unit": "degF"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 1.0
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Unit": "BTU/hr"
+            }
+          }
+        },
+        "ActiveCooling": {
+          "Power": {
+            "ScalarPower": {
+              "Unit": "BTU/hr"
+            }
+          }
+        },
+        "AppliedTemperature": {
+          "State": "Off"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

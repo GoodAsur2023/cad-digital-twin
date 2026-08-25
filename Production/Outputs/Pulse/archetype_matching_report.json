@@ -1,0 +1,9 @@
+{
+  "total_lifestyle_patients": 13727,
+  "total_clinical_archetypes": 238,
+  "mean_distance": 0.03719771744691184,
+  "median_distance": 0.025427085109504425,
+  "threshold_95th": 0.11354766480815448,
+  "low_confidence_count": 687,
+  "total_mapped_pulse_rows": 54908
+}

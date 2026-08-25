@@ -1,0 +1,33 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "AirwayPressure",                         "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "MechanicalVentilator", "PropertyName": "BreathState"                                                 },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "DynamicRespiratoryCompliance",           "Unit": "mL/cmH2O"  },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "EndTidalCarbonDioxideFraction"                               },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "EndTidalCarbonDioxidePressure",          "Unit": "mmHg"      },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "EndTidalOxygenFraction"                                      },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "EndTidalOxygenPressure",                 "Unit": "mmHg"      },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "ExpiratoryFlow",                         "Unit": "L/s"       },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "ExpiratoryResistance",                   "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "ExpiratoryTidalVolume",                  "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "ExtrinsicPositiveEndExpiratoryPressure", "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "InspiratoryExpiratoryRatio"                                  },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "InspiratoryFlow",                        "Unit": "L/min"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "InspiratoryResistance",                  "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "InspiratoryTidalVolume",                 "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "IntrinsicPositiveEndExpiratoryPressure", "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "LeakFraction"                                                },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "MeanAirwayPressure",                     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "PeakExpiratoryFlow",                     "Unit": "L/s"       },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "PeakInspiratoryFlow",                    "Unit": "L/s"       },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "PeakInspiratoryPressure",                "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "PlateauPressure",                        "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "RespirationRate",                        "Unit": "1/min"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "StaticRespiratoryCompliance",            "Unit": "mL/cmH2O"  },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "TidalVolume",                            "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "TotalLungVolume",                        "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "TotalPositiveEndExpiratoryPressure",     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "MechanicalVentilator", "PropertyName": "TotalPulmonaryVentilation",              "Unit": "L/s"       }
+  ]
+}

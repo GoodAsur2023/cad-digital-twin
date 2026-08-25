@@ -1,0 +1,136 @@
+{
+  "Scenario": {
+    "Name": "AlbuterolValidation",
+    "Description": "Patient using Albuterol with an inhaler.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+    "DataRequestManager": {
+      "SamplesPerSecond": 1.0,
+      "DataRequest": [
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Albuterol", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Albuterol", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Albuterol", "PropertyName": "MassInBody", "Unit": "ug" },
+      
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "LeftKidneyTissue",  "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "RightKidneyTissue", "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "BrainTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "RightLungTissue",   "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "LeftLungTissue",    "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "LiverTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "BoneTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "FatTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "SkinTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "MuscleTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "SpleenTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "GutTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Albuterol", "CompartmentName": "MyocardiumTissue",  "PropertyName": "PartitionCoefficient" },
+      
+      { "DecimalFormat": { "Precision": 9 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "VenaCava",                       "PropertyName": "Concentration", "Unit": "ug/mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Albuterol", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassExcreted",  "Unit": "ug" }
+      
+      ]
+    },
+    "AnyAction": [{
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 30.0,
+            "Unit": "s"
+          }
+        }
+      }
+    }, {
+      "EquipmentAction": {
+        "InhalerConfiguration": {
+          "Configuration": {
+            "Substance": "Albuterol",
+            "MeteredDose": {
+              "ScalarMass": {
+                "Value": 90.0,
+                "Unit": "ug"
+              }
+            },
+            "NozzleLoss": {
+              "Scalar0To1": {
+                "Value": 0.04
+              }
+            },
+            "SpacerVolume": {
+              "ScalarVolume": {
+                "Value": 500.0,
+                "Unit": "mL"
+              }
+            }
+          }
+        }
+      }
+    }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 720.0,
+            "Unit": "min"
+          }
+        }
+      }
+    }]
+  },
+  "Configuration": {
+    "DrugsConfiguration": {
+      "PDModel": "Off"
+    }
+  }
+}

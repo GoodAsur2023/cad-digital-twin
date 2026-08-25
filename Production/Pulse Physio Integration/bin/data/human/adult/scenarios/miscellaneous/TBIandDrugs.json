@@ -1,0 +1,79 @@
+{
+  "Name": "TBIandDrugs",
+  "Description": "The patient receives a TBI and then gets a bolus Fentanyl.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "CerebralBloodFlow", "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "IntracranialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "CerebralPerfusionPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Oxygen", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Oxygen", "PropertyName": "Saturation", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "Saturation", "Unit": "unitless" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 20.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 100.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Fentanyl",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 15.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,140 @@
+{
+  "Name": "Naloxone",
+  "Description": "Inject standard patient with Naloxone.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenVasculature", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueExtracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Naloxone", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Naloxone", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Naloxone", "PropertyName": "MassInBody", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftKidneyTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightKidneyTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BrainTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightLungTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftLungTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LiverTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BoneTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "FatTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SkinTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MuscleTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SpleenTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "GutTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MyocardiumTissue", "SubstanceName": "Naloxone", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Naloxone", "PropertyName": "MassExcreted", "Unit": "ug" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Fentanyl",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 15.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 300.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Naloxone",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 10.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 3.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

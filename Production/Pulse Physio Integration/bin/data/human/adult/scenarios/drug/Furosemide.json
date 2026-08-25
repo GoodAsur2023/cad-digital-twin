@@ -1,0 +1,115 @@
+{
+  "Name": "Furosemide",
+  "Description": "Inject standard patient with Furosemide.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenVasculature", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueExtracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Furosemide", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Furosemide", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Furosemide", "PropertyName": "MassInBody", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftKidneyTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightKidneyTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BrainTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightLungTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftLungTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LiverTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BoneTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "FatTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SkinTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MuscleTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SpleenTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "GutTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MyocardiumTissue", "SubstanceName": "Furosemide", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Furosemide", "PropertyName": "MassExcreted", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "Clearance-RenalExcretionRate", "Unit": "g/day" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Chloride", "PropertyName": "Clearance-RenalExcretionRate", "Unit": "g/day" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Furosemide",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 4000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

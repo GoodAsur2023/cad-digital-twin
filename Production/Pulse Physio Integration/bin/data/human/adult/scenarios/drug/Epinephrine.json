@@ -1,0 +1,112 @@
+{
+  "Name": "Epinephrine",
+  "Description": "Inject standard patient with Epinephrine.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenVasculature", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueExtracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BoneTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "BrainTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "FatTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "GutTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLungTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MuscleTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "MyocardiumTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightLungTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SkinTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "SpleenTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Epinephrine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Epinephrine", "PropertyName": "MassInBody", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftKidneyTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightKidneyTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BrainTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "RightLungTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LeftLungTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "LiverTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "BoneTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "FatTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SkinTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MuscleTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "SpleenTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "GutTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "CompartmentName": "MyocardiumTissue", "SubstanceName": "Epinephrine", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightKidneyTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "MassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LiverTissueIntracellular", "SubstanceName": "Epinephrine", "PropertyName": "MassExcreted", "Unit": "ug" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Epinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

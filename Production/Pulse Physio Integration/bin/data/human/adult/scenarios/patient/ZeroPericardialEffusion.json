@@ -1,0 +1,28 @@
+{
+  "Name": "ZeroPericardialEffusion",
+  "Description": "Ensure a 0 severity has no impact on the patient",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "ChronicPericardialEffusion": {
+          "AccumulatedVolume": {
+            "ScalarVolume": {
+              "Value": 0.0,
+              "Unit": "mL"
+            }
+          }
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": {
+    "Action": { "Comment": "Advance some time" },
+    "Time": { "ScalarTime": { "Value": 2, "Unit": "min" }}}}
+  ]
+}

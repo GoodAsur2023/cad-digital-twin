@@ -1,0 +1,6 @@
+Genetic Prior Weight (lambda),Integrated Model,Test AUC,Brier Loss,Standard 10-Bin ECE,Interpretation
+0.00,(1-lambda)*P_Fused + lambda*P_PRS,0.8938,0.1336,0.0792,Pure ML Empirical Model
+0.05,(1-lambda)*P_Fused + lambda*P_PRS,0.8938,0.1353,0.097,Conservative Genetic Calibration
+0.10,(1-lambda)*P_Fused + lambda*P_PRS,0.8938,0.1373,0.0993,Balanced Context Layer
+0.15,(1-lambda)*P_Fused + lambda*P_PRS,0.8938,0.1398,0.1083,Primary Digital Twin Configuration
+0.20,(1-lambda)*P_Fused + lambda*P_PRS,0.8938,0.1427,0.1147,High Prior Sensitivity

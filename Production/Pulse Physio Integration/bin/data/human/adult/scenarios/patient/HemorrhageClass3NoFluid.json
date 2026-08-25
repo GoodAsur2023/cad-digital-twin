@@ -1,0 +1,96 @@
+{
+  "Name": "HemorrhageClass3NoFluidLongTerm",
+  "Description": "35% Blood Loss",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightLegVasculature", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightLegVasculature", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "VenaCava", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "VenaCava", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhageRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhagedVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 75.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "VenaCava",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 125.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 575.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightLeg",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "VenaCava",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

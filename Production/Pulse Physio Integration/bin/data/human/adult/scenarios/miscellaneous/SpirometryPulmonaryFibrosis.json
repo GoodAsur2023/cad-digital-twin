@@ -1,0 +1,39 @@
+{
+  "Name": "SpirometryPulmonaryFibrosis",
+  "Description": "Perform a spirometry breath.",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "PulmonaryFibrosis": {
+            "Severity": {
+              "Scalar0To1": {
+                "Value": 0.85
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } },
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } } },
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 22.0, "Unit": "s" }}}}
+  ]
+}

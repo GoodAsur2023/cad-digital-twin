@@ -1,0 +1,18 @@
+{
+  "Configuration": {
+    "TimeStep" : { "ScalarTime": { "Value": 0.02, "Unit": "s" } }
+  },
+  "Scenario": {
+  "Name": "BasicStandard",
+  "Description": "Basic scenario measuring standard male patient vitals with no conditions, insults, or interventions.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { 
+    "Action": { "Comment": "Advance some time" },
+    "Time": { "ScalarTime": { "Value": 2, "Unit": "min" }}}}
+  ]
+}}

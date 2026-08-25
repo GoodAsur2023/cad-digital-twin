@@ -1,0 +1,350 @@
+{
+  "Name": "MultiDrug",
+  "Description": "Give lots of drugs, smoke, and CO at the same time to ensure stability using all available routes.  Note: The current PK/PD model does not include drug-on-drug interactions.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Carbohydrate", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Fat", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Protein", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Calcium", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Sodium", "Unit": "g" },
+      { "DecimalFormat": { }, "Category": "Physiology", "PropertyName": "StomachContents-Water", "Unit": "mL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Glucose", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Tristearin", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Calcium", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Sodium", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Urea", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "PropertyName": "Pressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Glucose", "PropertyName": "Concentration", "Unit": "mg/dL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Tristearin", "PropertyName": "Concentration", "Unit": "mg/dL" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Calcium", "PropertyName": "Concentration", "Unit": "mg/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration", "Unit": "g/L" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Urea", "PropertyName": "Concentration", "Unit": "mg/dL" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Succinylcholine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 77.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Epinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Fentanyl",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 15.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Furosemide",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 4000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Ketamine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 115.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Midazolam",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 500.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Naloxone",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 10.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 3.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Prednisone",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Propofol",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 200.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Rocuronium",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 50.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "AdministrationRoute": "Intramuscular",
+        "Substance": "Pralidoxime",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 350.0,
+            "Unit": "mg/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 2.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Morphine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.1,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditionsFile": "./environments/CheyenneMountainFireFighter.json"
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "InhalerConfiguration": {
+        "Configuration": {
+          "Substance": "Albuterol",
+          "MeteredDose": {
+            "ScalarMass": {
+              "Value": 90.0,
+              "Unit": "ug"
+            }
+          },
+          "NozzleLoss": {
+            "Scalar0To1": {
+              "Value": 0.04
+            }
+          },
+          "SpacerVolume": {
+            "ScalarVolume": {
+              "Value": 500.0,
+              "Unit": "mL"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Action": {
+        "Comment": "Death Events: Low O2 in Brain/Heart with hypocapnia" },
+      "Time": {
+        "ScalarTime": {
+          "Value": 400.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

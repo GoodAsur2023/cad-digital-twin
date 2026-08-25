@@ -1,0 +1,120 @@
+{
+  "Name": "HouseFireSmoke",
+  "Description": "High concentrations of particulate and CO concentrations.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Ambient", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Airway", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Carina", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftAlveoli", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftAnatomicDeadSpace", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightAlveoli", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightAnatomicDeadSpace", "SubstanceName": "ForestFireParticulate", "PropertyName": "Concentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Airway", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "Carina", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftAlveoli", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftAnatomicDeadSpace", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightAlveoli", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "RightAnatomicDeadSpace", "SubstanceName": "ForestFireParticulate", "PropertyName": "MassDeposited", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "ExpiratoryFlow", "Unit": "L/s" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "InspiratoryFlow", "Unit": "L/s" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 6.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 6.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [{
+            "Name": "Nitrogen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.79
+              }
+            }
+          }, {
+            "Name": "Oxygen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.2096
+              }
+            }
+          }, {
+            "Name": "CarbonDioxide",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 4.0E-4
+              }
+            }
+          }],
+          "AmbientAerosol": [{
+            "Name": "ForestFireParticulate",
+            "Concentration": {
+              "ScalarMassPerVolume": {
+                "Value": 2500.0,
+                "Unit": "mg/m^3"
+              }
+            }
+          }]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Action": {
+        "Comment": "Death Events: Exceeded the maximum target pulmonary ventilation" },
+      "Time": {
+        "ScalarTime": {
+          "Value": 800.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

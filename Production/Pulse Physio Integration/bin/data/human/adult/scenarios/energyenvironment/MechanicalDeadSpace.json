@@ -1,0 +1,46 @@
+{
+  "Name": "ColdWaterSubmersion",
+  "Description": "Patient is submerged in freezing water for five minutes.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "MechanicalDeadSpace": {
+            "ScalarVolume": {
+              "Value": 0.5,
+              "Unit": "L"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "BronchodilationLevel",                 "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "HeartRateChange",                      "Unit": "1/min" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "MeanBloodPressureChange",              "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "NeuromuscularBlockLevel",              "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "PulsePressureChange",                  "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "RespirationRateChange",                "Unit": "1/min" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SedationLevel",                        "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TidalVolumeChange",                    "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TubularPermeabilityChange",            "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "LeftEyePupillaryResponse-SizeModifier" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "RightEyePupillaryResponse-SizeModifier" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "LeftEyePupillaryResponse-ReactivityModifier" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "RightEyePupillaryResponse-ReactivityModifier" },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "PulsePressure", "Unit": "mmHg" }
+  ]
+}

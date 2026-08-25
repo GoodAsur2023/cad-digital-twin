@@ -1,0 +1,59 @@
+{
+  "Name": "NonRebreatherMask",
+  "Description": "Apply supplemental oxygen via a non-rebreather mask.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "SupplementalOxygenDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Carbohydrate", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Fat", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Protein", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Calcium", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "StomachContents-Sodium", "Unit": "g" },
+      { "DecimalFormat": { }, "Category": "Physiology", "PropertyName": "StomachContents-Water", "Unit": "mL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Glucose", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Tristearin", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Calcium", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Sodium", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineChyme", "SubstanceName": "Urea", "PropertyName": "Mass", "Unit": "g" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "PropertyName": "Pressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Glucose", "PropertyName": "Concentration", "Unit": "mg/dL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Tristearin", "PropertyName": "Concentration", "Unit": "mg/dL" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Calcium", "PropertyName": "Concentration", "Unit": "mg/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration", "Unit": "g/L" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "SmallIntestineVasculature", "SubstanceName": "Urea", "PropertyName": "Concentration", "Unit": "mg/dL" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "NonRebreatherMask"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

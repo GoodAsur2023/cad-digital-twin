@@ -1,0 +1,49 @@
+{
+  "Name": "AsystoleToUnstableVentricularTachycardia",
+  "Description": "Transition from NormalSinus to Asystole, to Unstable VTACH",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "ACLSDataRequests.json"
+  ],
+ "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "Asystole"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 120.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "UnstableVentricularTachycardia"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 240.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

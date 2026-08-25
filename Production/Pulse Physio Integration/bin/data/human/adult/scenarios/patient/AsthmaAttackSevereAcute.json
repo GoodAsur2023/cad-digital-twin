@@ -1,0 +1,56 @@
+{
+  "Name": "AsthmaAttackSevereAcute",
+  "Description": "Patient is afflicted with an severe acute asthma attack.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.75
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 550.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

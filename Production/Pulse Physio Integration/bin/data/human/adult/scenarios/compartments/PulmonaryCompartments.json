@@ -1,0 +1,1177 @@
+{
+  "Name": "PulmonaryCompartments",
+  "Description": "Validation scenario to make sure all compartment level data requests match up with the expected results.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Ambient",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Airway",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Carina",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PulmonaryLungs",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightLungPulmonary",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAnatomicDeadSpace",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightAlveoli",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "VolumeFraction"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "Stomach",
+      "SubstanceName": "Nitrogen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PleuralCavity",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PleuralCavity",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PleuralCavity",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "PleuralCavity",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftPleuralCavity",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftPleuralCavity",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftPleuralCavity",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "LeftPleuralCavity",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightPleuralCavity",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightPleuralCavity",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightPleuralCavity",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "GasCompartment",
+      "CompartmentName": "RightPleuralCavity",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

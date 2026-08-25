@@ -1,0 +1,185 @@
+{
+  "Name": "ExerciseStages",
+  "Description": "Tests exercise physiology by increasing intensity.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "BloodPH", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "LactateProductionRate", "Unit": "mol/day" },
+      { "DecimalFormat": { }, "Category": "Physiology", "PropertyName": "MeanSkinFlow", "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SweatRate", "Unit": "mg/min" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TotalMetabolicRate", "Unit": "kcal/day" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TotalMetabolicRate", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology", "PropertyName": "UrineOsmolality", "Unit": "mOsm/kg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TotalWorkRateLevel", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "FatigueLevel", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "AchievedExerciseLevel", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Insulin", "PropertyName": "BloodConcentration", "Unit": "ug/mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "BloodConcentration", "Unit": "ug/mL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "GutVasculature", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "MuscleVasculature", "PropertyName": "InFlow", "Unit": "mL/s" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.0375
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 6.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.075
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 6.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.1583
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 6.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.3583
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 6.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,36 @@
+{
+  "Name": "ZeroSepsis",
+  "Description": "Ensure a 0 severity has no impact on the patient",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": 
+    { 
+      "AnyCondition": 
+      [
+        { "PatientCondition": { "Sepsis": 
+        {
+          "Severity": { "Scalar0To1": { "Value": 0.0 }}
+        }}}
+      ]
+    }
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "HeartEjectionFraction" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "SystemicVascularResistance", "Unit": "mmHg s/mL" },
+      { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "Pericardium", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "Pericardium", "PropertyName": "Pressure", "Unit": "mmHg" }
+    ]
+  },
+  "AnyAction":
+  [
+    { "AdvanceTime": { 
+    "Action": { "Comment": "Advance some time" },
+    "Time": { "ScalarTime": { "Value": 2, "Unit": "min" }}}}
+  ]
+}

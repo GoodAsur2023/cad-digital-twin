@@ -1,0 +1,173 @@
+{
+  "Name": "EsophagealIntubation",
+  "Description": "A patient is injected with succinylcholine and an endotracheal tube is inserted, but is set in the esophagus. Oxygen is administered following this, but fails to reach the lungs. The tube is then removed and reset in the trachea.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal"
+      }
+    }
+  },
+    {
+    "EquipmentAction": {
+      "MechanicalVentilatorConfiguration": {
+        "MechanicalVentilatorAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the mechanical ventilator - VC-AC: TV = 7 mL/kg(ideal)" }}},
+        "Settings":
+        {
+          "Connection": "On",
+          "InspirationWaveform": "Square",
+          "ExpirationWaveform": "Square",
+          "InspirationTargetFlow": { "ScalarVolumePerTime": { "Value": 0.351, "Unit": "L/s" } },
+          "PositiveEndExpiratoryPressure": { "ScalarPressure": { "Value": 5.0, "Unit": "cmH2O" } },
+          "InspirationMachineTriggerTime": { "ScalarTime": { "Value": 10.0, "Unit": "s" } },
+          "InspirationPatientTriggerPressure": { "ScalarPressure": { "Value": -1, "Unit": "cmH2O" } },
+          "ExpirationCycleVolume": { "ScalarVolume": { "Value": 0.527, "Unit": "L" } },
+          "FractionInspiredGas": [
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.3, "Unit": "" } } }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.3
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.6
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.9
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Esophageal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Tracheal"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,92 @@
+{
+  "Name":"Nutrition",
+  "Description":"A look at the substances from the default meal and how they behave.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": { "SamplesPerSecond": 1.0, "DataRequest":
+  [
+    {"DecimalFormat":{"Precision":4}, "Category":"Physiology", "PropertyName":"WaterAbsorptionRate",               "Unit":"mL/min" },
+    {"DecimalFormat":{"Precision":4}, "Category":"Physiology", "PropertyName":"InsulinSynthesisRate",              "Unit":"pmol/min" },
+
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"BloodPH"                                          },
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"SweatRate",                      "Unit":"mg/min"  },
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"BloodUreaNitrogenConcentration", "Unit":"ug/mL"   },
+
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"StomachContents-Carbohydrate", "Unit":"g"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"StomachContents-Fat",          "Unit":"g"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"StomachContents-Protein",      "Unit":"g"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"StomachContents-Calcium",      "Unit":"g"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Physiology", "PropertyName":"StomachContents-Sodium",       "Unit":"g"},
+    {"DecimalFormat":{}             , "Category":"Physiology", "PropertyName":"StomachContents-Water",        "Unit":"mL"},
+
+    {"DecimalFormat":{}             , "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineChyme", "PropertyName":"Volume", "Unit":"mL"},
+
+    {"DecimalFormat":{}             , "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature",                                "PropertyName":"Volume",        "Unit":"mL"},
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature",                                "PropertyName":"Pressure",      "Unit":"mmHg"},
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Glucose",     "PropertyName":"Concentration", "Unit":"mg/dL"},
+    {"DecimalFormat":{}             , "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Tristearin",  "PropertyName":"Concentration", "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Calcium",     "PropertyName":"Concentration", "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":2}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Sodium",      "PropertyName":"Concentration", "Unit":"g/L"},
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Urea",        "PropertyName":"Concentration", "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Glucose",     "PropertyName":"Mass",          "Unit":"mg" },
+    {"DecimalFormat":{             }, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Tristearin",  "PropertyName":"Mass",          "Unit":"mg" },
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Calcium",     "PropertyName":"Mass",          "Unit":"mg" },
+    {"DecimalFormat":{"Precision":2}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Sodium",      "PropertyName":"Mass",          "Unit":"g" },
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"SmallIntestineVasculature", "SubstanceName":"Urea",        "PropertyName":"Mass",          "Unit":"mg" },
+
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"LiverTissueIntracellular",  "SubstanceName":"Glucose",     "PropertyName":"Mass",          "Unit":"mg" },
+    {"DecimalFormat":{"Precision":1}, "Category":"LiquidCompartment", "CompartmentName":"MuscleTissueIntracellular", "SubstanceName":"Glucose",     "PropertyName":"Mass",          "Unit":"mg" },
+
+    {"DecimalFormat":{"Precision":0}, "Category":"LiquidCompartment", "CompartmentName":"Bladder",                           "PropertyName":"Volume",        "Unit":"mL"   },
+    {"DecimalFormat":{"Precision":2}, "Category":"LiquidCompartment", "CompartmentName":"Bladder", "SubstanceName":"Sodium", "PropertyName":"Concentration", "Unit":"g/mL" },
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Acetoacetate", "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Albumin",      "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Bicarbonate",  "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Chloride",     "PropertyName":"BloodConcentration",  "Unit":"g/L"},
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Creatinine",   "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Globulin",     "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Substance", "SubstanceName":"Hemoglobin",   "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Lactate",      "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":2}, "Category":"Substance", "SubstanceName":"Potassium",    "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Insulin", "PropertyName":"BloodConcentration",  "Unit":"ug/L"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Insulin", "PropertyName":"MassInBody",          "Unit":"mg"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Insulin", "PropertyName":"MassInBlood",         "Unit":"mg"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Insulin", "PropertyName":"SystemicMassCleared", "Unit":"mg"},
+
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Glucose", "PropertyName":"BloodConcentration",  "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Glucose", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Glucose", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Glucose", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Tristearin", "PropertyName":"BloodConcentration",  "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Tristearin", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Tristearin", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Tristearin", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":2}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"BloodConcentration",  "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":1}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInBlood",  "Unit":"mg"  }
+
+  ]},
+
+  "AnyAction":[{"AdvanceTime":{"Time":{"ScalarTime":{"Value":6.0,"Unit":"hr"}}}}]}

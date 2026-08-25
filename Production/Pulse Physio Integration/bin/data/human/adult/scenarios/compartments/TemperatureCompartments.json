@@ -1,0 +1,274 @@
+{
+  "Name": "TemperatureCompartments",
+  "Description": "Output everything from every property from these compartments.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalCore",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalCore",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalCore",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalCore",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalSkin",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalSkin",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalSkin",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "InternalSkin",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Active",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Active",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Active",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Active",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Clothing",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Clothing",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Clothing",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Clothing",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Enclosure",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Enclosure",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Enclosure",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Enclosure",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalCore",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalCore",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalCore",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalCore",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalSkin",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalSkin",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalSkin",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "ExternalSkin",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "HeatTransferRateIn",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "HeatTransferRateOut",
+      "Unit": "W"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "Temperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "ThermalCompartment",
+      "CompartmentName": "Ambient",
+      "PropertyName": "Heat",
+      "Unit": "J"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

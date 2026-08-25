@@ -1,0 +1,100 @@
+{
+  "Name": "TensionPneumothoraxBilateral",
+  "Description": "Patient is afflicted with an open pneumothorax at the left lung and a closed pneumothorax at the right lung. An occlusive dressing is applied to the open wound, and then needle decompression is given to both sides.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Closed",
+        "Side": "Right",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ChestOcclusiveDressing": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "NeedleDecompression": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 20.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "NeedleDecompression": {
+        "State": "On",
+        "Side": "Right"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

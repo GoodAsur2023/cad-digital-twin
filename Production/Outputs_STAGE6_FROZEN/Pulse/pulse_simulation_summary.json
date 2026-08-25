@@ -1,0 +1,14 @@
+{
+  "pulse_engine_version": "Kitware Pulse Physiology v4.3.2",
+  "c_api_library": "libPulseC.dll",
+  "cohort_size": 238,
+  "total_simulations": 952,
+  "overall_agreement_pct": 97.48,
+  "scenario_mean_reductions": {
+    "exercise_aerobic": 0.0022,
+    "weight_loss_5pct": 0.0022,
+    "smoking_cessation": 0.0022,
+    "combined_exercise_diet": 0.0022
+  },
+  "mean_cardiac_workload_reduction_pct": -9.49
+}

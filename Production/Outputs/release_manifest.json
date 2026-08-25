@@ -1,0 +1,36 @@
+{
+    "release_id": "CAD_DT_STAGE7_LIVE",
+    "primary_pgs": "PGS000116",
+    "canonical_genomics_rows": 40079,
+    "prs_raw": 2.962466254375361,
+    "gbi": 40.01970268032352,
+    "lifestyle_test_auc": 0.8044,
+    "clinical_test_auc": 0.8788,
+    "baseline_test_auc": 0.8595,
+    "fusion_test_auc": 0.8838,
+    "fusion_weights": {
+        "w_diagnostic": 0.5,
+        "w_baseline": 0.5
+    },
+    "models": {
+        "lifestyle_model": "XGBoost",
+        "clinical_model": "XGBoost",
+        "baseline_model": "GradientBoosting"
+    },
+    "python_version": "3.12.6",
+    "sklearn_version": "1.6.1",
+    "xgboost_version": "3.4.1",
+    "file_hashes": {
+        "pgs000116_genomeindia_harmonized.csv": "714390c82de42cb0e265b4ef796360818addadbb6560bf542fbbea17d8146939",
+        "genetic_intelligence_profile.json": "5285da23d5695eeada0d9afb0a2c943cf0e50d8b7221f743f35a80336a9df41d",
+        "lifestyle_pipeline.pkl": "88d640ad098d2cb78d0b5c0d069c823a731a1b1ef8df3951d899dea95e7e4713",
+        "clinical_pipeline.pkl": "86acb0227e2453dd52e065f6d165f5617ef28be192e500af352f3692840ebec2",
+        "clinical_prediagnostic_pipeline.pkl": "e54ececed5a77b242f3d640fe94ce1349269957b5e4c0a7e9ca349d84ae532e7",
+        "fusion_weight_provenance.json": "6107d5883890543c09491fd45a9ffb0e8d59dcdca3e2eea0461ae4f793ed8ce8",
+        "canonical_test_predictions.parquet": "ef7d4a4f8a98ce02d114c0d45ad876139062fd14be65ac588f7e92022cc12f48",
+        "canonical_benchmark_metrics.json": "495610e4a2b31c40c564fd2788e2329247d2cfd04a7542237b93de69584c1ad9",
+        "methodology_audit_report.json": "3744a11f818f0d39e2fcd2d5ab503b4451c9ee5a5879a6b36d464c9372617758",
+        "sanity_check_results.csv": "f7f3a54e0377b7358ec13d76890f028ed7c1239bbe70536a1c98eee3e0afee81",
+        "intervention_results.csv": "4788e0609f4833d08e8b364d90319051b994165b72ec6e21fdfc4ce19ab5966c"
+    }
+}

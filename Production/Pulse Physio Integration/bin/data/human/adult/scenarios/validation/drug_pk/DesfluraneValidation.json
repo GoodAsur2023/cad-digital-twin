@@ -1,0 +1,143 @@
+{
+  "Scenario": {
+    "Name": "DesfluraneValidation",
+    "Description": "Patient breathing in Desflurane.",
+    "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+    "DataRequestManager": {
+      "SamplesPerSecond": 1.0,
+      "DataRequest": [
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Desflurane", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Desflurane", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Desflurane", "PropertyName": "MassInBody", "Unit": "ug" },
+      
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "LeftKidneyTissue",  "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "RightKidneyTissue", "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "BrainTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "RightLungTissue",   "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "LeftLungTissue",    "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "LiverTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "BoneTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "FatTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "SkinTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "MuscleTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "SpleenTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "GutTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Desflurane", "CompartmentName": "MyocardiumTissue",  "PropertyName": "PartitionCoefficient" },
+      
+      { "DecimalFormat": { "Precision": 9 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "VenaCava",                       "PropertyName": "Concentration", "Unit": "ug/mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Desflurane", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassExcreted",  "Unit": "ug" }
+      
+      ]
+    },
+    "AnyAction": [{
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 50.0,
+            "Unit": "s"
+          }
+        }
+      }
+    }, {
+      "EquipmentAction": {
+        "AnesthesiaMachineConfiguration": {
+          "Configuration": {
+            "Connection": "On",
+            "InletFlow": {
+              "ScalarVolumePerTime": {
+                "Value": 5.0,
+                "Unit": "L/min"
+              }
+            },
+            "InspiratoryExpiratoryRatio": {
+              "Value": 0.5
+            },
+            "OxygenFraction": {
+              "Scalar0To1": {
+                "Value": 0.23
+              }
+            },
+            "OxygenSource": "Wall",
+            "PositiveEndExpiratoryPressure": {
+              "ScalarPressure": {
+                "Unit": "cmH2O"
+              }
+            },
+            "PrimaryGas": "Nitrogen",
+            "RespiratoryRate": {
+              "ScalarFrequency": {
+                "Value": 16.0,
+                "Unit": "1/min"
+              }
+            },
+            "PeakInspiratoryPressure": {
+              "ScalarPressure": {
+                "Unit": "cmH2O"
+              }
+            },
+            "OxygenBottleOne": {
+              "Volume": {
+                "ScalarVolume": {
+                  "Value": 660.0,
+                  "Unit": "L"
+                }
+              }
+            },
+            "OxygenBottleTwo": {
+              "Volume": {
+                "ScalarVolume": {
+                  "Value": 660.0,
+                  "Unit": "L"
+                }
+              }
+            }
+          }
+        }
+      }
+    }, {
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 50.0,
+            "Unit": "s"
+          }
+        }
+      }
+    }, {
+      "EquipmentAction": {
+        "AnesthesiaMachineConfiguration": {
+          "Configuration": {
+            "LeftChamber": {
+              "State": "On",
+              "SubstanceFraction": {
+                "Scalar0To1": {
+                  "Value": 0.04
+                }
+              },
+              "Substance": "Desflurane"
+            }
+          }
+        }
+      }
+    }, {
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 1000.0,
+            "Unit": "s"
+          }
+        }
+      }
+    }]
+  },
+  "Configuration": {
+    "DrugsConfiguration": {
+      "PDModel": "Off"
+    }
+  }
+}

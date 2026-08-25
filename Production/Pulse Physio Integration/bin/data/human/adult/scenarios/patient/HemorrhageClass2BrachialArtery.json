@@ -1,0 +1,70 @@
+{
+  "Name": "HemorrhageClass2BrachialArtery",
+  "Description": "25% Blood Loss from Brachial Artery",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightArmVasculature", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "RightArmVasculature", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhageRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhagedVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightArm",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 60.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1375.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "RightArm",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 400.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "Name": "EffusionCondition",
+  "Description": "A chronic Pericardial Effusion is applied to the patient.",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "ChronicPericardialEffusion": {
+          "AccumulatedVolume": {
+            "ScalarVolume": {
+              "Value": 500.0,
+              "Unit": "mL"
+            }
+          }
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "RightPulmonaryCapillaries", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "LeftPulmonaryCapillaries", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "RightPulmonaryCapillaries", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { }, "Category": "LiquidCompartment", "CompartmentName": "LeftPulmonaryCapillaries", "PropertyName": "InFlow", "Unit": "mL/s" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

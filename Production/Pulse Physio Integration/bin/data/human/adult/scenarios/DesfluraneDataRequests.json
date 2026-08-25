@@ -1,0 +1,6 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Desflurane", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" }
+  ]
+}

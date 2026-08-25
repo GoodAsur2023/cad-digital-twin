@@ -1,0 +1,130 @@
+{
+  "Name": "BrainInjury",
+  "Description": "The patient receives three successive brain injuries of increasing severity with a rest period in between them.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest": 
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "CerebralBloodFlow", "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "IntracranialPressure", "Unit": "mmHg" }, 
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "CerebralPerfusionPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "PropertyName": "Volume", "Unit": "mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Oxygen", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "Oxygen", "PropertyName": "Saturation", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "PartialPressure", "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "SubstanceName": "CarbonDioxide", "PropertyName": "Saturation", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "LeftEyePupillaryResponse-SizeModifier" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "RightEyePupillaryResponse-SizeModifier" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "LeftEyePupillaryResponse-ReactivityModifier" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "RightEyePupillaryResponse-ReactivityModifier" }
+  ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 20.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.2
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 600.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 300.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Type": "LeftFocal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.75
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 800.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 300.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Type": "RightFocal",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3600.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

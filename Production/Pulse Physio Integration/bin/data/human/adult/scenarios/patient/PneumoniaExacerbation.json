@@ -1,0 +1,37 @@
+{
+  "Name": "PneumoniaExacerbation",
+  "Description": "Increasing severities of pneumonia.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}},
+    { "PatientAction": { "PneumoniaExacerbation":
+      {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.3 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.3 }}}]
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 5.0, "Unit": "min" }}}},
+    { "PatientAction": { "PneumoniaExacerbation":
+      {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}}]
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 5.0, "Unit": "min" }}}},
+    { "PatientAction": { "PneumoniaExacerbation":
+      {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.9 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.9 }}}]
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 5.0, "Unit": "min" }}}}
+  ]
+}

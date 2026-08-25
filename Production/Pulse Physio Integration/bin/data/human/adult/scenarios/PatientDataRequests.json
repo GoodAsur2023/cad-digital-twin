@@ -1,0 +1,27 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "Age",                               "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "Weight",                            "Unit": "lb" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "Height",                            "Unit": "in" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "BodyFatFraction",                   "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "BodyMassIndex",                     "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "IdealBodyWeight",                   "Unit": "kg" },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "SystolicArterialPressureBaseline",  "Unit": "mmHg" }, 
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "DiastolicArterialPressureBaseline", "Unit": "mmHg" }, 
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "HeartRateBaseline",                 "Unit": "1/min" }, 
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "RespirationRateBaseline",           "Unit": "1/min" }, 
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "TidalVolumeBaseline",               "Unit": "mL" },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "AlveoliSurfaceArea", "Unit": "m^2" },
+
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "ExpiratoryReserveVolume",    "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "FunctionalResidualCapacity", "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "InspiratoryCapacity",        "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "InspiratoryReserveVolume",   "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "ResidualVolume",             "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "TotalLungCapacity",          "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 3 }, "PropertyName": "VitalCapacity",              "Unit": "mL" }
+  ]
+}

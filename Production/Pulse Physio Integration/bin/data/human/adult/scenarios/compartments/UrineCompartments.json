@@ -1,0 +1,354 @@
+{
+  "Name": "UrineCompartments",
+  "Description": "Validation scenario to make sure all compartment level data requests match up with the expected results.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "LeftUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "RightUreter",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Ureters",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "PropertyName": "InFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "PropertyName": "OutFlow",
+      "Unit": "mL/s"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Sodium",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Concentration",
+      "Unit": "ug/mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Mass",
+      "Unit": "ug"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Bladder",
+      "SubstanceName": "Albumin",
+      "PropertyName": "Molarity",
+      "Unit": "mmol/L"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

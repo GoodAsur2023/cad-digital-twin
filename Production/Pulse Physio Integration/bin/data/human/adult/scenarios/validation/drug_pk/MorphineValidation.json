@@ -1,0 +1,71 @@
+{
+  "Scenario": {
+    "Name": "MorphineValidation",
+    "Description": "Inject standard patient with Morphine.",
+    "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+    "DataRequestManager": {
+      "SamplesPerSecond": 1.0,
+      "DataRequest": [
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Morphine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Morphine", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Morphine", "PropertyName": "MassInBody", "Unit": "ug" },
+      
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "LeftKidneyTissue",  "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "RightKidneyTissue", "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "BrainTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "RightLungTissue",   "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "LeftLungTissue",    "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "LiverTissue",       "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "BoneTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "FatTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "SkinTissue",        "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "MuscleTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "SpleenTissue",      "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "GutTissue",         "PropertyName": "PartitionCoefficient" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Morphine", "CompartmentName": "MyocardiumTissue",  "PropertyName": "PartitionCoefficient" },
+      
+      { "DecimalFormat": { "Precision": 9 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "VenaCava",                       "PropertyName": "Concentration", "Unit": "ug/mL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassCleared",   "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassExcreted",  "Unit": "ug" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Morphine", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassExcreted",  "Unit": "ug" }
+      
+      ]
+    },
+    "AnyAction": [{
+      "PatientAction": {
+        "SubstanceBolus": {
+          "Substance": "Morphine",
+          "Concentration": {
+            "ScalarMassPerVolume": {
+              "Value": 1000.0,
+              "Unit": "ug/mL"
+            }
+          },
+          "Dose": {
+            "ScalarVolume": {
+              "Value": 5.64,
+              "Unit": "mL"
+            }
+          }
+        }
+      }
+    }, {
+      "AdvanceTime": {
+        "Time": {
+          "ScalarTime": {
+            "Value": 540.0,
+            "Unit": "min"
+          }
+        }
+      }
+    }]
+  },
+  "Configuration": {
+    "DrugsConfiguration": {
+      "PDModel": "Off"
+    }
+  }
+}

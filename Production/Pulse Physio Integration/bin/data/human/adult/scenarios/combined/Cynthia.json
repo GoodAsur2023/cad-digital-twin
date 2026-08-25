@@ -1,0 +1,201 @@
+{
+  "Name": "Cynthia",
+  "Description": "Inject Cynthia with Midazolam. Reaction to sedative causes an airway obstruction. A  mask is applied to attempt to supply Oxygen. Ketamine is administered and the airway obstruction is cleared. Rocuronium is administered. Patient is then intubated.",
+  "PatientConfiguration": {
+      "PatientFile": "Cynthia.json"
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest": 
+    [
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Ketamine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Rocuronium", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Midazolam", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Midazolam",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 300.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 60.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 150.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "SimpleMask",
+		"Flow": {
+            "ScalarVolumePerTime": {
+              "Value": 1.0,
+              "Unit": "L/min"
+            }
+		}
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Ketamine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 5000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 60.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Rocuronium",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 3100.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 90.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "None"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Tracheal"
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "MechanicalVentilatorConfiguration": {
+        "MechanicalVentilatorAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the mechanical ventilator - PC-CMV: RR = 15 bpm, I:E = 0.6, TV = 7 mL/kg(ideal)" }}},
+        "Settings":
+        {
+          "Connection": "On",
+          "InspirationWaveform": "Square",
+          "ExpirationWaveform": "Square",
+          "PeakInspiratoryPressure": { "ScalarPressure": { "Value": 13.2, "Unit": "cmH2O" } },
+          "PositiveEndExpiratoryPressure": { "ScalarPressure": { "Value": 5.0, "Unit": "cmH2O" } },
+          "InspirationMachineTriggerTime": { "ScalarTime": { "Value": 3.25, "Unit": "s" } },
+          "ExpirationCycleTime": { "ScalarTime": { "Value": 1.75, "Unit": "s" } },
+          "FractionInspiredGas": [
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.3, "Unit": "" } } }
+          ]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

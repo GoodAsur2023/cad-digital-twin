@@ -1,0 +1,12895 @@
+{
+ "Name": "ChestCompression",
+ "Description": "Test the ChestCompression Action",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "ACLSDataRequests.json"
+  ],
+ "AnyAction": [
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 30,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "Arrhythmia": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Rhythm": "Asystole"
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 30,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Depth": {
+      "ScalarLength": {
+       "Value": 5.5,
+       "Unit": "cm"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "ChestCompression": {
+     "PatientAction": {
+      "Action": {}
+     },
+     "Force": {
+      "ScalarForce": {
+       "Value": 500,
+       "Unit": "N"
+      }
+     },
+     "CompressionPeriod": {
+      "ScalarTime": {
+       "Value": 0.48,
+       "Unit": "s"
+      }
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 0.6,
+      "Unit": "s"
+     }
+    }
+   }
+  },
+  {
+   "PatientAction": {
+    "Arrhythmia": {
+     "PatientAction": {
+      "Action": {}
+     }
+    }
+   }
+  },
+  {
+   "AdvanceTime": {
+    "Action": {},
+    "Time": {
+     "ScalarTime": {
+      "Value": 60,
+      "Unit": "s"
+     }
+    }
+   }
+  }
+ ]
+}

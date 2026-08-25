@@ -1,0 +1,154 @@
+{
+  "Name": "RespirationModification",
+  "Description": "Change respiratory system parameters via the modifier action.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 30.0, "Unit": "s" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "RespirationRateMultiplier": { "ScalarUnsigned": { "Value": 2.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "RespirationRateMultiplier": { "ScalarUnsigned": { "Value": 0.5 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "RespirationRateMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "TidalVolumeMultiplier": { "ScalarUnsigned": { "Value": 2.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "TidalVolumeMultiplier": { "ScalarUnsigned": { "Value": 0.5 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "TidalVolumeMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "LeftComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "RightComplianceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "LeftExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "RightExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "UpperExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "LeftInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "RightInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "UpperInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "LeftComplianceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "RightComplianceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "LeftExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "RightExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "UpperExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 2.0 }},
+          "LeftInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "RightInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }},
+          "UpperInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 0.5 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },{
+    "PatientAction": {
+      "RespiratoryMechanicsModification": {
+        "Modifiers": {
+          "LeftComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "RightComplianceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "LeftExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "RightExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "UpperExpiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "LeftInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "RightInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }},
+          "UpperInspiratoryResistanceMultiplier": { "ScalarUnsigned": { "Value": 1.0 }}
+    }}}
+  },{
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },
+  {
+   "PatientAction": {
+    "RespiratoryMechanicsModification": {
+     "Modifiers": {
+      "VolumeIncrement": [
+       { "Compartment": "LeftLung", "Increment": { "ScalarVolume": { "Value": 50, "Unit": "mL" }}},
+       { "Compartment": "RightLung", "Increment": { "ScalarVolume": { "Value": 100, "Unit": "mL" }}}
+      ]
+  }}}},
+  {
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },
+  {
+   "PatientAction": {
+    "RespiratoryMechanicsModification": {
+     "Modifiers": {
+      "VolumeIncrement": [
+       { "Compartment": "LeftLung", "Increment": { "ScalarVolume": { "Value": 75, "Unit": "mL" }}},
+       { "Compartment": "RightLung", "Increment": { "ScalarVolume": { "Value": 10, "Unit": "mL" }}}
+      ]
+  }}}},
+  {
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  },
+  {
+   "PatientAction": {
+    "RespiratoryMechanicsModification": {
+     "Modifiers": {
+      "VolumeIncrement": [
+       { "Compartment": "LeftLung", "Increment": { "ScalarVolume": { "Value": 0, "Unit": "mL" }}},
+       { "Compartment": "RightLung", "Increment": { "ScalarVolume": { "Value": 0, "Unit": "mL" }}}
+      ]
+  }}}},
+  {
+    "AdvanceTime": {
+      "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}
+  }]
+}

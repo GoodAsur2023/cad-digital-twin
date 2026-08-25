@@ -1,0 +1,45 @@
+{
+  "Name": "ConsciousRespiration",
+  "Description": "Perform a spirometry breath.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TransMusclePressure", "Unit": "cmH2O" }
+    ]
+  },
+
+  "AnyAction":
+  [
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } ,
+            "ReleasePeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } } } ,
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 0.0 } },
+            "HoldPeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 4.0, "Unit": "s" }}}},
+
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } ,
+            "ReleasePeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } } } ,
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 0.0 } },
+            "HoldPeriod": { "ScalarTime": { "Value": 1.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 4.0, "Unit": "s" }}}}
+  ]
+}

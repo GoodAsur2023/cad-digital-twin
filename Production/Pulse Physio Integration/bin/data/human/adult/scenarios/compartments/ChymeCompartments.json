@@ -1,0 +1,32 @@
+{
+  "Name": "ChymeCompartments",
+  "Description": "Validation scenario to make sure all compartment level data requests match up with the expected results.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SmallIntestineChyme",
+      "PropertyName": "Pressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "SmallIntestineChyme",
+      "PropertyName": "Volume",
+      "Unit": "mL"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

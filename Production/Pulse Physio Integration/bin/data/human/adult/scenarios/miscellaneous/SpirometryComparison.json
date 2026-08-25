@@ -1,0 +1,86 @@
+{
+  "Name": "SpirometryComparison",
+  "Description": "Perform a spirometry breath.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } },
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } } },
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" }}}},
+
+    { "PatientAction": { "ChronicObstructivePulmonaryDiseaseExacerbation":
+      {
+        "BronchitisSeverity": { "Scalar0To1": { "Value": 0.6 }},
+        "EmphysemaSeverity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}}]
+      }}
+    },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 10.0, "Unit": "s" }}}},
+
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } },
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } } },
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" }}}},
+
+    { "PatientAction": { "ChronicObstructivePulmonaryDiseaseExacerbation":
+      {
+        "BronchitisSeverity": { "Scalar0To1": { "Value": 0.0 }},
+        "EmphysemaSeverity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.0 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.0 }}}]
+      }}
+    },
+
+    { "PatientAction": { "AcuteRespiratoryDistressSyndromeExacerbation":
+      {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.6 }}}]
+      }}
+    },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 10.0, "Unit": "s" }}}},
+
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } },
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } ,
+            "HoldPeriod": { "ScalarTime": { "Value": 2.0, "Unit": "s" } } } },
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" }}}}
+  ]
+}

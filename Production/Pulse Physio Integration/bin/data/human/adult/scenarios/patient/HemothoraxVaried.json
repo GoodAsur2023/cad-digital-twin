@@ -1,0 +1,169 @@
+{
+  "Name": "HemothoraxVaried",
+  "Description": "Patient is afflicted with an hemothorax in the left lung. A tube thoracostomy is performed as an intervention.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "LeftHemothorax", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "LeftHemothorax", "PropertyName": "TotalBloodVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemothorax": {
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemothorax": {
+        "Side": "Left",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.1,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 12.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemothorax": {
+        "Side": "Left",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.5,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 12.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemothorax": {
+        "Side": "Left",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 1.0,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 18.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemothorax": {
+        "Side": "Left",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.0,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TubeThoracostomy": {
+        "Side": "Left",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 1.0,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceCompoundInfusion": {
+        "SubstanceCompound": "Blood",
+        "BagVolume": {
+          "ScalarVolume": {
+            "Value": 1000.0,
+            "Unit": "mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+            "Value": 100.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 25.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

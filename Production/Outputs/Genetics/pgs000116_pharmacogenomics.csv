@@ -1,0 +1,7 @@
+gene_symbol,variants_in_pgs,evidence_framework,evidence_level,drug_class,clinical_guidance,requires_individual_genotype,patient_genotype_available,clinical_status
+SLCO1B1,14,CPIC,Level A,"Statins (Simvastatin, Atorvastatin)",Reduced hepatic uptake increases statin systemic exposure and myopathy risk; guide statin dose.,True,False,population_knowledge_only
+CYP2C19,8,CPIC,Level A,Antiplatelets (Clopidogrel),Loss-of-function alleles impair clopidogrel bioactivation; consider ticagrelor/prasugrel post-PCI.,True,False,population_knowledge_only
+HMGCR,38,CPIC,Level A,"Statins (Atorvastatin, Rosuvastatin)",Primary rate-limiting target of statin therapy; variants modulate baseline cholesterol synthesis and statin efficacy.,True,False,population_knowledge_only
+PCSK9,17,AHA / ACC Guidelines,Class I / Level A,"PCSK9 Inhibitors (Evolocumab, Alirocumab)",Elevated genetic burden at PCSK9 locus indicates LDL receptor clearance impairment; guide intensive lipid lowering.,False,False,population_risk_context
+LPA,72,ACC Expert Consensus,Consensus Recommendation,Lp(a) Screening & Emerging RNA Therapeutics,Genetically determined Lp(a) elevation; warrants serum Lp(a) screening and aggressive ASCVD risk control.,False,False,population_risk_context
+LDLR,30,FH Clinical Guidelines,Guideline Consensus,"Statins, Ezetimibe, PCSK9i",Receptor clearance defect locus; screen to exclude familial hypercholesterolemia phenotype.,False,False,population_risk_context

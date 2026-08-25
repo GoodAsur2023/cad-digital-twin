@@ -1,0 +1,229 @@
+{
+  "Name": "Norepinephrine",
+  "Description": "Infuse standard patient with Norepinephrine.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest": [
+    
+    { "DecimalFormat": { "Precision": 6 }, "Category": "Substance",  "SubstanceName": "Epinephrine",    "PropertyName": "BloodConcentration",  "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Epinephrine", "CompartmentName": "Aorta",                          "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Epinephrine", "CompartmentName": "VenaCava",                       "PropertyName": "Concentration", "Unit": "ug/L" },
+    
+    { "DecimalFormat": { "Precision": 6 }, "Category": "Substance",  "SubstanceName": "Norepinephrine", "PropertyName": "BloodConcentration",  "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 6 }, "Category": "Substance",  "SubstanceName": "Norepinephrine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "Norepinephrine", "PropertyName": "SystemicMassCleared", "Unit": "ug" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "Norepinephrine", "PropertyName": "MassInBody",          "Unit": "ug" },
+
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftKidneyTissue",  "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "RightKidneyTissue", "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "BrainTissue",       "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "RightLungTissue",   "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftLungTissue",    "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverTissue",       "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "BoneTissue",        "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "FatTissue",         "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "SkinTissue",        "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "MuscleTissue",      "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "SpleenTissue",      "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "GutTissue",         "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Substance", "SubstanceName": "Norepinephrine", "CompartmentName": "MyocardiumTissue",  "PropertyName": "PartitionCoefficient", "Unit": "unitless" },
+    
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "Aorta",                          "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "VenaCava",                       "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BoneVasculature",                "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BrainVasculature",               "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "FatVasculature",                 "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "GutVasculature",                 "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftKidneyVasculature",          "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftLungVasculature",            "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverVasculature",               "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MuscleVasculature",              "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MyocardiumVasculature",          "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightKidneyVasculature",         "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightLungVasculature",           "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SkinVasculature",                "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SpleenVasculature",              "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BoneTissueExtracellular",        "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BrainTissueExtracellular",       "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "FatTissueExtracellular",         "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "GutTissueExtracellular",         "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftKidneyTissueExtracellular",  "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftLungTissueExtracellular",    "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverTissueExtracellular",       "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MuscleTissueExtracellular",      "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MyocardiumTissueExtracellular",  "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightKidneyTissueExtracellular", "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightLungTissueExtracellular",   "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SkinTissueExtracellular",        "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SpleenTissueExtracellular",      "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BoneTissueIntracellular",        "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "BrainTissueIntracellular",       "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "FatTissueIntracellular",         "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "GutTissueIntracellular",         "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftLungTissueIntracellular",    "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MuscleTissueIntracellular",      "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "MyocardiumTissueIntracellular",  "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightLungTissueIntracellular",   "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SkinTissueIntracellular",        "PropertyName": "Concentration", "Unit": "ug/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "SpleenTissueIntracellular",      "PropertyName": "Concentration", "Unit": "ug/L" },
+    
+    { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassCleared",   "Unit": "ug" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LeftKidneyTissueIntracellular",  "PropertyName": "MassCleared",   "Unit": "ug" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "RightKidneyTissueIntracellular", "PropertyName": "MassCleared",   "Unit": "ug" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "SubstanceName": "Norepinephrine", "CompartmentName": "LiverTissueIntracellular",       "PropertyName": "MassExcreted",  "Unit": "ug" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Norepinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.013,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Norepinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+        "Value": 0.077,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+    }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Norepinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+        "Value": 0.13,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+    }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Norepinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+        "Value": 0.18,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "min"
+        }
+      }
+    }
+    }, {
+    "PatientAction": {
+      "SubstanceInfusion": {
+        "Substance": "Norepinephrine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+        "Value": 0.26,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 40.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

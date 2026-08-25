@@ -1,0 +1,40 @@
+{
+  "Name": "BronchoconstrictionDeath",
+  "Description": "Bronchoconstriction with no interventions.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Bronchoconstriction": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Action": {
+        "Comment": "Death Events: Low O2 in Brain/Heart with hypocapnia" },
+      "Time": {
+        "ScalarTime": {
+          "Value": 10,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

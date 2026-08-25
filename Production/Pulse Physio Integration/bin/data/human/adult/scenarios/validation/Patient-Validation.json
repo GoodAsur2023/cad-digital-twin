@@ -1,0 +1,32 @@
+{
+  "Scenario": {
+    "Name": "System-Validation",
+    "Description": "Validation of all system data.",
+    "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+    "DataRequestFile":
+    [
+      "./validation/requests/Patient.json",
+      "./validation/requests/BloodChemistry.json",
+      "./validation/requests/Cardiovascular.json",
+      "./validation/requests/CardiovascularCompartments.json",
+      "./validation/requests/Endocrine.json",
+      "./validation/requests/Energy.json",
+      "./validation/requests/Gastrointestinal.json",
+      "./validation/requests/Renal.json",
+      "./validation/requests/RenalCompartments.json",
+      "./validation/requests/RenalSubstances.json",
+      "./validation/requests/Respiratory.json",
+      "./validation/requests/RespiratoryCompartments.json",
+      "./validation/requests/Tissue.json",
+      "./validation/requests/TissueCompartments.json"
+    ],
+    "AnyAction": 
+    [
+      { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}},
+      { "PatientAction": { "Assessment": { "Type": "ArterialBloodGasTest" }}},
+      { "PatientAction": { "Assessment": { "Type": "CompleteBloodCount" }}},
+      { "PatientAction": { "Assessment": { "Type": "ComprehensiveMetabolicPanel" }}},
+      { "PatientAction": { "Assessment": { "Type": "Urinalysis" }}}
+    ]
+  }
+}

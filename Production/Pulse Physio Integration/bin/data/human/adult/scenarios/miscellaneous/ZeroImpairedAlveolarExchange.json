@@ -1,0 +1,28 @@
+{
+  "Name": "ZeroImpariedAlveolarExchange",
+  "Description": "Ensure a 0 severity has no impact on the patient",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "ImpairedAlveolarExchange": {
+            "Severity": {
+              "Scalar0To1": {
+                "Value": 0.0
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": {
+    "Action": { "Comment": "Advance some time" },
+    "Time": { "ScalarTime": { "Value": 2, "Unit": "min" }}}}
+  ]
+}

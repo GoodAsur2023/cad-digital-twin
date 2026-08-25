@@ -1,0 +1,64 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Patient",    "PropertyName": "Weight", "Unit": "kg" },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "BloodPH",                  "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TotalFluidVolume",         "Unit": "L"        },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "ExtracellularFluidVolume", "Unit": "L"        },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "IntracellularFluidVolume", "Unit": "L"        },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SweatRate",                "Unit": "mg/min"   },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "MeanSkinFlow",             "Unit": "L/min"    },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "PulsePressure",            "Unit": "mmHg"     },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"PlasmaOsmolality", "Unit":"mOsm/kg"  },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"PlasmaOsmolarity", "Unit":"mOsm/L"  },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrineOsmolality", "Unit":"mOsm/kg"  },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrineOsmolarity", "Unit":"mOsm/L"  },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrinationRate",   "Unit":"mL/s"  },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Sodium", "PropertyName":"Concentration", "Unit": "g/L" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Chloride",     "PropertyName": "Concentration", "Unit": "g/L"  },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Urea",         "PropertyName": "Concentration", "Unit": "g/L"  },
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"BloodConcentration",  "Unit":"g/dL"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Sodium", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Chloride", "PropertyName":"BloodConcentration",  "Unit":"ug/L"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Chloride", "PropertyName":"MassInBody",          "Unit":"mg"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Chloride", "PropertyName":"MassInBlood",         "Unit":"mg"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Chloride", "PropertyName":"SystemicMassCleared", "Unit":"mg"},
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Potassium", "PropertyName":"BloodConcentration",  "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Potassium", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Potassium", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Potassium", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Calcium", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":3}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"BloodConcentration",  "Unit":"mg/L"},
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":0}, "Category":"Substance", "SubstanceName":"Lactate", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    {"DecimalFormat":{"Precision":2}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"BloodConcentration",  "Unit":"mg/dL"},
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInBody",   "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInTissue", "Unit":"mg"  },
+    {"DecimalFormat":{"Precision":4}, "Category":"Substance", "SubstanceName":"Urea", "PropertyName":"MassInBlood",  "Unit":"mg"  },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "ConvectiveHeatLoss", "Unit": "W" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "ConvectiveHeatTranferCoefficient", "Unit": "W/m^2 K" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "EvaporativeHeatLoss", "Unit": "W" },
+    { "DecimalFormat": { "Precision": 5 }, "Category": "Environment", "PropertyName": "EvaporativeHeatTranferCoefficient", "Unit": "W/m^2 K" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RadiativeHeatLoss", "Unit": "W" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RadiativeHeatTranferCoefficient", "Unit": "W/m^2 K" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RespirationHeatLoss", "Unit": "W" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "SkinHeatLoss", "Unit": "W" }
+  ]
+}

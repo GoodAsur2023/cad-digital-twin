@@ -1,0 +1,7 @@
+Cohort,Model,Test_AUC,Test_Brier
+Lifestyle,Lifestyle — Base,0.8044,0.1793
+Lifestyle,Lifestyle — Integrated,0.8044,0.1812
+Lifestyle,Lifestyle — Calibrated,0.8044,0.1799
+Clinical,Clinical — Base,0.8788,0.1435
+Clinical,Clinical — Integrated,0.8788,0.1472
+Clinical,Clinical — Calibrated,0.8788,0.1458

@@ -1,0 +1,66 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "AlveolarArterialGradient",                   "Unit": "mmHg"      },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "AlveolarDeadSpace",                          "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "AnatomicDeadSpace",                          "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "ChestWallCompliance",                        "Unit": "L/cmH2O"   },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "EndTidalOxygenPressure",                     "Unit": "mmHg"      },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "ExpiratoryFlow",                             "Unit": "L/s"       },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "ExpiratoryRespiratoryResistance",            "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "ExtrinsicPositiveEndExpiratoryPressure",     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "FractionOfInspiredOxygen",                   "Unit": "unitless"  },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "HorowitzIndex",                              "Unit": "mmHg"      },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "InspiratoryExpiratoryRatio",                 "Unit": "unitless"  },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "InspiratoryFlow",                            "Unit": "L/s"       },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "InspiratoryRespiratoryResistance",           "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "IntrinsicPositiveEndExpiratoryPressure",     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "LungCompliance",                             "Unit": "L/cmH2O"   },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "PeakInspiratoryPressure",                    "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "PhysiologicDeadSpace",                       "Unit": "mL"        },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "PhysiologicDeadSpaceTidalVolumeRatio",       "Unit": "unitless"  },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "RespiratoryCompliance",                      "Unit": "L/cmH2O"   },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "RespiratoryMuscleFatigue",                   "Unit": "unitless"  },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TransMusclePressure",                        "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalPositiveEndExpiratoryPressure",         "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalPowerOfBreathing",                      "Unit": "W"         },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalPulmonaryVentilation",                  "Unit": "L/min"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalWorkOfBreathing",                       "Unit": "J"         },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TransthoracicPressure",                      "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "TransChestWallPressure",                     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "IntrapulmonaryPressure",                     "Unit": "cmH2O"     },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "VentilationPerfusionRatio",                  "Unit": "unitless"  },
+
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalRespiratoryModelExpiratoryResistance",  "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalRespiratoryModelInspiratoryResistance", "Unit": "cmH2O s/L" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TotalRespiratoryModelCompliance",            "Unit": "L/cmH2O"   },
+
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "LeftLungPulmonary",  "PropertyName": "Volume", "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "RightLungPulmonary", "PropertyName": "Volume", "Unit": "mL" },
+
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "LeftPleuralCavity",  "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "RightPleuralCavity", "PropertyName": "Volume",   "Unit": "mL" },
+
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "LeftAlveoli",  "PropertyName": "Volume",   "Unit": "mL"    },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "RightAlveoli", "PropertyName": "Volume",   "Unit": "mL"    },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "ShuntFraction",      "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "IdealBodyWeight",    "Unit": "kg"       },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Patient",    "PropertyName": "AlveoliSurfaceArea", "Unit": "m^2"      },
+
+    { "DecimalFormat": {                }, "PropertyName": "ExpiratoryReserveVolume",    "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "FunctionalResidualCapacity", "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "InspiratoryCapacity",        "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "InspiratoryReserveVolume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "ResidualVolume",             "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "TotalLungCapacity",          "Unit": "mL" },
+    { "DecimalFormat": {                }, "PropertyName": "VitalCapacity",              "Unit": "mL" },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "NeuromuscularBlockLevel", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SedationLevel",           "Unit": "unitless" },
+
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "PulsePressure", "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "BloodPH" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "Aorta",        "SubstanceName": "Bicarbonate",   "PropertyName": "Molarity",        "Unit": "mEq/L" }
+  ]
+}

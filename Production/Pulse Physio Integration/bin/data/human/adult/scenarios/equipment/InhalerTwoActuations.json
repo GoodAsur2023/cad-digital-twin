@@ -1,0 +1,165 @@
+{
+  "Name": "Inhaler_TwoActuations",
+  "Description": "Patient actuates the inhaler twice.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json",
+    "AlbuterolDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "InhalerConfiguration": {
+        "Configuration": {
+          "Substance": "Albuterol",
+          "MeteredDose": {
+            "ScalarMass": {
+              "Value": 90.0,
+              "Unit": "ug"
+            }
+          },
+          "NozzleLoss": {
+            "Scalar0To1": {
+              "Value": 0.04
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 25.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 150.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "Name": "PneumoniaSevereRightLung",
+  "Description": "Severe Pneumonia in the entire right lungs.",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "Pneumonia": {
+          "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.0 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.9 }}}]
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

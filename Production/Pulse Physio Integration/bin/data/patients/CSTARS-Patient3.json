@@ -1,0 +1,22 @@
+{
+  "Name": "CSTARS-Patient3",
+  "Sex": "Female",
+  "Age": {
+    "ScalarTime": {
+      "Value": 25.0,
+      "Unit": "yr"
+    }
+  },
+  "Weight": {
+    "ScalarMass": {
+      "Value": 170.0,
+      "Unit": "lb"
+    }
+  },
+  "Height": {
+    "ScalarLength": {
+      "Value": 67.0,
+      "Unit": "in"
+    }
+  }
+}

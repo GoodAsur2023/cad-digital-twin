@@ -1,0 +1,49 @@
+{
+  "harmonization_engine": "build_canonical_pgs000116_harmonization.py (Stage 6 Hardened)",
+  "pgs_catalog_id": "PGS000116",
+  "trait": "Coronary Artery Disease",
+  "scoring_method": "lassosum",
+  "total_variants_reported": 40079,
+  "total_variants_harmonized": 40079,
+  "harmonization_rate_pct": 100.0,
+  "unique_rsids": 40079,
+  "duplicate_variants": 0,
+  "missing_beta_weights": 0,
+  "missing_effect_allele_frequencies": 0,
+  "effect_allele_orientation_counts": {
+    "REF": 28351,
+    "ALT": 11695,
+    "STRAND_FLIP_ALT": 21,
+    "STRAND_FLIP_REF": 12
+  },
+  "frequency_source_breakdown": {
+    "GenomeIndia_observed_tsv": 37884,
+    "DETERMINISTIC_SYNTHETIC_PRIOR_BETA_2_2_2_0": 2195
+  },
+  "strand_status_counts": {
+    "DIRECT": 37851,
+    "NO_GI_MATCH": 2195,
+    "STRAND_FLIP": 33
+  },
+  "calibrated_prior_specification": {
+    "distribution": "Beta(alpha=2.2, beta=2.0)",
+    "calibration_source": "South Asian 1000G / GenomeIndia MAF empirical distribution",
+    "fallback_trigger": "Position outside GenomeIndia JointCall TSV coverage",
+    "bounds": "[0.01, 0.99]"
+  },
+  "qc_summary_table": {
+    "input_pgs_variants": 40079,
+    "position_matches": 37884,
+    "direct_allele_matches": 37851,
+    "strand_flip_matches": 33,
+    "synthetic_prior_rows": 2195,
+    "ambiguous_palindromic_snps": 0,
+    "unresolved_allele_mismatches": 0,
+    "duplicate_rsid_count": 0,
+    "missing_beta_count": 0,
+    "missing_effect_frequency_count": 0,
+    "final_retained_variants": 40079
+  },
+  "total_signed_prs": 2.962466254375361,
+  "total_gbi": 40.01970268032352
+}

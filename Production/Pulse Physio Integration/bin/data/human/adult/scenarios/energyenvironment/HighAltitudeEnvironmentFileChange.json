@@ -1,0 +1,59 @@
+{
+  "Name": "HighAltitudeEnvironmentFileChange",
+  "Description": "The environment is changed to mimic high altitude conditions by loading an json file.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "ConvectiveHeatLoss", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "ConvectiveHeatTranferCoefficient", "Unit": "W/m^2 K" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "EvaporativeHeatLoss", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 5 }, "Category": "Environment", "PropertyName": "EvaporativeHeatTranferCoefficient", "Unit": "W/m^2 K" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RadiativeHeatLoss", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RadiativeHeatTranferCoefficient", "Unit": "W/m^2 K" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "RespirationHeatLoss", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Environment", "PropertyName": "SkinHeatLoss", "Unit": "W" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology", "PropertyName": "UrineOsmolality", "Unit": "mOsm/kg" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology", "PropertyName": "UrineOsmolarity", "Unit": "mOsm/L" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "RightTubularReabsorptionFluidPermeability", "Unit": "mL/s mmHg m^2" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "LeftTubularReabsorptionFluidPermeability", "Unit": "mL/s mmHg m^2" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Physiology", "PropertyName": "SweatRate", "Unit": "ug/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "BloodConcentration", "Unit": "g/L" },
+      { "DecimalFormat": { "Precision": 5 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "Clearance-RenalClearance", "Unit": "mL/min kg" },
+      { "DecimalFormat": { }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "Clearance-RenalReabsorptionRate", "Unit": "mg/min" },
+      { "DecimalFormat": { "Precision": 1 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "MassInBody", "Unit": "g" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Sodium", "PropertyName": "Concentration", "Unit": "g/L" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightUreter", "PropertyName": "InFlow", "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftUreter", "PropertyName": "InFlow", "Unit": "mL/min" },
+      { "DecimalFormat": { }, "Category": "GasCompartment", "CompartmentName": "Ambient", "PropertyName": "Pressure", "Unit": "mmHg" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 50.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditionsFile": "./environments/Hypobaric3000m.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 900.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

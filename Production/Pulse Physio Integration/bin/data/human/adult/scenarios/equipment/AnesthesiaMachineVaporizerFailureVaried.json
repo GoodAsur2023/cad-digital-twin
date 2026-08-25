@@ -1,0 +1,162 @@
+{
+  "Name": "VaporizerFailureVaried",
+  "Description": "Testing vaporizer failure severity.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json",
+    "AnesthesiaMachineDataRequests.json",
+    "DesfluraneDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineConfiguration": {
+        "Configuration": {
+          "Connection": "On",
+          "InletFlow": {
+            "ScalarVolumePerTime": {
+              "Value": 5.0,
+              "Unit": "L/min"
+            }
+          },
+          "InspiratoryExpiratoryRatio": {
+            "Value": 0.5
+          },
+          "OxygenFraction": {
+            "Scalar0To1": {
+              "Value": 0.23
+            }
+          },
+          "OxygenSource": "Wall",
+          "PositiveEndExpiratoryPressure": {
+            "ScalarPressure": {
+              "Unit": "cmH2O"
+            }
+          },
+          "PrimaryGas": "Air",
+          "RespiratoryRate": {
+            "ScalarFrequency": {
+              "Value": 16.0,
+              "Unit": "1/min"
+            }
+          },
+          "PeakInspiratoryPressure": {
+            "ScalarPressure": {
+              "Unit": "cmH2O"
+            }
+          },
+          "OxygenBottleOne": {
+            "Volume": {
+              "ScalarVolume": {
+                "Value": 660.0,
+                "Unit": "L"
+              }
+            }
+          },
+          "OxygenBottleTwo": {
+            "Volume": {
+              "ScalarVolume": {
+                "Value": 660.0,
+                "Unit": "L"
+              }
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 90.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineConfiguration": {
+        "Configuration": {
+          "Connection": "On",
+          "OxygenSource": "Wall",
+          "PrimaryGas": "Air",
+          "LeftChamber": {
+            "State": "On",
+            "SubstanceFraction": {
+              "Scalar0To1": {
+                "Value": 0.04
+              }
+            },
+            "Substance": "Desflurane"
+          }
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineVaporizerFailure": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 180.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineVaporizerFailure": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 180.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineVaporizerFailure": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 180.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

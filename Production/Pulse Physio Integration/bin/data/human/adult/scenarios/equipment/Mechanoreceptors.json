@@ -1,0 +1,163 @@
+{
+  "Name": "Mechanoreceptors",
+  "Description": "Ensure the mechanoreceptor feedback keeps the patient effort (i.e., respiratory muscle driver) lower when assisted by a ventilator.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json",
+    "MechanicalVentilatorDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "SaturationAndFractionOfInspiredOxygenRatio", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "OxygenationIndex",                           "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "OxygenSaturationIndex",                      "Unit": "cmH2O" }
+    ]
+  },
+  "AnyAction":
+  [
+  { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 30.0, "Unit": "s" } } } },
+
+      {
+        "PatientAction": {
+          "ChronicObstructivePulmonaryDiseaseExacerbation": {
+            "BronchitisSeverity": {
+              "Scalar0To1": {
+                "Value": 0.9
+              }
+            },
+            "EmphysemaSeverity": [
+              {
+                "Compartment": "LeftLung",
+                "Severity": {
+                  "Scalar0To1": {
+                    "Value": 0.9
+                  }
+                }
+              },
+              {
+                "Compartment": "RightLung",
+                "Severity": {
+                  "Scalar0To1": {
+                    "Value": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "PatientAction": {
+          "Intubation": {
+            "Type": "Tracheal"
+          }
+        }
+      },
+      {
+        "EquipmentAction": {
+          "MechanicalVentilatorVolumeControl": {
+            "MechanicalVentilatorMode": {
+              "MechanicalVentilatorAction": {
+                "EquipmentAction": {
+                  "Action": {}
+                }
+              },
+              "Connection": "On"
+            },
+            "Mode": "AssistedControl",
+            "InspirationWaveform": "Square",
+            "Flow": {
+              "ScalarVolumePerTime": {
+                "Value": 45,
+                "Unit": "L/min"
+              }
+            },
+            "FractionInspiredOxygen": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InspiratoryPeriod": {
+              "ScalarTime": {
+                "Value": 0.6,
+                "Unit": "s"
+              }
+            },
+            "PositiveEndExpiratoryPressure": {
+              "ScalarPressure": {
+                "Value": 5,
+                "Unit": "cmH2O"
+              }
+            },
+            "RespirationRate": {
+              "ScalarFrequency": {
+                "Value": 10,
+                "Unit": "1/min"
+              }
+            },
+            "TidalVolume": {
+              "ScalarVolume": {
+                "Value": 400,
+                "Unit": "mL"
+              }
+            }
+          }
+        }
+      },
+
+      { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 10.0, "Unit": "min" } } } },
+
+      {
+        "EquipmentAction": {
+          "MechanicalVentilatorPressureControl": {
+            "MechanicalVentilatorMode": {
+              "MechanicalVentilatorAction": {
+                "EquipmentAction": {
+                  "Action": {}
+                }
+              },
+              "Connection": "On"
+            },
+            "Mode": "AssistedControl",
+            "InspirationWaveform": "Square",
+            "FractionInspiredOxygen": {
+              "Scalar0To1": {
+                "Value": 0.6
+              }
+            },
+            "InspiratoryPeriod": {
+              "ScalarTime": {
+                "Value": 1.2,
+                "Unit": "s"
+              }
+            },
+            "InspiratoryPressure": {
+              "ScalarPressure": {
+                "Value": 20,
+                "Unit": "cmH2O"
+              }
+            },
+            "PositiveEndExpiratoryPressure": {
+              "ScalarPressure": {
+                "Value": 10,
+                "Unit": "cmH2O"
+              }
+            },
+            "RespirationRate": {
+              "ScalarFrequency": {
+                "Value": 10,
+                "Unit": "1/min"
+              }
+            }
+          }
+        }
+      },
+
+      { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 10.0, "Unit": "min" } } } }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "Name": "AsthmaAttack",
+  "Description": "Showcase scenario: Patient is afflicted with an severe acute asthma attack. Albuterol is administered.",
+  "PatientConfiguration": { "PatientFile": "Carol.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "Physiology",
+      "PropertyName": "TotalLungVolume",
+      "Unit": "L"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "Physiology",
+      "PropertyName": "TidalVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 3
+      },
+      "Category": "Physiology",
+      "PropertyName": "OxygenSaturation",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "CardiacOutput",
+      "Unit": "L/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "HeartRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "HeartStrokeVolume",
+      "Unit": "mL"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "MeanArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "SystolicArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "RespirationRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 4
+      },
+      "Category": "Physiology",
+      "PropertyName": "EndTidalCarbonDioxideFraction",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "BloodPH",
+      "Unit": "unitless"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Aorta",
+      "SubstanceName": "Oxygen",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "LiquidCompartment",
+      "CompartmentName": "Aorta",
+      "SubstanceName": "CarbonDioxide",
+      "PropertyName": "PartialPressure",
+      "Unit": "mmHg"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "PatientAction": {
+          "Action": {
+            "Comment": "Insult: Severe acute asthma attack"
+          }
+        },
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.7
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "InhalerConfiguration": {
+        "InhalerAction": { "EquipmentAction": {
+          "Action": {
+            "Comment": "Intervention: Administer bronchodilator (albuterol) through inhaler"
+          }
+        }},
+        "Configuration": {
+          "Substance": "Albuterol",
+          "MeteredDose": {
+            "ScalarMass": {
+              "Value": 90.0,
+              "Unit": "ug"
+            }
+          },
+          "NozzleLoss": {
+            "Scalar0To1": {
+              "Value": 0.04
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,941 @@
+{
+  "Name": "Comprehensive",
+  "Description": "Do a bunch of stuff together to test the stability of the engine.",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "Pneumonia": {
+             "Severity": [ 
+             { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.05 }}},
+             { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.05 }}}]
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "AcuteRespiratoryDistressSyndrome": {
+            "Severity": [ 
+            { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.2 }}},
+            { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.35 }}}]
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "PulmonaryFibrosis": {
+            "Severity": {
+              "Scalar0To1": {
+                "Value": 0.02
+              }
+            }
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ChronicObstructivePulmonaryDisease": {
+            "BronchitisSeverity": {
+              "Scalar0To1": {
+                "Value": 0.1
+              }
+            },
+            "EmphysemaSeverity": [ 
+            { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.12 }}},
+            { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.14 }}}]
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ImpairedAlveolarExchange": {
+            "ImpairedFraction": {
+              "Scalar0To1": {
+                "Value": 0.09
+              }
+            }
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ChronicRenalStenosis": {
+            "LeftKidneySeverity": {
+              "Scalar0To1": {
+                "Value": 0.1
+              }
+            },
+            "RightKidneySeverity": {
+              "Scalar0To1": {
+                "Value": 0.05
+              }
+            }
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ChronicVentricularSystolicDysfunction": {
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ChronicAnemia": {
+            "ReductionFactor": {
+              "Scalar0To1": {
+                "Value": 0.1
+              }
+            }
+          }
+        }
+      }, {
+        "PatientCondition": {
+          "ChronicPericardialEffusion": {
+            "AccumulatedVolume": {
+              "ScalarVolume": {
+                "Value": 50.0,
+                "Unit": "mL"
+              }
+            }
+          }
+        }
+      }, {
+      "PatientCondition": {
+          "PulmonaryShunt": {
+            "Severity": {
+              "Scalar0To1": {
+                "Value": 0.8
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "PericardialEffusion": {
+        "EffusionRate": {
+          "ScalarVolumePerTime": {
+            "Value": 0.0001,
+            "Unit": "mL/s"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.1
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "RespiratoryFatigue":
+      {
+        "Severity": { "Scalar0To1": { "Value": 0.0 }}
+      }
+    }
+  },
+    { "PatientAction": { "AcuteRespiratoryDistressSyndromeExacerbation":
+      {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.13 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.02 }}}]
+      }}
+    },
+  {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 10.0,
+              "Unit": "BTU/hr"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.23
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.2
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "VenaCava",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 10.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Bronchoconstriction": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.1
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AcuteStress": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.4
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Dyspnea": {
+        "TidalVolumeSeverity": {
+          "Scalar0To1": {
+            "Value": 0.3
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Succinylcholine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 3500.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 1.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "Asystole"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "NormalSinus"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "RightMainstem"
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineConfiguration": {
+        "Configuration": {
+          "Connection": "On",
+          "InletFlow": {
+            "ScalarVolumePerTime": {
+              "Value": 5.0,
+              "Unit": "L/min"
+            }
+          },
+          "InspiratoryExpiratoryRatio": {
+            "Value": 0.5
+          },
+          "OxygenFraction": {
+            "Scalar0To1": {
+              "Value": 0.23
+            }
+          },
+          "OxygenSource": "Wall",
+          "PositiveEndExpiratoryPressure": {
+            "ScalarPressure": {
+              "Value": 1.0,
+              "Unit": "cmH2O"
+            }
+          },
+          "PrimaryGas": "Nitrogen",
+          "RespiratoryRate": {
+            "ScalarFrequency": {
+              "Value": 16.0,
+              "Unit": "1/min"
+            }
+          },
+          "PeakInspiratoryPressure": {
+            "ScalarPressure": {
+              "Value": 6,
+              "Unit": "cmH2O"
+            }
+          },
+          "OxygenBottleOne": {
+            "Volume": {
+              "ScalarVolume": {
+                "Value": 660.0,
+                "Unit": "L"
+              }
+            }
+          },
+          "OxygenBottleTwo": {
+            "Volume": {
+              "ScalarVolume": {
+                "Value": 660.0,
+                "Unit": "L"
+              }
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Tracheal"
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "SurroundingType": "Air",
+          "AirVelocity": {
+            "ScalarLengthPerTime": {
+              "Unit": "m/s"
+            }
+          },
+          "AmbientTemperature": {
+            "ScalarTemperature": {
+              "Value": 22.0,
+              "Unit": "degC"
+            }
+          },
+          "AtmosphericPressure": {
+            "ScalarPressure": {
+              "Value": 700.0,
+              "Unit": "mmHg"
+            }
+          },
+          "ClothingResistance": {
+            "ScalarHeatResistanceArea": {
+              "Value": 3.0,
+              "Unit": "clo"
+            }
+          },
+          "Emissivity": {
+            "Scalar0To1": {
+              "Value": 0.9
+            }
+          },
+          "MeanRadiantTemperature": {
+            "ScalarTemperature": {
+              "Value": 22.0,
+              "Unit": "degC"
+            }
+          },
+          "RelativeHumidity": {
+            "Scalar0To1": {
+              "Value": 0.5
+            }
+          },
+          "RespirationAmbientTemperature": {
+            "ScalarTemperature": {
+              "Value": 22.0,
+              "Unit": "degC"
+            }
+          },
+          "AmbientGas": [{
+            "Name": "Nitrogen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.816
+              }
+            }
+          }, {
+            "Name": "Oxygen",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.14
+              }
+            }
+          }, {
+            "Name": "CarbonDioxide",
+            "Amount": {
+              "Scalar0To1": {
+                "Value": 0.044
+              }
+            }
+          }]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineConfiguration": {
+        "Configuration": {
+          "Connection": "Off"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Exercise": {
+        "Intensity": {
+          "Scalar0To1": {
+            "Value": 0.05
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineTubeCuffLeak": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.1
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "AnesthesiaMachineConfiguration": {
+        "Configuration": {
+          "Connection": "Off"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AcuteStress": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "EquipmentAction": {
+      "InhalerConfiguration": {
+        "Configuration": {
+          "Substance": "Albuterol",
+          "MeteredDose": {
+            "ScalarMass": {
+              "Value": 90.0,
+              "Unit": "ug"
+            }
+          },
+          "NozzleLoss": {
+            "Scalar0To1": {
+              "Value": 0.04
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ConsciousRespiration": {
+        "Command": [{
+          "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "ExhalePeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }, {
+          "UseInhaler": {
+          }
+        }, {
+          "ForcedInhale": {
+            "InspiratoryCapacityFraction": {
+              "Scalar0To1": {
+                "Value": 1.0
+              }
+            },
+            "InhalePeriod": {
+              "ScalarTime": {
+                "Value": 12.0,
+                "Unit": "s"
+              }
+            },
+            "HoldPeriod": {
+              "ScalarTime": {
+                "Value": 3.0,
+                "Unit": "s"
+              }
+            },
+            "ReleasePeriod": {
+              "ScalarTime": {
+                "Value": 5.0,
+                "Unit": "s"
+              }
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Assessment": {
+        "Type": "ComprehensiveMetabolicPanel"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Morphine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 1000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 5.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceCompoundInfusion": {
+        "SubstanceCompound": "Saline",
+        "BagVolume": {
+          "ScalarVolume": {
+            "Value": 500.0,
+            "Unit": "mL"
+          }
+        },
+        "Rate": {
+          "ScalarVolumePerTime": {
+            "Value": 100.0,
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "TensionPneumothorax": {
+        "Type": "Open",
+        "Side": "Left",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.2
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ChestOcclusiveDressing": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "NeedleDecompression": {
+        "State": "On",
+        "Side": "Left"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "ChestCompression": {
+        "Force": {
+          "ScalarForce": {
+            "Value": 10.0,
+            "Unit": "N"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Urinate": {
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "VenaCava",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        }
+      }
+    }
+  },{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Furosemide",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 4000.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 10.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  },
+  { "PatientAction": { "PulmonaryShuntExacerbation": {
+        "Severity": { "Scalar0To1": { "Value": 0.1 } }
+    } } },
+  {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditionsFile": "./environments/CheyenneMountainFireFighter.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Pressure": {
+          "ScalarPressure": {
+            "Value": 10.0,
+            "Unit": "cmH2O"
+          }
+        },
+        "GasFraction": [{
+          "Name": "Oxygen",
+          "Amount": {
+            "Scalar0To1": {
+              "Value": 1.0
+            }
+          }
+        }, {
+          "Name": "CarbonDioxide",
+          "Amount": {
+            "Scalar0To1": {
+            }
+          }
+        }, {
+          "Name": "Nitrogen",
+          "Amount": {
+            "Scalar0To1": {
+            }
+          }
+        }]
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "On",
+        "Pressure": {
+          "ScalarPressure": {
+            "Value": -3.0,
+            "Unit": "cmH2O"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "MechanicalVentilation": {
+        "State": "Off"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 3.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Bronchoconstriction": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "BrainInjury": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Dyspnea": {
+        "TidalVolumeSeverity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "SimpleMask"
+      }
+    }
+  },
+  { "PatientAction": { "PneumoniaExacerbation":
+    {
+        "Severity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.22 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.77 }}}]
+      }}
+  },
+    { "PatientAction": { "ChronicObstructivePulmonaryDiseaseExacerbation":
+      {
+        "BronchitisSeverity": { "Scalar0To1": { "Value": 0.123 }},
+        "EmphysemaSeverity": [ 
+          { "Compartment": "LeftLung", "Severity": { "Scalar0To1": { "Value": 0.215 }}},
+          { "Compartment": "RightLung", "Severity": { "Scalar0To1": { "Value": 0.333 }}}]
+      }}
+    },
+  {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

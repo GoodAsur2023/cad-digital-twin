@@ -1,0 +1,49 @@
+{
+  "Name": "NormalSinusToSinusTachycardia",
+  "Description": "Transition from NormalSinus to Sinus Tachycardia back to NormalSinus",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "ACLSDataRequests.json"
+  ],
+ "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "SinusTachycardia"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 120.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Arrhythmia": {
+        "Rhythm": "NormalSinus"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 240.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

@@ -1,0 +1,15 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineConnection",      "PropertyName": "InFlow",   "Unit": "L/min" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineVentilator",      "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineReliefValve",     "PropertyName": "InFlow",   "Unit": "L/min" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineSelector",        "PropertyName": "Pressure", "Unit": "cmH2O" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineVentilator",      "PropertyName": "Pressure", "Unit": "cmH2O" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineExpiratoryLimb",  "PropertyName": "InFlow",   "Unit": "L/min" },
+    { "DecimalFormat": {                }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineInspiratoryLimb", "PropertyName": "InFlow",   "Unit": "L/min" },
+
+    { "DecimalFormat": { "Precision": 3 }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineGasInlet", "SubstanceName": "Oxygen",        "PropertyName": "VolumeFraction" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "AnesthesiaMachineGasInlet", "SubstanceName": "CarbonDioxide", "PropertyName": "VolumeFraction" }
+  ]
+}

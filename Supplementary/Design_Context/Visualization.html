@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD Digital Twin Pipeline Explorer</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --bg-light: #f8fafc;
+            --text-dark: #0f172a;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar Styles */
+        #sidebar {
+            width: 320px;
+            background: white;
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+            z-index: 10;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            background: var(--primary);
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .stage-btn {
+            padding: 16px 20px;
+            border: none;
+            background: transparent;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+        }
+
+        .stage-btn:hover {
+            background-color: var(--bg-light);
+        }
+
+        .stage-btn.active {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--secondary);
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .stage-num {
+            background: #e2e8f0;
+            color: #475569;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .active .stage-num {
+            background: var(--secondary);
+            color: white;
+        }
+
+        /* Main Content Styles */
+        #main-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 15px;
+        }
+
+        .section-header {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .notebook-badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="sidebar-header">CAD Digital Twin Pipeline</div>
+        <div id="menu">
+            </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-card" id="card">
+            <h2 style="color: #64748b; text-align: center; margin-top: 40px;">Select a stage from the menu to explore the architecture.</h2>
+        </div>
+    </div>
+
+    <script>
+        const pipelineData = [
+            {
+                id: 1,
+                title: "Stage 1: Data Preprocessing",
+                notebooks: ["NB1: preprocessing_70k.ipynb", "NB2: preprocessing_1190_clinical.ipynb"],
+                operations: [
+                    "Clean and transform the 70,000-row cardiovascular lifestyle dataset.",
+                    "Convert age to years, encode gender, handle impossible BP outliers, and derive BMI.",
+                    "Clean and merge the 1,190-row clinical dataset (Cleveland/Hungarian/Statlog).",
+                    "Handle missing values (median imputation) and standardize schemas."
+                ],
+                outputs: "Independent Train/Test splits for both Lifestyle (70k) and Clinical (1190) datasets, ready for ML training. Saved StandardScaler objects."
+            },
+            {
+                id: 2,
+                title: "Stage 2: Genomic Preprocessing",
+                notebooks: ["NB3: genome_data_preprocessing.ipynb"],
+                operations: [
+                    "Match 182 CAD-associated SNPs from PGS2809 with GenomeIndia allele frequency tables.",
+                    "Perform Coordinate-Based matching (Chromosome + Base Pair Position).",
+                    "Execute 'Allele Alignment' (Strand Correction) to ensure the risk allele aligns with the Indian reference/alternate alleles.",
+                    "Apply Quality Control: Filter out ambiguous palindromic SNPs (A/T, C/G)."
+                ],
+                outputs: "Harmonized Genetic Map (Excel/CSV) linking European Beta weights with Indian-Ancestry Allele Frequencies."
+            },
+            {
+                id: 3,
+                title: "Stage 3: PRS Computation",
+                notebooks: ["NB4: pgs_score_computation.ipynb"],
+                operations: [
+                    "Compute the expected allelic dosage for a diploid individual.",
+                    "Calculate per-SNP contribution using: 2 × (Indian Risk Allele Frequency) × (Effect Weight Beta).",
+                    "Sum all contributions to generate the Population-Level PRS offset scalar.",
+                    "Identify and rank the top 10 contributing SNPs for the Indian cohort."
+                ],
+                outputs: "Population-Level PRS Scalar (CSV), Per-SNP Contribution Table."
+            },
+            {
+                id: 4,
+                title: "Stage 4: Lifestyle ML Training",
+                notebooks: ["NB5: model_training_lifestyle.ipynb"],
+                operations: [
+                    "Train 6 baseline models (Logistic Regression, Random Forest, XGBoost, SVM, KNN, MLP) on the 70k lifestyle dataset.",
+                    "Execute 5-fold stratified cross-validation.",
+                    "Evaluate against held-out test set using AUC-ROC, Precision, and Recall.",
+                    "Select the best performing model (anticipated to be XGBoost/LightGBM)."
+                ],
+                outputs: "Trained Lifestyle Model (lifestyle_best_model.pkl), Base Lifestyle Probabilities."
+            },
+            {
+                id: 5,
+                title: "Stage 5: Clinical ML Training",
+                notebooks: ["NB6: model_training_clinical.ipynb"],
+                operations: [
+                    "Train 6 baseline models on the richer, 1,190-row clinical dataset.",
+                    "Apply strict regularization (GridSearchCV) to prevent overfitting on the smaller dataset.",
+                    "Monitor for train/test AUC gaps > 0.08.",
+                    "Select the best performing clinical model."
+                ],
+                outputs: "Trained Clinical Model (clinical_best_model.pkl), Base Clinical Probabilities."
+            },
+            {
+                id: 6,
+                title: "Stage 6: Genetic Risk Integration",
+                notebooks: ["NB7: genetic_risk_integration.ipynb"],
+                operations: [
+                    "Inject the Population-Level PRS scalar into the predicted probabilities from both ML models.",
+                    "Apply integration formula: p_integrated = (w1 × p_model) + (w2 × sigmoid(PRS_population)).",
+                    "Stratify patients into standardized risk bands (Low, Moderate, High, Very High)."
+                ],
+                outputs: "Genetically-augmented probability scores for all patients, Risk Stratification Tables."
+            },
+            {
+                id: 7,
+                title: "Stage 7: Fusion & Explainability",
+                notebooks: ["NB8: fusion_and_explainability.ipynb"],
+                operations: [
+                    "Train a Stacked Meta-Learner (Logistic Regression) on the out-of-fold predictions of the Lifestyle and Clinical models.",
+                    "Apply Platt scaling/Isotonic regression to calibrate the final fused probability.",
+                    "Deploy SHAP TreeExplainer on the best model to generate feature attributions.",
+                    "Group SHAP values into three intuitive domains: Genetic, Lifestyle, and Clinical."
+                ],
+                outputs: "Calibrated Fused Model (fusion_calibrated_model.pkl), SHAP Domain Attributions (Waterfall/Beeswarm plots)."
+            },
+            {
+                id: 8,
+                title: "Stage 8: Digital Twin Counterfactuals",
+                notebooks: ["NB9: digital_twin_counterfactual.ipynb", "NB11: evaluation_and_paper_figures.ipynb"],
+                operations: [
+                    "Initialize the ML-Based Digital Twin Counterfactual Engine.",
+                    "Perturb modifiable features in a patient's vector (e.g., set smoke = 0, reduce BMI by 5%).",
+                    "Re-run the full fused pipeline to compute risk deltas and relative risk reductions.",
+                    "Rank interventions by maximum risk reduction.",
+                    "Execute validation suite: DeLong's test, NRI, IDI, and 20+ Clinical Sanity Checks."
+                ],
+                outputs: "Ranked Patient Intervention Plans, Simulated Trajectory Projections, Publication-Ready Figures (ROC, Calibration, Ablation Tables)."
+            }
+        ];
+
+        const menuContainer = document.getElementById('menu');
+        const cardContainer = document.getElementById('card');
+
+        function renderContent(stageId) {
+            // Update active button
+            document.querySelectorAll('.stage-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`btn-${stageId}`).classList.add('active');
+
+            const data = pipelineData.find(d => d.id === stageId);
+
+            let notebooksHtml = data.notebooks.map(nb => `<span class="notebook-badge">${nb}</span>`).join('');
+            
+            let opsHtml = data.operations.map(op => `<li>${op}</li>`).join('');
+
+            cardContainer.innerHTML = `
+                <h2>${data.title}</h2>
+                
+                <div class="section-header">Notebooks Involved</div>
+                <div>${notebooksHtml}</div>
+
+                <div class="section-header">Key Operations</div>
+                <div class="info-box">
+                    <ul>${opsHtml}</ul>
+                </div>
+
+                <div class="section-header">Expected Outputs</div>
+                <div class="info-box" style="background: #f0fdf4; border-color: #bbf7d0; color: #166534;">
+                    ${data.outputs}
+                </div>
+            `;
+        }
+
+        // Initialize sidebar
+        pipelineData.forEach(stage => {
+            const btn = document.createElement('button');
+            btn.className = 'stage-btn';
+            btn.id = `btn-${stage.id}`;
+            btn.innerHTML = `<span class="stage-num">${stage.id}</span> ${stage.title.split(':')[1]}`;
+            btn.onclick = () => renderContent(stage.id);
+            menuContainer.appendChild(btn);
+        });
+
+        // Load first stage by default
+        renderContent(1);
+
+    </script>
+</body>
+</html>

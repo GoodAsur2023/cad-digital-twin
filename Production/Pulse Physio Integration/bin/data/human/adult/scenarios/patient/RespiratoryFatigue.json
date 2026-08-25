@@ -1,0 +1,31 @@
+{
+  "Name": "RespiratoryFatigue",
+  "Description": "Apply respiratory fatigue at varying severities.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}},
+    { "PatientAction": { "RespiratoryFatigue":
+      {
+        "Severity": { "Scalar0To1": { "Value": 0.0 }}
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}},
+    { "PatientAction": { "RespiratoryFatigue":
+      {
+        "Severity": { "Scalar0To1": { "Value": 0.5 }}
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}},
+    { "PatientAction": { "RespiratoryFatigue":
+      {
+        "Severity": { "Scalar0To1": { "Value": 1.0 }}
+      }}
+    },
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}}
+  ]
+}

@@ -1,0 +1,46 @@
+{ "Scenario":
+  {
+    "Name": "WaterIngestion",
+    "Description": "Drink water.",
+    "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+    "DataRequestFile": [
+      "StandardDataRequests.json"
+    ],
+    "DataRequestManager":
+    {
+      "DataRequest":
+      [
+        { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "BloodConcentration",              "Unit": "g/L"      },
+        { "DecimalFormat": { "Precision": 5 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "Clearance-RenalClearance",        "Unit":"mL/min kg" },
+        { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "Clearance-RenalReabsorptionRate", "Unit":"g/day"     },
+        { "DecimalFormat": { "Precision": 2 }, "Category": "Substance", "SubstanceName": "Sodium", "PropertyName": "MassInBody",                      "Unit":"g"         },
+
+        { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"StomachContents-Sodium", "Unit":"g"  },
+        { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"StomachContents-Water",  "Unit":"mL" },
+
+        { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrineOsmolality", "Unit":"mOsm/kg"  },
+        { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrineOsmolarity", "Unit":"mOsm/L"  },
+        { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName":"UrinationRate",   "Unit":"mL/s"  },
+
+        { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName":"Sodium", "PropertyName":"Concentration", "Unit": "g/L" },
+        { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightUreter", "PropertyName": "InFlow", "Unit": "mL/min" },
+        { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftUreter",  "PropertyName": "InFlow", "Unit": "mL/min" },
+
+        { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Chloride",     "PropertyName": "Concentration", "Unit": "g/L"  },
+        { "DecimalFormat": { "Precision": 1 }, "Category": "LiquidCompartment", "CompartmentName": "Bladder", "SubstanceName": "Urea",         "PropertyName": "Concentration", "Unit": "g/L"  }
+      ]
+    },
+    "AnyAction":
+    [
+      { "PatientAction": { "ConsumeNutrients": { "Nutrition":
+      {  "Carbohydrate" : { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Fat" :          { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Protein" :      { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Calcium" :      { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Sodium" :       { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Water" :        { "ScalarVolume": { "Value": 1.0,   "Unit": "L" }}
+      }}}},
+      { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 60.0, "Unit": "min" }}}}
+    ]
+  }
+}

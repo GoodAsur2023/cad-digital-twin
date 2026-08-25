@@ -1,0 +1,238 @@
+{
+  "Name": "ECMOVariedConfiguration",
+  "Description": "Connect the ECMO machine to a patient.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOBloodSamplingPort", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOBloodSamplingPort", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOBloodSamplingPort", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOBloodSamplingPort", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOOxygenator", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOOxygenator", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOOxygenator", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "ECMOOxygenator", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLegVasculature", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLegVasculature", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLegVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftLegVasculature", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLegVasculature", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightLegVasculature", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightLegVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightLegVasculature", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftArmVasculature", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "LeftArmVasculature", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftArmVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "LeftArmVasculature", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightArmVasculature", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "RightArmVasculature", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightArmVasculature", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "RightArmVasculature", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "InFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 3 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "OutFlow", "Unit": "mL/s" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Sodium", "PropertyName": "Concentration",   "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 2 }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "SubstanceName": "Oxygen", "PropertyName": "Concentration",   "Unit": "mg/mL" },
+
+
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Sodium","PropertyName": "BloodConcentration",  "Unit": "g/dL" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Oxygen","PropertyName": "BloodConcentration",  "Unit": "mg/mL" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right to left leg" }}},
+        "Settings":
+        {
+          "InflowLocation": "InternalJugular",
+          "OutflowLocation": "InternalJugular",
+          "OxygenatorVolume": { "ScalarVolume": { "Value": 500.0, "Unit": "mL" } },
+          "TransfusionFlow": { "ScalarVolumePerTime": { "Value": 1.0, "Unit": "mL/s" } },
+          "SubstanceConcentrations":
+          [
+            { "Name": "Sodium", "Concentration": { "ScalarMassPerVolume": { "Value": 0.7, "Unit": "g/dL" }}},
+            { "Name": "Oxygen", "Concentration": { "ScalarMassPerVolume": { "Value": 0.0043, "Unit": "mg/mL" }}}
+          ]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right leg to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "InternalJugular",
+          "OutflowLocation": "LeftFemoralVein"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right leg to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "InternalJugular",
+          "OutflowLocation": "RightSubclavianVein"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from jugular to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "InternalJugular",
+          "OutflowLocation": "LeftSubclavianVein"
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right arm to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "InternalJugular",
+          "OutflowLocation": "RightFemoralVein",
+          "TransfusionFlow": { "ScalarVolumePerTime": { "Value": 1.5, "Unit": "mL/s" } }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right arm to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "RightFemoralVein",
+          "OutflowLocation": "InternalJugular",
+          "TransfusionFlow": { "ScalarVolumePerTime": { "Value": 1.0, "Unit": "mL/s" } }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the ECMO machine from right arm to jugular" }}},
+        "Settings":
+        {
+          "InflowLocation": "LeftFemoralVein",
+          "OutflowLocation": "LeftFemoralVein",
+          "TransfusionFlow": { "ScalarVolumePerTime": { "Value": 1.0, "Unit": "mL/s" } }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+   "EquipmentAction": {
+      "ECMOConfiguration": {
+        "ECMOAction": { "EquipmentAction": { "Action": {
+              "Comment": "Detach the ECMO machine" }}},
+        "Settings":
+        {
+          "TransfusionFlow": { "ScalarVolumePerTime": { "Value": 0, "Unit": "mL/s" } }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 5.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

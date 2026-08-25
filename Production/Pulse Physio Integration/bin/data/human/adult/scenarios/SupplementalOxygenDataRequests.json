@@ -1,0 +1,12 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "Carina", "SubstanceName": "Oxygen",        "PropertyName": "VolumeFraction" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "Carina", "SubstanceName": "CarbonDioxide", "PropertyName": "VolumeFraction" },
+
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "NasalCannulaOxygenSource",      "PropertyName": "OutFlow", "Unit": "L/min" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "SimpleMaskOxygenSource",        "PropertyName": "OutFlow", "Unit": "L/min" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "NonRebreatherMaskOxygenSource", "PropertyName": "OutFlow", "Unit": "L/min" },
+    { "DecimalFormat": { "Precision": 4 }, "Category": "GasCompartment", "CompartmentName": "NonRebreatherMaskBag",          "PropertyName": "Volume",  "Unit": "L"     }
+  ]
+}

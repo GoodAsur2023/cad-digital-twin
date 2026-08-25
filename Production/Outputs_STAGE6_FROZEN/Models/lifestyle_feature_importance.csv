@@ -1,0 +1,15 @@
+Feature,Importance,Method,Model,Importance_normalized
+systolic_bp,0.4820216,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.48202163
+diastolic_bp,0.16378392,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.16378394
+cholesterol_level_3,0.10589464,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.10589465
+cholesterol_level_1,0.07685281,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.07685282
+age,0.039981626,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.03998163
+physical_activity,0.0296477,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.029647702
+bmi,0.023134707,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.023134708
+cholesterol_level_2,0.021406379,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.02140638
+glucose_level_3,0.017135568,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.01713557
+glucose_level_1,0.010501016,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.010501017
+alcohol,0.008048002,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.008048003
+gender,0.007855904,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.007855905
+glucose_level_2,0.007826709,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.00782671
+smoking,0.005909366,Mean Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.0059093665

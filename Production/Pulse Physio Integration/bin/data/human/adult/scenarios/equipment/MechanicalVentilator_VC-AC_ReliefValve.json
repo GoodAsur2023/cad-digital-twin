@@ -1,0 +1,52 @@
+{
+  "Name": "MechanicalVentilator_VC-AC_ReliefValve",
+  "Description": "Apply a VC-AC mode ventilator to a healthy patient and intentionally trigger the relief valve.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json",
+    "EquipmentDataRequests.json",
+    "MechanicalVentilatorDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "SaturationAndFractionOfInspiredOxygenRatio", "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "OxygenationIndex",                           "Unit": "unitless" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "OxygenSaturationIndex",                      "Unit": "cmH2O" }
+    ]
+  },
+  "AnyAction":
+  [
+  { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 30.0, "Unit": "s" } } } },
+
+  { "PatientAction": { "Intubation": { "Type": "Tracheal" } } },
+
+  {
+    "EquipmentAction": {
+      "MechanicalVentilatorConfiguration": {
+        "MechanicalVentilatorAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the mechanical ventilator - VC-AC: TV = 7 mL/kg(ideal); with a relief valve that will get hit" }}},
+        "Settings":
+        {
+          "Connection": "On",
+          "InspirationWaveform": "Square",
+          "ExpirationWaveform": "Square",
+          "InspirationTargetFlow": { "ScalarVolumePerTime": { "Value": 0.351, "Unit": "L/s" } },
+          "PositiveEndExpiratoryPressure": { "ScalarPressure": { "Value": 5.0, "Unit": "cmH2O" } },
+          "InspirationMachineTriggerTime": { "ScalarTime": { "Value": 10.0, "Unit": "s" } },
+          "InspirationPatientTriggerRespiratoryModel": "On",
+          "ExpirationCycleVolume": { "ScalarVolume": { "Value": 0.527, "Unit": "L" } },
+          "ReliefValveThreshold": { "ScalarPressure": { "Value": 12.0, "Unit": "cmH2O" } },
+          "FractionInspiredGas": [
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.3, "Unit": "" } } }
+          ]
+        }
+      }
+    }
+  },
+
+  { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" } } } }
+  ]
+}

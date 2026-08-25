@@ -1,0 +1,47 @@
+{
+  "dataset_metadata": {
+    "source": "Merged Multi-Center CAD Cohort (Cleveland, Hungarian, Statlog, VA)",
+    "total_samples": 1190,
+    "train_samples": 952,
+    "test_samples": 238,
+    "split_ratio": "80/20 train/test split",
+    "random_state": 42,
+    "stratified": true
+  },
+  "raw_feature_schema": {
+    "features": [
+      "age", "sex", "chest_pain_type", "resting_bp", "cholesterol",
+      "fasting_blood_sugar", "resting_ecg", "max_heart_rate",
+      "exercise_angina", "oldpeak", "st_slope"
+    ],
+    "target": "target"
+  },
+  "imputation_policy": {
+    "continuous_features": ["cholesterol", "resting_bp"],
+    "continuous_imputer": "Iterative chained-equation imputation (IterativeImputer, max_iter=10, random_state=42)",
+    "categorical_features": ["st_slope"],
+    "categorical_imputer": "Most-frequent mode imputation (SimpleImputer, strategy='most_frequent')",
+    "missing_sentinel_policy": "Zero and negative outlier sentinels converted to NaN prior to fold-isolated imputation"
+  },
+  "outlier_policy": {
+    "method": "IQR clipping on training fold (Q1 - 1.5*IQR to Q3 + 1.5*IQR)",
+    "features_clipped": ["cholesterol", "resting_bp"],
+    "oldpeak_policy": "Negative oldpeak values retained as observed in source recordings without distortion"
+  },
+  "encoding_policy": {
+    "nominal_features": ["chest_pain_type", "resting_ecg", "st_slope"],
+    "encoding_method": "One-Hot Encoding with handle_unknown='ignore'",
+    "reference_dropped": false
+  },
+  "scaling_policy": {
+    "method": "StandardScaler (zero mean, unit variance)",
+    "location": "Clinical preprocessing pipeline (persisted as clinical_scaler.pkl)"
+  },
+  "feature_order_processed": [
+    "age", "sex", "resting_bp", "cholesterol", "fasting_blood_sugar",
+    "max_heart_rate", "exercise_angina", "oldpeak",
+    "chest_pain_type_1", "chest_pain_type_2", "chest_pain_type_3", "chest_pain_type_4",
+    "resting_ecg_0", "resting_ecg_1", "resting_ecg_2",
+    "st_slope_1", "st_slope_2", "st_slope_3"
+  ]
+}

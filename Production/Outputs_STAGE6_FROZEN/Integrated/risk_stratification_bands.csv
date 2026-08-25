@@ -1,0 +1,17 @@
+Band,n,pct,cad_prev,mean_prob,model,type
+Low,3306,24.1,16.6,0.1831,Lifestyle,p_base
+Moderate,4226,30.8,36.6,0.3547,Lifestyle,p_base
+High,2187,15.9,61.0,0.6143,Lifestyle,p_base
+Very High,4008,29.2,83.9,0.8328,Lifestyle,p_base
+Low,2164,15.8,13.4,0.2105,Lifestyle,p_integrated
+Moderate,5368,39.1,33.6,0.3536,Lifestyle,p_integrated
+High,2770,20.2,64.4,0.626,Lifestyle,p_integrated
+Very High,3425,25.0,85.0,0.7912,Lifestyle,p_integrated
+Low,74,31.1,14.9,0.1603,Clinical,p_base
+Moderate,39,16.4,30.8,0.3639,Clinical,p_base
+High,35,14.7,65.7,0.6301,Clinical,p_base
+Very High,90,37.8,88.9,0.8701,Clinical,p_base
+Low,56,23.5,7.1,0.1936,Clinical,p_integrated
+Moderate,57,23.9,33.3,0.3471,Clinical,p_integrated
+High,40,16.8,62.5,0.6246,Clinical,p_integrated
+Very High,85,35.7,91.8,0.82,Clinical,p_integrated

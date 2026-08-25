@@ -1,0 +1,50 @@
+# ==============================================================================
+# Git Ignore Configuration: Precision Cardiology CAD Digital Twin
+# ==============================================================================
+# API Keys and Secrets (CRITICAL)
+API_KEY/
+*.env
+*.key
+secrets.json
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+# C extensions & dynamic build artifacts
+*.so
+*.dylib
+*.obj
+*.o
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+# IDE and Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Temporary files & logs
+*.tmp
+*.log
+*.bak
+scratch/
+# Large archive files (keep source TSVs and canonical CSVs)
+*.zip
+*.tar.gz
+*.7z
+
+# Virtual Environments and Node
+venv/
+Web_Application/frontend/node_modules/
+.env
+
+# Exclude massive datasets and catalogs
+Production/GenomeIndiaSummary/
+Production/PGS\ CATALOGS/

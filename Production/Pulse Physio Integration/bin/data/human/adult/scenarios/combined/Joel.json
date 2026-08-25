@@ -1,0 +1,182 @@
+{
+  "Name": "Joel",
+  "Description": "Airway obstruction occurs at the beginning of the scenario. The airway obstruction is removed. A mask is placed on Joel and oxygen is supplied from a ventilator. Etomidate and succinylcholine are administered and the mask is removed. An endotracheal tube is placed.",
+  "PatientConfiguration": {
+      "PatientFile": "Joel.json"
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DrugDataRequests.json",
+    "NervousDataRequests.json"
+  ],
+  "DataRequestManager": {
+    "DataRequest": 
+    [
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Succinylcholine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" },
+      { "DecimalFormat": { "Precision": 6 }, "Category": "Substance", "SubstanceName": "Ketamine", "PropertyName": "PlasmaConcentration", "Unit": "ug/L" }
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 120.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AirwayObstruction": {
+        "Severity": {
+          "Scalar0To1": {
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 60.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "SimpleMask",
+		"Flow": {
+            "ScalarVolumePerTime": {
+              "Value": 1.0,
+              "Unit": "L/min"
+            }
+		}
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 15.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Ketamine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 8400.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 20.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SubstanceBolus": {
+        "Substance": "Succinylcholine",
+        "Concentration": {
+          "ScalarMassPerVolume": {
+            "Value": 5750.0,
+            "Unit": "ug/mL"
+          }
+        },
+        "Dose": {
+          "ScalarVolume": {
+            "Value": 20.0,
+            "Unit": "mL"
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "SupplementalOxygen": {
+        "Device": "None"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Intubation": {
+        "Type": "Tracheal"
+      }
+    }
+  }, {	
+    "EquipmentAction": {
+      "MechanicalVentilatorConfiguration": {
+        "MechanicalVentilatorAction": { "EquipmentAction": { "Action": {
+              "Comment": "Attach the mechanical ventilator - PC-CMV: RR = 16 bpm, I:E = 0.5, TV = 7 mL/kg(ideal)" }}},
+        "Settings":
+        {
+          "Connection": "On",
+          "InspirationWaveform": "Square",
+          "ExpirationWaveform": "Square",
+          "PeakInspiratoryPressure": { "ScalarPressure": { "Value": 17.2, "Unit": "cmH2O" } },
+          "PositiveEndExpiratoryPressure": { "ScalarPressure": { "Value": 5.0, "Unit": "cmH2O" } },
+          "InspirationMachineTriggerTime": { "ScalarTime": { "Value": 2.5, "Unit": "s" } },
+          "ExpirationCycleTime": { "ScalarTime": { "Value": 1.25, "Unit": "s" } },
+          "FractionInspiredGas": [
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.3, "Unit": "" } } }
+          ]
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

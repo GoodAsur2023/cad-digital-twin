@@ -1,0 +1,157 @@
+{
+  "Lifestyle Risk Model (XGBoost)": {
+    "auc": 0.8044,
+    "auc_ci": [
+      0.7974,
+      0.8117
+    ],
+    "brier_loss": 0.1793,
+    "brier_ci": [
+      0.1759,
+      0.1826
+    ],
+    "ece": 0.0145,
+    "ece_ci": [
+      0.0116,
+      0.022
+    ],
+    "sensitivity": 0.6915,
+    "sensitivity_ci": [
+      0.6809,
+      0.7037
+    ],
+    "specificity": 0.7839,
+    "specificity_ci": [
+      0.7745,
+      0.7935
+    ],
+    "model_name": "Lifestyle Risk Model (XGBoost)",
+    "cohort": "Lifestyle Test (n=13,727)",
+    "clinical_role": "Routine population behavioral & metabolic risk estimation",
+    "target_definition": "CVD_diagnosis"
+  },
+  "Baseline Clinical Feature Model (GradientBoosting)": {
+    "auc": 0.8595,
+    "auc_ci": [
+      0.8134,
+      0.9029
+    ],
+    "brier_loss": 0.1549,
+    "brier_ci": [
+      0.1332,
+      0.1763
+    ],
+    "ece": 0.0596,
+    "ece_ci": [
+      0.0561,
+      0.1254
+    ],
+    "sensitivity": 0.8175,
+    "sensitivity_ci": [
+      0.754,
+      0.881
+    ],
+    "specificity": 0.7232,
+    "specificity_ci": [
+      0.6429,
+      0.8036
+    ],
+    "model_name": "Baseline Clinical Feature Model (GradientBoosting)",
+    "cohort": "Clinical Test (n=238)",
+    "clinical_role": "Clinical model without exercise-ST-depression (oldpeak)",
+    "target_definition": "angiographic_CAD_gt50pct"
+  },
+  "Exercise-ST-Augmented Clinical Model (XGBoost)": {
+    "auc": 0.8788,
+    "auc_ci": [
+      0.8364,
+      0.9194
+    ],
+    "brier_loss": 0.1435,
+    "brier_ci": [
+      0.1184,
+      0.17
+    ],
+    "ece": 0.0924,
+    "ece_ci": [
+      0.0663,
+      0.1404
+    ],
+    "sensitivity": 0.8175,
+    "sensitivity_ci": [
+      0.754,
+      0.8889
+    ],
+    "specificity": 0.8036,
+    "specificity_ci": [
+      0.7319,
+      0.875
+    ],
+    "model_name": "Exercise-ST-Augmented Clinical Model (XGBoost)",
+    "cohort": "Clinical Test (n=238)",
+    "clinical_role": "Exercise-ST-Augmented Diagnostic Clinical Model",
+    "target_definition": "angiographic_CAD_gt50pct"
+  },
+  "Clinical Staged Fusion Ensemble": {
+    "auc": 0.8838,
+    "auc_ci": [
+      0.8415,
+      0.922
+    ],
+    "brier_loss": 0.1423,
+    "brier_ci": [
+      0.1207,
+      0.1643
+    ],
+    "ece": 0.0742,
+    "ece_ci": [
+      0.0666,
+      0.1324
+    ],
+    "sensitivity": 0.8413,
+    "sensitivity_ci": [
+      0.7778,
+      0.9048
+    ],
+    "specificity": 0.7679,
+    "specificity_ci": [
+      0.6875,
+      0.8393
+    ],
+    "model_name": "Clinical Staged Fusion Ensemble",
+    "cohort": "Clinical Test (n=238)",
+    "clinical_role": "Ensemble fusion combining routine screening + diagnostic features",
+    "target_definition": "angiographic_CAD_gt50pct"
+  },
+  "Population-Genomics-Aware Digital Twin": {
+    "auc": 0.8838,
+    "auc_ci": [
+      0.8415,
+      0.922
+    ],
+    "brier_loss": 0.1485,
+    "brier_ci": [
+      0.1298,
+      0.1675
+    ],
+    "ece": 0.0938,
+    "ece_ci": [
+      0.0727,
+      0.1464
+    ],
+    "sensitivity": 0.8413,
+    "sensitivity_ci": [
+      0.7778,
+      0.9048
+    ],
+    "specificity": 0.7679,
+    "specificity_ci": [
+      0.6875,
+      0.8393
+    ],
+    "model_name": "Population-Genomics-Aware Digital Twin",
+    "cohort": "Clinical Test (n=238)",
+    "clinical_role": "Genomics-aware, Pulse-grounded counterfactual Digital Twin",
+    "target_definition": "angiographic_CAD_gt50pct"
+  }
+}

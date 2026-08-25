@@ -1,0 +1,60 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "VenaCava", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "RightHeart", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryArteries", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryArteries", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryArteries", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryArteries", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryCapillaries", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryCapillaries", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryCapillaries", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryCapillaries", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryVeins", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryVeins", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryVeins", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "PulmonaryVeins", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "LeftHeart", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "PropertyName": "Volume",   "Unit": "mL" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "PropertyName": "Pressure", "Unit": "mmHg" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "PropertyName": "OutFlow",  "Unit": "mL/min" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "Aorta", "PropertyName": "InFlow",   "Unit": "mL/min" },
+    
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "BaroreceptorHeartRateScale",           "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "BaroreceptorHeartElastanceScale",      "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "BaroreceptorResistanceScale",          "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "BaroreceptorComplianceScale",          "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "ChemoreceptorHeartRateScale",          "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "ChemoreceptorHeartElastanceScale",     "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "PulmonaryCapillariesCoverageFraction", "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "EndTidalCarbonDioxidePressure",        "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology",                                               "PropertyName": "PulseOximetry",                        "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "CoronaryPerfusionPressure",            "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "SystolicLeftHeartPressure",            "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "DiastolicLeftHeartPressure",           "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "SystolicRightHeartPressure",           "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 1 }, "Category": "Physiology",                                               "PropertyName": "DiastolicRightHeartPressure",          "Unit": "mmHg" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "Oxygen",                    "PropertyName": "MassInBlood",                          "Unit": "g" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "CarbonDioxide",             "PropertyName": "MassInBlood",                          "Unit": "g" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "Oxygen",                    "PropertyName": "MassInTissue",                         "Unit": "g" },
+    { "DecimalFormat": { "Precision": 2 }, "Category": "Substance",  "SubstanceName": "CarbonDioxide",             "PropertyName": "MassInTissue",                         "Unit": "g" },
+    { "DecimalFormat": {                }, "Category": "LiquidCompartment", "CompartmentName": "BrainVasculature", "PropertyName": "InFlow",                               "Unit": "mL/min" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "ECG",                                                      "PropertyName": "Lead3ElectricPotential",               "Unit": "mV" }
+  ]
+}

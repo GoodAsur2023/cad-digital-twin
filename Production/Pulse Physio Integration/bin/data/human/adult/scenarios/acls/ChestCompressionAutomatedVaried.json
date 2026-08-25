@@ -1,0 +1,59 @@
+{
+  "Name": "ChestCompressionAutomatedVaried",
+  "Description": "Do 60s of CPR at various depths",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "ACLSDataRequests.json"
+  ],
+ "AnyAction": [
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 30, "Unit": "s" }}}},
+
+  { "PatientAction": { "Arrhythmia": {
+     "PatientAction": { "Action": {} },
+     "Rhythm": "Asystole" }}},
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 60, "Unit": "s" }}}},
+
+  { "PatientAction": { "ChestCompressionAutomated": {
+     "PatientAction": { "Action": { "Comment": "Maximum Effective Depth" }},
+     "Depth": { "ScalarLength": { "Value": 6, "Unit": "cm" }},
+     "CompressionFrequency": { "ScalarFrequency": { "Value": 100, "Unit": "1/min" }},
+     "AppliedForceFraction": { "Scalar0To1": { "Value": 0.8 }}}}},
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 60, "Unit": "s" }}}},
+
+  { "PatientAction": { "ChestCompressionAutomated": {
+     "PatientAction": { "Action": { "Comment": "Minimum Effective Depth" }},
+     "Depth": { "ScalarLength": { "Value": 5, "Unit": "cm" }},
+     "CompressionFrequency": { "ScalarFrequency": { "Value": 100, "Unit": "1/min" }},
+     "AppliedForceFraction": { "Scalar0To1": { "Value": 0.8 }}}}},
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 60, "Unit": "s" }}}},
+
+  { "PatientAction": { "ChestCompressionAutomated": {
+     "PatientAction": { "Action": { "Comment": "Ineffective Depth" }},
+     "Depth": { "ScalarLength": { "Value": 2.5, "Unit": "cm" }},
+     "CompressionFrequency": { "ScalarFrequency": { "Value": 100, "Unit": "1/min" }},
+     "AppliedForceFraction": { "Scalar0To1": { "Value": 0.8 }}}}},
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 60, "Unit": "s" }}}},
+
+  { "PatientAction": { "ChestCompressionAutomated": {
+     "PatientAction": { "Action": { "Comment": "Stop Compressions" }},
+     "Depth": { "ScalarLength": { "Value": 0, "Unit": "cm" }}}}},
+
+  { "PatientAction": { "Arrhythmia": {
+     "PatientAction": { "Action": {} },
+     "Rhythm": "NormalSinus" }}},
+
+  { "AdvanceTime": { "Action": {},
+    "Time": { "ScalarTime": { "Value": 180, "Unit": "s" }}}}
+ ]
+}

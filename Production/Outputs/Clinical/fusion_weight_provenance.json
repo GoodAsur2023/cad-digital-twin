@@ -1,0 +1,18 @@
+{
+  "source": "training_5fold_cv",
+  "optimal_w_diag": 0.5,
+  "optimal_w_prediag": 0.5,
+  "canonical_weights": {
+    "w_diagnostic": 0.5,
+    "w_baseline": 0.5
+  },
+  "optimization_metric": "roc_auc",
+  "cv_auc_scores": {
+    "0.5": 0.942,
+    "0.6": 0.9417,
+    "0.7": 0.9408,
+    "0.8": 0.939,
+    "0.9": 0.9365
+  },
+  "test_used_for_tuning": false
+}

@@ -1,0 +1,45 @@
+{
+  "Name":"ModerateDehydrationWithSaltWater",
+  "Description":"Moderately dehydrated patient from excessive sweating drinks a saltwater solution.",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "Dehydration": {
+          "Severity": {
+            "Scalar0To1": {
+              "Value": 0.7
+            }
+          }
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "DehydrationDataRequests.json"
+  ],
+  "AnyAction": [
+  {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 2.0,
+          "Unit": "min"
+        }
+      }
+    }
+  },
+  { "PatientAction": { "Assessment": { "Type": "Urinalysis" }}},
+  { "PatientAction": { "ConsumeNutrients": { "Nutrition":
+      {  "Carbohydrate" : { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Fat" :          { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Protein" :      { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Calcium" :      { "ScalarMass":   { "Value": 0.0,   "Unit": "g" }},
+         "Sodium" :       { "ScalarMass":   { "Value": 100.0, "Unit": "g" }},
+         "Water" :        { "ScalarVolume": { "Value": 2.0,   "Unit": "L" }}
+   }}}},
+   { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 4.0, "Unit": "hr" }}}},
+   { "PatientAction": { "Assessment": { "Type": "Urinalysis" }}}
+  ]
+}

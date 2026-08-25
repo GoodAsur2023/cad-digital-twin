@@ -1,0 +1,94 @@
+{
+  "Name": "HemorrhageSeverityP5",
+  "Description": "",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Muscle", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Muscle", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Skin", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Skin", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhageRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhagedVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Muscle",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.15
+          }
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Skin",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.5
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 200.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Muscle",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.0
+          }
+        }
+      }
+    }
+  }, {
+      "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Skin",
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 0.0
+          }
+        }
+      }
+    }
+  }, {
+  "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 400.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

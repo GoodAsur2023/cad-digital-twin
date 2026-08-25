@@ -1,0 +1,230 @@
+[
+  {
+    "patient_idx": 4248,
+    "cohort": "lifestyle",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 39.74794521,
+      "gender": 1.0,
+      "systolic_bp": 160.0,
+      "diastolic_bp": 90.0,
+      "smoking": 1.0,
+      "alcohol": 0.0,
+      "physical_activity": 0.0,
+      "bmi": 39.24646781789639,
+      "cholesterol_level_1": 0.0,
+      "cholesterol_level_2": 1.0,
+      "cholesterol_level_3": 0.0,
+      "glucose_level_1": 1.0,
+      "glucose_level_2": 0.0,
+      "glucose_level_3": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.8428,
+      "risk_ci_lower": 0.8124,
+      "risk_ci_upper": 0.841,
+      "risk_band": "High Risk",
+      "acc_aha_category": "High Risk",
+      "recommendation": "High-intensity statin (reduce LDL-C \u226550%). Aggressive lifestyle intervention. Consider PCSK9 inhibitors. Specialist referral.",
+      "statin": "High-intensity statin",
+      "monitoring": "Every 3-6 months"
+    },
+    "risk_label": "high"
+  },
+  {
+    "patient_idx": 11245,
+    "cohort": "lifestyle",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 56.12054795,
+      "gender": 0.0,
+      "systolic_bp": 120.0,
+      "diastolic_bp": 70.0,
+      "smoking": 1.0,
+      "alcohol": 0.0,
+      "physical_activity": 0.0,
+      "bmi": 30.119375573921037,
+      "cholesterol_level_1": 1.0,
+      "cholesterol_level_2": 0.0,
+      "cholesterol_level_3": 0.0,
+      "glucose_level_1": 1.0,
+      "glucose_level_2": 0.0,
+      "glucose_level_3": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.449,
+      "risk_ci_lower": 0.3572,
+      "risk_ci_upper": 0.5182,
+      "risk_band": "High Risk",
+      "acc_aha_category": "High Risk",
+      "recommendation": "High-intensity statin (reduce LDL-C \u226550%). Aggressive lifestyle intervention. Consider PCSK9 inhibitors. Specialist referral.",
+      "statin": "High-intensity statin",
+      "monitoring": "Every 3-6 months"
+    },
+    "risk_label": "med"
+  },
+  {
+    "patient_idx": 11617,
+    "cohort": "lifestyle",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 39.2,
+      "gender": 0.0,
+      "systolic_bp": 90.0,
+      "diastolic_bp": 60.0,
+      "smoking": 0.0,
+      "alcohol": 0.0,
+      "physical_activity": 1.0,
+      "bmi": 15.967484395412978,
+      "cholesterol_level_1": 1.0,
+      "cholesterol_level_2": 0.0,
+      "cholesterol_level_3": 0.0,
+      "glucose_level_1": 1.0,
+      "glucose_level_2": 0.0,
+      "glucose_level_3": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.1567,
+      "risk_ci_lower": 0.1562,
+      "risk_ci_upper": 0.1684,
+      "risk_band": "Intermediate Risk",
+      "acc_aha_category": "Intermediate Risk",
+      "recommendation": "Moderate-intensity statin recommended (reduce LDL-C by 30-49%). Consider CAC scoring.",
+      "statin": "Moderate-intensity statin",
+      "monitoring": "Annual reassessment"
+    },
+    "risk_label": "low"
+  },
+  {
+    "patient_idx": 31,
+    "cohort": "clinical",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 58.0,
+      "sex": 1.0,
+      "resting_bp": 132.0,
+      "cholesterol": 371.0,
+      "fasting_blood_sugar": 1.0,
+      "max_heart_rate": 69.0,
+      "oldpeak": 1.0,
+      "resting_ecg_0.0": 1.0,
+      "resting_ecg_1.0": 0.0,
+      "resting_ecg_2.0": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.8511,
+      "risk_ci_lower": 0.6914,
+      "risk_ci_upper": 0.851,
+      "risk_band": "High Risk",
+      "acc_aha_category": "High Risk",
+      "recommendation": "High-intensity statin (reduce LDL-C \u226550%). Aggressive lifestyle intervention. Consider PCSK9 inhibitors. Specialist referral.",
+      "statin": "High-intensity statin",
+      "monitoring": "Every 3-6 months"
+    },
+    "risk_label": "high"
+  },
+  {
+    "patient_idx": 154,
+    "cohort": "clinical",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 68.0,
+      "sex": 1.0,
+      "resting_bp": 118.0,
+      "cholesterol": 277.0,
+      "fasting_blood_sugar": 0.0,
+      "max_heart_rate": 151.0,
+      "oldpeak": 1.0,
+      "resting_ecg_0.0": 1.0,
+      "resting_ecg_1.0": 0.0,
+      "resting_ecg_2.0": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.5539,
+      "risk_ci_lower": 0.1981,
+      "risk_ci_upper": 0.7565,
+      "risk_band": "High Risk",
+      "acc_aha_category": "High Risk",
+      "recommendation": "High-intensity statin (reduce LDL-C \u226550%). Aggressive lifestyle intervention. Consider PCSK9 inhibitors. Specialist referral.",
+      "statin": "High-intensity statin",
+      "monitoring": "Every 3-6 months"
+    },
+    "risk_label": "med"
+  },
+  {
+    "patient_idx": 145,
+    "cohort": "clinical",
+    "genetic_state": {
+      "prs_raw": 2.962466254375361,
+      "prs_index": 0.5,
+      "confidence_tier": "UNKNOWN",
+      "top_genes": [],
+      "gene_context_notes": [
+        "PCSK9-region genetic burden elevated \u2192 PCSK9 inhibitors may be considered for persistent elevated LDL-C."
+      ]
+    },
+    "feature_state": {
+      "age": 39.0,
+      "sex": 0.0,
+      "resting_bp": 94.0,
+      "cholesterol": 199.0,
+      "fasting_blood_sugar": 0.0,
+      "max_heart_rate": 179.0,
+      "oldpeak": 0.0,
+      "resting_ecg_0.0": 1.0,
+      "resting_ecg_1.0": 0.0,
+      "resting_ecg_2.0": 0.0
+    },
+    "risk_state": {
+      "current_risk": 0.1607,
+      "risk_ci_lower": 0.1607,
+      "risk_ci_upper": 0.1651,
+      "risk_band": "Intermediate Risk",
+      "acc_aha_category": "Intermediate Risk",
+      "recommendation": "Moderate-intensity statin recommended (reduce LDL-C by 30-49%). Consider CAC scoring.",
+      "statin": "Moderate-intensity statin",
+      "monitoring": "Annual reassessment"
+    },
+    "risk_label": "low"
+  }
+]

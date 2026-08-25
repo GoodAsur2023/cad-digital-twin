@@ -1,0 +1,98 @@
+{
+  "Name": "AlveolarArterialGradientEnvironment",
+  "Description": "Change the ambient O2 to check the gas exchange.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "HorowitzIndex",  "Unit": "mmHg" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "TransthoracicPressure",  "Unit": "cmH2O" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "Physiology", "PropertyName": "AlveolarArterialGradient",  "Unit": "mmHg" }
+    ]
+  },
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.6896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.31 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.5896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.41 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.4896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.51 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.3896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.61 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.2896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.71 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.1896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.81 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } },
+
+    { "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditions": {
+          "AmbientGas": [
+            { "Name": "Nitrogen", "Amount": { "Scalar0To1": { "Value": 0.0896 } } },
+            { "Name": "Oxygen", "Amount": { "Scalar0To1": { "Value": 0.91 } } },
+            { "Name": "CarbonDioxide", "Amount": { "Scalar0To1": { "Value": 4.0E-4 } } }
+      ] } } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" } } } }
+  ]
+}

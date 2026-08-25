@@ -1,0 +1,139 @@
+{
+  "Name": "HemorrhageClass2InternalSpleen",
+  "Description": "",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "DataRequestManager":
+  {
+    "DataRequest":
+    [
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Spleen", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Spleen", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Liver", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "Liver", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "LeftKidney", "PropertyName": "FlowRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Action", "ActionName": "Hemorrhage", "CompartmentName": "LeftKidney", "PropertyName": "TotalBloodLost", "Unit": "mL"},
+      
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftKidneyVasculature",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftRenalArtery",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftNephron",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftAfferentArteriole",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftGlomerularCapillaries",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftEfferentArteriole",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftPeritubularCapillaries",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftBowmansCapsules",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftTubules",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      { "DecimalFormat": { "Precision": 4 }, "Category": "LiquidCompartment", "CompartmentName": "LeftRenalVein",     "PropertyName": "OutFlow",  "Unit": "mL/min" },
+      
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhageRate", "Unit": "mL/s"},
+      { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "TotalHemorrhagedVolume", "Unit": "mL"}
+    ]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Spleen",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 60.0,
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Liver",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 60.0,
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "LeftKidney",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Value": 60.0,
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 500.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Spleen",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "Liver",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "PatientAction": {
+      "Hemorrhage": {
+        "Compartment": "LeftKidney",
+        "FlowRate": {
+          "ScalarVolumePerTime": {
+            "Unit": "mL/min"
+          }
+        },
+        "Type": "Internal"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 400.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }]
+}

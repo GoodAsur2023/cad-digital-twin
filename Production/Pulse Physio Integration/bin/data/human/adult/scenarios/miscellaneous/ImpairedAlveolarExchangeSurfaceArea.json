@@ -1,0 +1,33 @@
+{
+  "Name": "ImpairedAlveolarExchangeSurfaceArea",
+  "Description": "Cause Acute Respiratory Distress by generically reducing the alveolar surface area.",
+  "PatientConfiguration": {
+      "PatientFile": "StandardMale.json",
+      "Conditions": { "AnyCondition": [{
+        "PatientCondition": {
+          "ImpairedAlveolarExchange": {
+            "ImpairedSurfaceArea": {
+              "ScalarArea": {
+                "Value": 55.9896,
+                "Unit": "m^2"
+              }
+            }
+          }
+        }
+      }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 1.0, "Unit": "min" }}}},
+
+    { "PatientAction": { "ImpairedAlveolarExchangeExacerbation": {
+        "ImpairedSurfaceArea": { "ScalarArea": { "Value": 25, "Unit": "m^2" } }
+    } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 5.0, "Unit": "min" }}}}
+  ]
+}

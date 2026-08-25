@@ -1,0 +1,24 @@
+{
+  "Name": "ComplianceCurve",
+  "Description": "Perform a spirometry breath.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "PatientAction": { "ConsciousRespiration": { "Command": [
+        { "ForcedExhale": {
+            "ExpiratoryReserveVolumeFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "ExhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } },
+            "ReleasePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } },
+        { "ForcedInhale": {
+            "InspiratoryCapacityFraction": { "Scalar0To1": { "Value": 1.0 } },
+            "InhalePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } ,
+            "ReleasePeriod": { "ScalarTime": { "Value": 10.0, "Unit": "s" } } } }
+    ] } } },
+
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 40.0, "Unit": "s" }}}}
+  ]
+}

@@ -1,0 +1,898 @@
+{
+  "profile_metadata": {
+    "catalog_id": "PGS000116",
+    "scoring_file": "PGS000116_hmPOS_GRCh38.txt",
+    "variant_harmonization_source": "Outputs/Genetics/pgs000116_genomeindia_harmonized.csv",
+    "n_variants": 40079,
+    "method": "lassosum",
+    "ancestry_derivation": "Multi-ancestry with 13.6% South Asian representation"
+  },
+  "population_baseline": {
+    "signed_expected_prs": 2.962466254375361,
+    "marginal_frequency_delta_method_se": 0.0009600409060945503,
+    "parameter_estimation_se": 0.0009600409060945503,
+    "parameter_se_95_ci": [
+      2.9605845741994155,
+      2.964347934551306
+    ],
+    "parameter_se_assumptions": "Marginal-frequency delta-method SE under SNP-independence approximation; pairwise LD covariance unmodeled from aggregate frequencies.",
+    "inter_individual_genotype_variability": 0.0938340871428014,
+    "inter_individual_mc_mean": 2.96085226722544,
+    "inter_individual_mc_95_interval": [
+      2.7776869776774995,
+      3.1444243905024996
+    ],
+    "genotype_variability_assumptions": "Monte Carlo simulated dosage draws under Hardy-Weinberg equilibrium (Independent-HWE approximation)."
+  },
+  "genetic_burden_index": {
+    "gbi_total_magnitude": 40.01970268032352,
+    "curated_loci_gbi": 1.743156950825464,
+    "curated_loci_pct_of_total_gbi": 4.36,
+    "polygenic_background_gbi": 38.276545729498054,
+    "polygenic_background_pct_of_total_gbi": 95.64
+  },
+  "top_gene_loci": [
+    {
+      "rank": 1,
+      "gene_symbol": "CDKN2B-AS1",
+      "pathway": "Cell Cycle / 9p21.3",
+      "cytoband": "9p21.3",
+      "n_snps": 61,
+      "expected_gbi": 0.371443684652712,
+      "signed_prs": 0.173766336764808,
+      "pct_annotated_gbi": 21.31,
+      "pct_total_genome_gbi": 0.93
+    },
+    {
+      "rank": 2,
+      "gene_symbol": "LPA",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "6q26",
+      "n_snps": 72,
+      "expected_gbi": 0.236990193834442,
+      "signed_prs": 0.12460431393588599,
+      "pct_annotated_gbi": 13.6,
+      "pct_total_genome_gbi": 0.59
+    },
+    {
+      "rank": 3,
+      "gene_symbol": "APOE",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19q13.32",
+      "n_snps": 42,
+      "expected_gbi": 0.096881282576998,
+      "signed_prs": 0.02233223624959,
+      "pct_annotated_gbi": 5.56,
+      "pct_total_genome_gbi": 0.24
+    },
+    {
+      "rank": 4,
+      "gene_symbol": "SORT1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p13.3",
+      "n_snps": 40,
+      "expected_gbi": 0.088399810030574,
+      "signed_prs": -0.054563345869882,
+      "pct_annotated_gbi": 5.07,
+      "pct_total_genome_gbi": 0.22
+    },
+    {
+      "rank": 5,
+      "gene_symbol": "PHACTR1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "6p24.1",
+      "n_snps": 24,
+      "expected_gbi": 0.0795723386556,
+      "signed_prs": -0.0037783046654199974,
+      "pct_annotated_gbi": 4.56,
+      "pct_total_genome_gbi": 0.2
+    },
+    {
+      "rank": 6,
+      "gene_symbol": "LDLR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19p13.2",
+      "n_snps": 30,
+      "expected_gbi": 0.076067458121656,
+      "signed_prs": -0.037650968587008,
+      "pct_annotated_gbi": 4.36,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 7,
+      "gene_symbol": "LPL",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "8p21.3",
+      "n_snps": 62,
+      "expected_gbi": 0.075357188878154,
+      "signed_prs": -0.013386539570105998,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 8,
+      "gene_symbol": "ADAMTS7",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "15q25.3",
+      "n_snps": 56,
+      "expected_gbi": 0.075348597047778,
+      "signed_prs": 0.0068605303289739974,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 9,
+      "gene_symbol": "IL6R",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "1q21.3",
+      "n_snps": 38,
+      "expected_gbi": 0.050434020646816,
+      "signed_prs": -0.004885524874184,
+      "pct_annotated_gbi": 2.89,
+      "pct_total_genome_gbi": 0.13
+    },
+    {
+      "rank": 10,
+      "gene_symbol": "PCSK9",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p32.3",
+      "n_snps": 17,
+      "expected_gbi": 0.049649254542498,
+      "signed_prs": -0.025785434206582,
+      "pct_annotated_gbi": 2.85,
+      "pct_total_genome_gbi": 0.12
+    },
+    {
+      "rank": 11,
+      "gene_symbol": "HMGCR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "5q13.3",
+      "n_snps": 38,
+      "expected_gbi": 0.046135793643198,
+      "signed_prs": 0.008349379328190002,
+      "pct_annotated_gbi": 2.65,
+      "pct_total_genome_gbi": 0.12
+    },
+    {
+      "rank": 12,
+      "gene_symbol": "APOB",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "2p24.1",
+      "n_snps": 50,
+      "expected_gbi": 0.038966470692496,
+      "signed_prs": -0.016118025328204,
+      "pct_annotated_gbi": 2.24,
+      "pct_total_genome_gbi": 0.1
+    },
+    {
+      "rank": 13,
+      "gene_symbol": "TNS1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "2q35",
+      "n_snps": 37,
+      "expected_gbi": 0.03800241927734,
+      "signed_prs": 0.0158262078281,
+      "pct_annotated_gbi": 2.18,
+      "pct_total_genome_gbi": 0.09
+    },
+    {
+      "rank": 14,
+      "gene_symbol": "SMAD3",
+      "pathway": "TGF-beta Signaling",
+      "cytoband": "15q22.33",
+      "n_snps": 16,
+      "expected_gbi": 0.036560676450012,
+      "signed_prs": -0.025642672601664,
+      "pct_annotated_gbi": 2.1,
+      "pct_total_genome_gbi": 0.09
+    },
+    {
+      "rank": 15,
+      "gene_symbol": "NOS3",
+      "pathway": "Endothelial Function",
+      "cytoband": "7q36.1",
+      "n_snps": 35,
+      "expected_gbi": 0.032028222814652,
+      "signed_prs": 0.014853379786724,
+      "pct_annotated_gbi": 1.84,
+      "pct_total_genome_gbi": 0.08
+    }
+  ],
+  "pathway_breakdown": [
+    {
+      "pathway": "Intergenic / Polygenic Background",
+      "n_snps": 39122,
+      "expected_gbi": 38.27654572949806,
+      "signed_prs": 2.811385018508073,
+      "pct_total_gbi": 95.64
+    },
+    {
+      "pathway": "Lipid Metabolism",
+      "n_snps": 428,
+      "expected_gbi": 0.814366636767476,
+      "signed_prs": -0.0029304995791560057,
+      "pct_total_gbi": 2.03
+    },
+    {
+      "pathway": "Cell Cycle / 9p21.3",
+      "n_snps": 61,
+      "expected_gbi": 0.371443684652712,
+      "signed_prs": 0.173766336764808,
+      "pct_total_gbi": 0.93
+    },
+    {
+      "pathway": "Vascular Remodeling",
+      "n_snps": 199,
+      "expected_gbi": 0.273795915542238,
+      "signed_prs": 0.0045162262145539995,
+      "pct_total_gbi": 0.68
+    },
+    {
+      "pathway": "Inflammation/Immune",
+      "n_snps": 107,
+      "expected_gbi": 0.12522662111561,
+      "signed_prs": -0.002824070044593999,
+      "pct_total_gbi": 0.31
+    },
+    {
+      "pathway": "TGF-beta Signaling",
+      "n_snps": 16,
+      "expected_gbi": 0.036560676450012,
+      "signed_prs": -0.025642672601664,
+      "pct_total_gbi": 0.09
+    },
+    {
+      "pathway": "Endothelial Function",
+      "n_snps": 35,
+      "expected_gbi": 0.032028222814652,
+      "signed_prs": 0.014853379786724,
+      "pct_total_gbi": 0.08
+    },
+    {
+      "pathway": "Angiogenesis",
+      "n_snps": 30,
+      "expected_gbi": 0.031646397527558,
+      "signed_prs": -0.004710505276726001,
+      "pct_total_gbi": 0.08
+    },
+    {
+      "pathway": "Metabolic Regulation",
+      "n_snps": 23,
+      "expected_gbi": 0.01674716392329,
+      "signed_prs": -0.001865999208950001,
+      "pct_total_gbi": 0.04
+    },
+    {
+      "pathway": "Pharmacogenomics",
+      "n_snps": 14,
+      "expected_gbi": 0.01593302344927,
+      "signed_prs": 0.004341195454882,
+      "pct_total_gbi": 0.04
+    },
+    {
+      "pathway": "Platelet Biology",
+      "n_snps": 23,
+      "expected_gbi": 0.010052257616562001,
+      "signed_prs": 0.000651415780514,
+      "pct_total_gbi": 0.03
+    },
+    {
+      "pathway": "Cellular Senescence",
+      "n_snps": 10,
+      "expected_gbi": 0.00960141105179,
+      "signed_prs": -0.00531538556711,
+      "pct_total_gbi": 0.02
+    },
+    {
+      "pathway": "Chromatin Remodeling",
+      "n_snps": 11,
+      "expected_gbi": 0.0057549399142940005,
+      "signed_prs": -0.003758185855994,
+      "pct_total_gbi": 0.01
+    }
+  ],
+  "top_genes": [
+    {
+      "rank": 1,
+      "gene_symbol": "CDKN2B-AS1",
+      "pathway": "Cell Cycle / 9p21.3",
+      "cytoband": "9p21.3",
+      "n_snps": 61,
+      "expected_gbi": 0.371443684652712,
+      "signed_prs": 0.173766336764808,
+      "pct_annotated_gbi": 21.31,
+      "pct_total_genome_gbi": 0.93
+    },
+    {
+      "rank": 2,
+      "gene_symbol": "LPA",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "6q26",
+      "n_snps": 72,
+      "expected_gbi": 0.236990193834442,
+      "signed_prs": 0.12460431393588599,
+      "pct_annotated_gbi": 13.6,
+      "pct_total_genome_gbi": 0.59
+    },
+    {
+      "rank": 3,
+      "gene_symbol": "APOE",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19q13.32",
+      "n_snps": 42,
+      "expected_gbi": 0.096881282576998,
+      "signed_prs": 0.02233223624959,
+      "pct_annotated_gbi": 5.56,
+      "pct_total_genome_gbi": 0.24
+    },
+    {
+      "rank": 4,
+      "gene_symbol": "SORT1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p13.3",
+      "n_snps": 40,
+      "expected_gbi": 0.088399810030574,
+      "signed_prs": -0.054563345869882,
+      "pct_annotated_gbi": 5.07,
+      "pct_total_genome_gbi": 0.22
+    },
+    {
+      "rank": 5,
+      "gene_symbol": "PHACTR1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "6p24.1",
+      "n_snps": 24,
+      "expected_gbi": 0.0795723386556,
+      "signed_prs": -0.0037783046654199974,
+      "pct_annotated_gbi": 4.56,
+      "pct_total_genome_gbi": 0.2
+    },
+    {
+      "rank": 6,
+      "gene_symbol": "LDLR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19p13.2",
+      "n_snps": 30,
+      "expected_gbi": 0.076067458121656,
+      "signed_prs": -0.037650968587008,
+      "pct_annotated_gbi": 4.36,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 7,
+      "gene_symbol": "LPL",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "8p21.3",
+      "n_snps": 62,
+      "expected_gbi": 0.075357188878154,
+      "signed_prs": -0.013386539570105998,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 8,
+      "gene_symbol": "ADAMTS7",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "15q25.3",
+      "n_snps": 56,
+      "expected_gbi": 0.075348597047778,
+      "signed_prs": 0.0068605303289739974,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19
+    },
+    {
+      "rank": 9,
+      "gene_symbol": "IL6R",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "1q21.3",
+      "n_snps": 38,
+      "expected_gbi": 0.050434020646816,
+      "signed_prs": -0.004885524874184,
+      "pct_annotated_gbi": 2.89,
+      "pct_total_genome_gbi": 0.13
+    },
+    {
+      "rank": 10,
+      "gene_symbol": "PCSK9",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p32.3",
+      "n_snps": 17,
+      "expected_gbi": 0.049649254542498,
+      "signed_prs": -0.025785434206582,
+      "pct_annotated_gbi": 2.85,
+      "pct_total_genome_gbi": 0.12
+    },
+    {
+      "rank": 11,
+      "gene_symbol": "HMGCR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "5q13.3",
+      "n_snps": 38,
+      "expected_gbi": 0.046135793643198,
+      "signed_prs": 0.008349379328190002,
+      "pct_annotated_gbi": 2.65,
+      "pct_total_genome_gbi": 0.12
+    },
+    {
+      "rank": 12,
+      "gene_symbol": "APOB",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "2p24.1",
+      "n_snps": 50,
+      "expected_gbi": 0.038966470692496,
+      "signed_prs": -0.016118025328204,
+      "pct_annotated_gbi": 2.24,
+      "pct_total_genome_gbi": 0.1
+    },
+    {
+      "rank": 13,
+      "gene_symbol": "TNS1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "2q35",
+      "n_snps": 37,
+      "expected_gbi": 0.03800241927734,
+      "signed_prs": 0.0158262078281,
+      "pct_annotated_gbi": 2.18,
+      "pct_total_genome_gbi": 0.09
+    },
+    {
+      "rank": 14,
+      "gene_symbol": "SMAD3",
+      "pathway": "TGF-beta Signaling",
+      "cytoband": "15q22.33",
+      "n_snps": 16,
+      "expected_gbi": 0.036560676450012,
+      "signed_prs": -0.025642672601664,
+      "pct_annotated_gbi": 2.1,
+      "pct_total_genome_gbi": 0.09
+    },
+    {
+      "rank": 15,
+      "gene_symbol": "NOS3",
+      "pathway": "Endothelial Function",
+      "cytoband": "7q36.1",
+      "n_snps": 35,
+      "expected_gbi": 0.032028222814652,
+      "signed_prs": 0.014853379786724,
+      "pct_annotated_gbi": 1.84,
+      "pct_total_genome_gbi": 0.08
+    }
+  ],
+  "gene_contributions": [
+    {
+      "gene_symbol": "CDKN2B-AS1",
+      "pathway": "Cell Cycle / 9p21.3",
+      "cytoband": "9p21.3",
+      "n_snps": 61,
+      "expected_gbi": 0.371443684652712,
+      "signed_prs": 0.173766336764808,
+      "pct_annotated_gbi": 21.31,
+      "pct_total_genome_gbi": 0.93,
+      "rank": 1
+    },
+    {
+      "gene_symbol": "LPA",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "6q26",
+      "n_snps": 72,
+      "expected_gbi": 0.236990193834442,
+      "signed_prs": 0.12460431393588599,
+      "pct_annotated_gbi": 13.6,
+      "pct_total_genome_gbi": 0.59,
+      "rank": 2
+    },
+    {
+      "gene_symbol": "APOE",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19q13.32",
+      "n_snps": 42,
+      "expected_gbi": 0.096881282576998,
+      "signed_prs": 0.02233223624959,
+      "pct_annotated_gbi": 5.56,
+      "pct_total_genome_gbi": 0.24,
+      "rank": 3
+    },
+    {
+      "gene_symbol": "SORT1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p13.3",
+      "n_snps": 40,
+      "expected_gbi": 0.088399810030574,
+      "signed_prs": -0.054563345869882,
+      "pct_annotated_gbi": 5.07,
+      "pct_total_genome_gbi": 0.22,
+      "rank": 4
+    },
+    {
+      "gene_symbol": "PHACTR1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "6p24.1",
+      "n_snps": 24,
+      "expected_gbi": 0.0795723386556,
+      "signed_prs": -0.0037783046654199974,
+      "pct_annotated_gbi": 4.56,
+      "pct_total_genome_gbi": 0.2,
+      "rank": 5
+    },
+    {
+      "gene_symbol": "LDLR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19p13.2",
+      "n_snps": 30,
+      "expected_gbi": 0.076067458121656,
+      "signed_prs": -0.037650968587008,
+      "pct_annotated_gbi": 4.36,
+      "pct_total_genome_gbi": 0.19,
+      "rank": 6
+    },
+    {
+      "gene_symbol": "LPL",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "8p21.3",
+      "n_snps": 62,
+      "expected_gbi": 0.075357188878154,
+      "signed_prs": -0.013386539570105998,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19,
+      "rank": 7
+    },
+    {
+      "gene_symbol": "ADAMTS7",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "15q25.3",
+      "n_snps": 56,
+      "expected_gbi": 0.075348597047778,
+      "signed_prs": 0.0068605303289739974,
+      "pct_annotated_gbi": 4.32,
+      "pct_total_genome_gbi": 0.19,
+      "rank": 8
+    },
+    {
+      "gene_symbol": "IL6R",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "1q21.3",
+      "n_snps": 38,
+      "expected_gbi": 0.050434020646816,
+      "signed_prs": -0.004885524874184,
+      "pct_annotated_gbi": 2.89,
+      "pct_total_genome_gbi": 0.13,
+      "rank": 9
+    },
+    {
+      "gene_symbol": "PCSK9",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p32.3",
+      "n_snps": 17,
+      "expected_gbi": 0.049649254542498,
+      "signed_prs": -0.025785434206582,
+      "pct_annotated_gbi": 2.85,
+      "pct_total_genome_gbi": 0.12,
+      "rank": 10
+    },
+    {
+      "gene_symbol": "HMGCR",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "5q13.3",
+      "n_snps": 38,
+      "expected_gbi": 0.046135793643198,
+      "signed_prs": 0.008349379328190002,
+      "pct_annotated_gbi": 2.65,
+      "pct_total_genome_gbi": 0.12,
+      "rank": 11
+    },
+    {
+      "gene_symbol": "APOB",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "2p24.1",
+      "n_snps": 50,
+      "expected_gbi": 0.038966470692496,
+      "signed_prs": -0.016118025328204,
+      "pct_annotated_gbi": 2.24,
+      "pct_total_genome_gbi": 0.1,
+      "rank": 12
+    },
+    {
+      "gene_symbol": "TNS1",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "2q35",
+      "n_snps": 37,
+      "expected_gbi": 0.03800241927734,
+      "signed_prs": 0.0158262078281,
+      "pct_annotated_gbi": 2.18,
+      "pct_total_genome_gbi": 0.09,
+      "rank": 13
+    },
+    {
+      "gene_symbol": "SMAD3",
+      "pathway": "TGF-beta Signaling",
+      "cytoband": "15q22.33",
+      "n_snps": 16,
+      "expected_gbi": 0.036560676450012,
+      "signed_prs": -0.025642672601664,
+      "pct_annotated_gbi": 2.1,
+      "pct_total_genome_gbi": 0.09,
+      "rank": 14
+    },
+    {
+      "gene_symbol": "NOS3",
+      "pathway": "Endothelial Function",
+      "cytoband": "7q36.1",
+      "n_snps": 35,
+      "expected_gbi": 0.032028222814652,
+      "signed_prs": 0.014853379786724,
+      "pct_annotated_gbi": 1.84,
+      "pct_total_genome_gbi": 0.08,
+      "rank": 15
+    },
+    {
+      "gene_symbol": "SH2B3",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "12q24.12",
+      "n_snps": 25,
+      "expected_gbi": 0.03201522747314,
+      "signed_prs": 0.004057140578436,
+      "pct_annotated_gbi": 1.84,
+      "pct_total_genome_gbi": 0.08,
+      "rank": 16
+    },
+    {
+      "gene_symbol": "VEGFA",
+      "pathway": "Angiogenesis",
+      "cytoband": "6p21.1",
+      "n_snps": 30,
+      "expected_gbi": 0.031646397527558,
+      "signed_prs": -0.004710505276726001,
+      "pct_annotated_gbi": 1.82,
+      "pct_total_genome_gbi": 0.08,
+      "rank": 17
+    },
+    {
+      "gene_symbol": "ARHGEF26",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "3p25.2",
+      "n_snps": 16,
+      "expected_gbi": 0.029721492628682,
+      "signed_prs": -0.006990318010518,
+      "pct_annotated_gbi": 1.71,
+      "pct_total_genome_gbi": 0.07,
+      "rank": 18
+    },
+    {
+      "gene_symbol": "TRIB1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "8q24.13",
+      "n_snps": 11,
+      "expected_gbi": 0.027408535726996003,
+      "signed_prs": -0.006837166864540001,
+      "pct_annotated_gbi": 1.57,
+      "pct_total_genome_gbi": 0.07,
+      "rank": 19
+    },
+    {
+      "gene_symbol": "FADS1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "11q12.2",
+      "n_snps": 15,
+      "expected_gbi": 0.026839983079154,
+      "signed_prs": 0.006615382953778001,
+      "pct_annotated_gbi": 1.54,
+      "pct_total_genome_gbi": 0.07,
+      "rank": 20
+    },
+    {
+      "gene_symbol": "LPA-SLC22A3",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "6q26",
+      "n_snps": 25,
+      "expected_gbi": 0.026097863150688003,
+      "signed_prs": 0.0007641353057319993,
+      "pct_annotated_gbi": 1.5,
+      "pct_total_genome_gbi": 0.07,
+      "rank": 21
+    },
+    {
+      "gene_symbol": "TCF21",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "6q23.2",
+      "n_snps": 23,
+      "expected_gbi": 0.022890172493546,
+      "signed_prs": 9.81586752899998e-05,
+      "pct_annotated_gbi": 1.31,
+      "pct_total_genome_gbi": 0.06,
+      "rank": 22
+    },
+    {
+      "gene_symbol": "PDGFD",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "11q22.3",
+      "n_snps": 15,
+      "expected_gbi": 0.020954397017554,
+      "signed_prs": -0.010588806481518,
+      "pct_annotated_gbi": 1.2,
+      "pct_total_genome_gbi": 0.05,
+      "rank": 23
+    },
+    {
+      "gene_symbol": "HNF1A",
+      "pathway": "Metabolic Regulation",
+      "cytoband": "12q24.31",
+      "n_snps": 23,
+      "expected_gbi": 0.01674716392329,
+      "signed_prs": -0.001865999208950001,
+      "pct_annotated_gbi": 0.96,
+      "pct_total_genome_gbi": 0.04,
+      "rank": 24
+    },
+    {
+      "gene_symbol": "ABO",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "9q34.2",
+      "n_snps": 18,
+      "expected_gbi": 0.016228072350468,
+      "signed_prs": -0.000784094682764,
+      "pct_annotated_gbi": 0.93,
+      "pct_total_genome_gbi": 0.04,
+      "rank": 25
+    },
+    {
+      "gene_symbol": "PPAP2B/PLPP3",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "1p36.11",
+      "n_snps": 8,
+      "expected_gbi": 0.011889632487792,
+      "signed_prs": -0.011884645536816,
+      "pct_annotated_gbi": 0.68,
+      "pct_total_genome_gbi": 0.03,
+      "rank": 26
+    },
+    {
+      "gene_symbol": "CYP2C19",
+      "pathway": "Pharmacogenomics",
+      "cytoband": "10q23.33",
+      "n_snps": 11,
+      "expected_gbi": 0.011791443470762001,
+      "signed_prs": 0.00019961547637399948,
+      "pct_annotated_gbi": 0.68,
+      "pct_total_genome_gbi": 0.03,
+      "rank": 27
+    },
+    {
+      "gene_symbol": "CXCL12",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "10q11.21",
+      "n_snps": 17,
+      "expected_gbi": 0.010228042176776,
+      "signed_prs": 0.00966197161852,
+      "pct_annotated_gbi": 0.59,
+      "pct_total_genome_gbi": 0.03,
+      "rank": 28
+    },
+    {
+      "gene_symbol": "RAP1GAP2",
+      "pathway": "Platelet Biology",
+      "cytoband": "1q25.1",
+      "n_snps": 23,
+      "expected_gbi": 0.010052257616562001,
+      "signed_prs": 0.000651415780514,
+      "pct_annotated_gbi": 0.58,
+      "pct_total_genome_gbi": 0.03,
+      "rank": 29
+    },
+    {
+      "gene_symbol": "JAK2",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "9p24.1",
+      "n_snps": 6,
+      "expected_gbi": 0.009619826333105999,
+      "signed_prs": -0.005088648889074,
+      "pct_annotated_gbi": 0.55,
+      "pct_total_genome_gbi": 0.02,
+      "rank": 30
+    },
+    {
+      "gene_symbol": "TERT",
+      "pathway": "Cellular Senescence",
+      "cytoband": "5p15.33",
+      "n_snps": 10,
+      "expected_gbi": 0.00960141105179,
+      "signed_prs": -0.00531538556711,
+      "pct_annotated_gbi": 0.55,
+      "pct_total_genome_gbi": 0.02,
+      "rank": 31
+    },
+    {
+      "gene_symbol": "MIA3",
+      "pathway": "Vascular Remodeling",
+      "cytoband": "1q41",
+      "n_snps": 28,
+      "expected_gbi": 0.007306498421738,
+      "signed_prs": 0.003088758539646,
+      "pct_annotated_gbi": 0.42,
+      "pct_total_genome_gbi": 0.02,
+      "rank": 32
+    },
+    {
+      "gene_symbol": "ZC3HC1",
+      "pathway": "Inflammation/Immune",
+      "cytoband": "7q32.1",
+      "n_snps": 3,
+      "expected_gbi": 0.006701432135303999,
+      "signed_prs": -0.005784913795528,
+      "pct_annotated_gbi": 0.38,
+      "pct_total_genome_gbi": 0.02,
+      "rank": 33
+    },
+    {
+      "gene_symbol": "SMARCA4",
+      "pathway": "Chromatin Remodeling",
+      "cytoband": "19p13.2",
+      "n_snps": 11,
+      "expected_gbi": 0.0057549399142940005,
+      "signed_prs": -0.003758185855994,
+      "pct_annotated_gbi": 0.33,
+      "pct_total_genome_gbi": 0.01,
+      "rank": 34
+    },
+    {
+      "gene_symbol": "FADS2",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "11q12.2",
+      "n_snps": 3,
+      "expected_gbi": 0.004654536054054,
+      "signed_prs": 0.002693798131494,
+      "pct_annotated_gbi": 0.27,
+      "pct_total_genome_gbi": 0.01,
+      "rank": 35
+    },
+    {
+      "gene_symbol": "APOC1",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19q13.32",
+      "n_snps": 4,
+      "expected_gbi": 0.004447616985019999,
+      "signed_prs": -0.00011260249542,
+      "pct_annotated_gbi": 0.26,
+      "pct_total_genome_gbi": 0.01,
+      "rank": 36
+    },
+    {
+      "gene_symbol": "SLCO1B1",
+      "pathway": "Pharmacogenomics",
+      "cytoband": "12p12.1",
+      "n_snps": 3,
+      "expected_gbi": 0.004141579978508001,
+      "signed_prs": 0.004141579978508001,
+      "pct_annotated_gbi": 0.24,
+      "pct_total_genome_gbi": 0.01,
+      "rank": 37
+    },
+    {
+      "gene_symbol": "ANGPTL4",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "19p13.2",
+      "n_snps": 7,
+      "expected_gbi": 0.00269732432624,
+      "signed_prs": -0.001478900046552,
+      "pct_annotated_gbi": 0.15,
+      "pct_total_genome_gbi": 0.01,
+      "rank": 38
+    },
+    {
+      "gene_symbol": "TTC39B",
+      "pathway": "Lipid Metabolism",
+      "cytoband": "2p23.3",
+      "n_snps": 4,
+      "expected_gbi": 0.001883692637516,
+      "signed_prs": -0.0004721169787159999,
+      "pct_annotated_gbi": 0.11,
+      "pct_total_genome_gbi": 0.0,
+      "rank": 39
+    }
+  ],
+  "population_prs": 2.962466254375361,
+  "gbi": 40.01970268032352,
+  "frequency_provenance": {
+    "observed_pct": 94.52331645001122,
+    "prior_pct": 5.476683549988772
+  }
+}

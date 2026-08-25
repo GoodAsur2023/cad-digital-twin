@@ -1,0 +1,11 @@
+{
+  "DataRequest":
+  [
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "BaroreceptorHeartRateScale",       "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "BaroreceptorHeartElastanceScale",  "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "BaroreceptorResistanceScale",      "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "BaroreceptorComplianceScale",      "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "ChemoreceptorHeartRateScale",      "Unit": "unitless" },
+    { "DecimalFormat": { "Precision": 3 }, "Category": "Physiology", "PropertyName": "ChemoreceptorHeartElastanceScale", "Unit": "unitless" }
+  ]
+}

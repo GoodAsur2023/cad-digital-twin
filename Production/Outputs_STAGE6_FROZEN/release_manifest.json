@@ -1,0 +1,31 @@
+{
+    "release_id": "CAD_DT_STAGE7_LIVE",
+    "primary_pgs": "PGS000116",
+    "canonical_genomics_rows": 40079,
+    "prs_raw": 2.962466254375361,
+    "gbi": 40.01970268032352,
+    "lifestyle_test_auc": 0.8044,
+    "clinical_test_auc": 0.8788,
+    "baseline_test_auc": 0.8595,
+    "fusion_test_auc": 0.8853,
+    "fusion_weights": {
+        "w_diagnostic": 0.6,
+        "w_baseline": 0.4
+    },
+    "models": {
+        "lifestyle_model": "XGBoost",
+        "clinical_model": "XGBoost",
+        "baseline_model": "GradientBoosting"
+    },
+    "python_version": "3.12.6",
+    "sklearn_version": "1.6.1",
+    "xgboost_version": "3.4.1",
+    "file_hashes": {
+        "pgs000116_genomeindia_harmonized.csv": "e8038522632817bdf90766015bc892fc0fc68d73d5a46754617d686f3dc044bf",
+        "genetic_intelligence_profile.json": "46aa621e24391dc9c4d262d33a6ee32175e27483161cd9e6ce5dc1bac6ac3193",
+        "lifestyle_pipeline.pkl": "88d640ad098d2cb78d0b5c0d069c823a731a1b1ef8df3951d899dea95e7e4713",
+        "clinical_pipeline.pkl": "86acb0227e2453dd52e065f6d165f5617ef28be192e500af352f3692840ebec2",
+        "clinical_prediagnostic_pipeline.pkl": "e54ececed5a77b242f3d640fe94ce1349269957b5e4c0a7e9ca349d84ae532e7",
+        "fusion_weight_provenance.json": "7741a7def89bf172c7749b053ca6ae419d8c50e8b8054eb4360ff54508a76b10"
+    }
+}

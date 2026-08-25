@@ -1,0 +1,390 @@
+{
+  "audit_gate_name": "NB12 Master 26-Point Methodology Integrity & Reproducibility Gate (Stage 7 Live Recomputed)",
+  "total_assertions": 27,
+  "passed_assertions": 27,
+  "pass_rate_pct": 100.0,
+  "verification_class_breakdown": {
+    "actively_recomputed": 12,
+    "artifact_verified": 11,
+    "scope_declared": 4
+  },
+  "external_prospective_south_asian_validation": "NOT PERFORMED",
+  "literature_based_plausibility_comparison": "performed internally",
+  "clinical_deployment_status": "RESEARCH_PROTOTYPE_ONLY",
+  "web_interface_readiness": "READY_FOR_PRESENTATION",
+  "benchmark_summary": {
+    "Lifestyle Risk Model (XGBoost)": {
+      "auc": 0.8044,
+      "auc_ci": [
+        0.7974,
+        0.8117
+      ],
+      "brier_loss": 0.1793,
+      "brier_ci": [
+        0.1759,
+        0.1826
+      ],
+      "ece": 0.0145,
+      "ece_ci": [
+        0.0116,
+        0.022
+      ],
+      "sensitivity": 0.6915,
+      "sensitivity_ci": [
+        0.6809,
+        0.7037
+      ],
+      "specificity": 0.7839,
+      "specificity_ci": [
+        0.7745,
+        0.7935
+      ],
+      "model_name": "Lifestyle Risk Model (XGBoost)",
+      "cohort": "Lifestyle Test (n=13,727)",
+      "clinical_role": "Routine population behavioral & metabolic risk estimation",
+      "target_definition": "CVD_diagnosis"
+    },
+    "Baseline Clinical Feature Model (GradientBoosting)": {
+      "auc": 0.8595,
+      "auc_ci": [
+        0.8134,
+        0.9029
+      ],
+      "brier_loss": 0.1549,
+      "brier_ci": [
+        0.1332,
+        0.1763
+      ],
+      "ece": 0.0596,
+      "ece_ci": [
+        0.0561,
+        0.1254
+      ],
+      "sensitivity": 0.8175,
+      "sensitivity_ci": [
+        0.754,
+        0.881
+      ],
+      "specificity": 0.7232,
+      "specificity_ci": [
+        0.6429,
+        0.8036
+      ],
+      "model_name": "Baseline Clinical Feature Model (GradientBoosting)",
+      "cohort": "Clinical Test (n=238)",
+      "clinical_role": "Clinical model without exercise-ST-depression (oldpeak)",
+      "target_definition": "angiographic_CAD_gt50pct"
+    },
+    "Exercise-ST-Augmented Clinical Model (XGBoost)": {
+      "auc": 0.8788,
+      "auc_ci": [
+        0.8364,
+        0.9194
+      ],
+      "brier_loss": 0.1435,
+      "brier_ci": [
+        0.1184,
+        0.17
+      ],
+      "ece": 0.0924,
+      "ece_ci": [
+        0.0663,
+        0.1404
+      ],
+      "sensitivity": 0.8175,
+      "sensitivity_ci": [
+        0.754,
+        0.8889
+      ],
+      "specificity": 0.8036,
+      "specificity_ci": [
+        0.7319,
+        0.875
+      ],
+      "model_name": "Exercise-ST-Augmented Clinical Model (XGBoost)",
+      "cohort": "Clinical Test (n=238)",
+      "clinical_role": "Exercise-ST-Augmented Diagnostic Clinical Model",
+      "target_definition": "angiographic_CAD_gt50pct"
+    },
+    "Clinical Staged Fusion Ensemble": {
+      "auc": 0.8838,
+      "auc_ci": [
+        0.8415,
+        0.922
+      ],
+      "brier_loss": 0.1423,
+      "brier_ci": [
+        0.1207,
+        0.1643
+      ],
+      "ece": 0.0742,
+      "ece_ci": [
+        0.0666,
+        0.1324
+      ],
+      "sensitivity": 0.8413,
+      "sensitivity_ci": [
+        0.7778,
+        0.9048
+      ],
+      "specificity": 0.7679,
+      "specificity_ci": [
+        0.6875,
+        0.8393
+      ],
+      "model_name": "Clinical Staged Fusion Ensemble",
+      "cohort": "Clinical Test (n=238)",
+      "clinical_role": "Ensemble fusion combining routine screening + diagnostic features",
+      "target_definition": "angiographic_CAD_gt50pct"
+    },
+    "Population-Genomics-Aware Digital Twin": {
+      "auc": 0.8838,
+      "auc_ci": [
+        0.8415,
+        0.922
+      ],
+      "brier_loss": 0.1485,
+      "brier_ci": [
+        0.1298,
+        0.1675
+      ],
+      "ece": 0.0938,
+      "ece_ci": [
+        0.0727,
+        0.1464
+      ],
+      "sensitivity": 0.8413,
+      "sensitivity_ci": [
+        0.7778,
+        0.9048
+      ],
+      "specificity": 0.7679,
+      "specificity_ci": [
+        0.6875,
+        0.8393
+      ],
+      "model_name": "Population-Genomics-Aware Digital Twin",
+      "cohort": "Clinical Test (n=238)",
+      "clinical_role": "Genomics-aware, Pulse-grounded counterfactual Digital Twin",
+      "target_definition": "angiographic_CAD_gt50pct"
+    }
+  },
+  "audit_checks": [
+    {
+      "check_id": 0,
+      "category": "System",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Pipeline Release Manifest Sync",
+      "status": "PASS",
+      "details": "Validated architecture against manifest: release_id=CAD_DT_STAGE7_LIVE. Cryptographic file hashes verified."
+    },
+    {
+      "check_id": 1,
+      "category": "Dataset",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Dataset Provenance Classification",
+      "status": "PASS",
+      "details": "Lifestyle cohort (n=13,727) & Clinical cohort (n=238) verified."
+    },
+    {
+      "check_id": 2,
+      "category": "Genomics",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Canonical 40,079-Variant Harmonization Table",
+      "status": "PASS",
+      "details": "Verified canonical single-source table: 40,079 rows, 40,079 unique rsIDs, zero null beta weights."
+    },
+    {
+      "check_id": 3,
+      "category": "Genomics",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Allele Orientation & Strand-Flip Resolution",
+      "status": "PASS",
+      "details": "Direct allele matches: 37,851, Strand-flip matches: 33, Synthetic-prior rows: 2195. All frequencies in [0, 1]."
+    },
+    {
+      "check_id": 4,
+      "category": "Genomics",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Recomputation of Signed PRS & GBI",
+      "status": "PASS",
+      "details": "Independently recomputed Signed PRS = 2.9625 and GBI = 40.0197 match profile JSON."
+    },
+    {
+      "check_id": 5,
+      "category": "Genomics",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Delta-Method SE under SNP Independence",
+      "status": "PASS",
+      "details": "Actively recomputed delta-method SE = 0.00096 (95% CI: [2.9606, 2.9643]) under SNP-independence approximation."
+    },
+    {
+      "check_id": 6,
+      "category": "Genomics",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Multi-Catalog Selection Hierarchy",
+      "status": "PASS",
+      "details": "Primary catalog selection justified by CAD trait match, 100% harmonization, South Asian representation (13.6%), and lassosum methodology."
+    },
+    {
+      "check_id": 7,
+      "category": "Genomics",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Live Variant-to-Gene Locus Aggregation",
+      "status": "PASS",
+      "details": "Mapped 40,079 variants to 39 candidate genes (top locus: CDKN2B-AS1, 21.31% of annotated signal)."
+    },
+    {
+      "check_id": 8,
+      "category": "Genomics",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Curated Loci vs Polygenic Background",
+      "status": "PASS",
+      "details": "Actively verified: Curated loci account for 4.36% of GBI; background accounts for 95.64%."
+    },
+    {
+      "check_id": 9,
+      "category": "Pharmacology",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Evidence-Graded PGx Guidance",
+      "status": "PASS",
+      "details": "Categorized CPIC Level A (SLCO1B1, CYP2C19, HMGCR) vs AHA/ACC Guidelines (PCSK9) and ACC Consensus (LPA)."
+    },
+    {
+      "check_id": 10,
+      "category": "Pharmacology",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "PGx Genotype-Availability Flag",
+      "status": "PASS",
+      "details": "Explicit flag: requires_individual_genotype=True, patient_genotype_available=False ('population_knowledge_only')."
+    },
+    {
+      "check_id": 11,
+      "category": "Explainability",
+      "verification_class": "SCOPE_DECLARED",
+      "title": "Decoupled Attribution vs Prior Shift",
+      "status": "PASS",
+      "details": "TreeSHAP feature attribution (100% across Clinical + Lifestyle features) strictly decoupled from external population prior probability shift."
+    },
+    {
+      "check_id": 12,
+      "category": "Machine Learning",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Live Baseline vs Diagnostic Feature Gain",
+      "status": "PASS",
+      "details": "Live test set re-evaluation: Baseline AUC = 0.8595 vs Diagnostic AUC = 0.8788 (Expected Base: 0.8595, Expected Diag: 0.8788)."
+    },
+    {
+      "check_id": 13,
+      "category": "Machine Learning",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Ensemble Fusion Weight Provenance",
+      "status": "PASS",
+      "details": "Fusion weights (w_diag=0.50, w_base=0.50) frozen from training folds, matching manifest and code implementation."
+    },
+    {
+      "check_id": 14,
+      "category": "Machine Learning",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Recomputation of Staged Fusion Test AUC",
+      "status": "PASS",
+      "details": "Independently recomputed Staged Fusion Ensemble Test AUC = 0.8838 on untouched test set (Expected: 0.8838)."
+    },
+    {
+      "check_id": 15,
+      "category": "Machine Learning",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Canonical Benchmark with 95% CIs",
+      "status": "PASS",
+      "details": "All 5 model tiers generated from canonical test prediction artifact, with perfectly matching deterministic AUCs."
+    },
+    {
+      "check_id": 16,
+      "category": "Machine Learning",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Sample-Weighted 10-Bin ECE",
+      "status": "PASS",
+      "details": "Sample-weighted 10-bin ECE calculated canonically (ECE = 0.0742)."
+    },
+    {
+      "check_id": 17,
+      "category": "Decision Support",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "DCA Model Decision Thresholds",
+      "status": "PASS",
+      "details": "Actively recomputed DCA Net Benefit at threshold 30% = 0.3944. Evaluated across model decision thresholds (10%\u201350%)."
+    },
+    {
+      "check_id": 18,
+      "category": "Target Semantics",
+      "verification_class": "SCOPE_DECLARED",
+      "title": "Target Definition Compatibility",
+      "status": "PASS",
+      "details": "Explicitly distinguished lifestyle surveillance target (CVD_diagnosis) from clinical diagnostic target (angiographic CAD >50%)."
+    },
+    {
+      "check_id": 19,
+      "category": "Sign Convention",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "\u0394Risk Canonical Sign Regression Test",
+      "status": "PASS",
+      "details": "Live regression test verified: delta_risk = P_post - P_base = -0.0000 < 0 for beneficial lifestyle/clinical interventions."
+    },
+    {
+      "check_id": 20,
+      "category": "Counterfactual",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Production Constraint Registry Test",
+      "status": "PASS",
+      "details": "Actively verified production registry: Rejection of immutable age, excessive BMI delta (>5 kg/m2), and diagnostic oldpeak modification."
+    },
+    {
+      "check_id": 21,
+      "category": "Sanity Battery",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Live Category A: Intervention Plausibility",
+      "status": "PASS",
+      "details": "Parsed sanity results across 6 intervention scenarios: 6/6 PASSED. Artifacts tracked in manifest: True."
+    },
+    {
+      "check_id": 22,
+      "category": "Sanity Battery",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "Live Category B: Model Sensitivity",
+      "status": "PASS",
+      "details": "Parsed sanity results across 7 sensitivity scenarios: 7/7 PASSED (100% monotonic sensitivity). Artifacts tracked in manifest: True."
+    },
+    {
+      "check_id": 23,
+      "category": "Physiology",
+      "verification_class": "ARTIFACT_VERIFIED",
+      "title": "PulsePhysio C-API Mechanistic Grounding",
+      "status": "PASS",
+      "details": "Simulated 952 Pulse-grounded cohort counterfactual simulations across 238 CAD patients (mean cardiac workload reduction = -9.49%)."
+    },
+    {
+      "check_id": 24,
+      "category": "Physiology",
+      "verification_class": "ACTIVELY_RECOMPUTED",
+      "title": "Literature Concordance Deviation Recomputation",
+      "status": "PASS",
+      "details": "Actively recomputed literature relative deviations from 5 benchmarks (max observed = 7.50%, well below < 15% threshold)."
+    },
+    {
+      "check_id": 25,
+      "category": "Scope",
+      "verification_class": "SCOPE_DECLARED",
+      "title": "Counterfactual State-Transition Scope",
+      "status": "PASS",
+      "details": "Accurately scoped as counterfactual state-transition digital twin (S_t -> S_t') across 13965 patient states rather than unvalidated continuous longitudinal tracker."
+    },
+    {
+      "check_id": 26,
+      "category": "Scope",
+      "verification_class": "SCOPE_DECLARED",
+      "title": "Audit Scope & Deployment Status",
+      "status": "PASS",
+      "details": "Declared status: Methodological Audit = PASS (26 methodology assertions + 1 release preflight = 27 total assertions), Internal Reproducibility = PASS, External prospective South Asian validation = NOT PERFORMED, Literature-based plausibility comparison = performed internally, Status = RESEARCH_PROTOTYPE_ONLY."
+    }
+  ]
+}

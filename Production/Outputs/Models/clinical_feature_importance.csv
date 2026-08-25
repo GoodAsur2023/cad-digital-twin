@@ -1,0 +1,11 @@
+Feature,Importance,Method,Model,Importance_normalized
+sex,0.19864783,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.19864783
+oldpeak,0.17188434,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.17188434
+max_heart_rate,0.15089956,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.15089956
+fasting_blood_sugar,0.106950134,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.106950134
+cholesterol,0.07839937,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.07839937
+resting_bp,0.077642426,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.077642426
+resting_ecg_2.0,0.066738404,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.066738404
+age,0.06317158,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.06317158
+resting_ecg_0.0,0.0482199,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.0482199
+resting_ecg_1.0,0.037446495,Gini/Gain Impurity Decrease (XGBClassifier),XGBoost,0.037446495

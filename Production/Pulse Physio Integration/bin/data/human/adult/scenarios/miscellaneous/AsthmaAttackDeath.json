@@ -1,0 +1,40 @@
+{
+  "Name": "AsthmaAttackDeath",
+  "Description": "Patient is afflicted with an untreated life threatening acute asthma attack.",
+  "PatientConfiguration": { "PatientFile": "StandardMale.json" },
+  "DataRequestFile": [
+    "StandardDataRequests.json",
+    "RespiratoryDataRequests.json"
+  ],
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 30.0,
+          "Unit": "s"
+        }
+      }
+    }
+  }, {
+    "PatientAction": {
+      "AsthmaAttack": {
+        "Severity": {
+          "Scalar0To1": {
+            "Value": 1.0
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Action": {
+        "Comment": "Death Events: Exceeded the maximum target pulmonary ventilation" },
+      "Time": {
+        "ScalarTime": {
+          "Value": 10,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

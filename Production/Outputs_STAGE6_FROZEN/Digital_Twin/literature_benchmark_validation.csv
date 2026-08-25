@@ -1,0 +1,7 @@
+scenario_id,cohort,dt_predicted_pct,literature_pct,literature_range,source,PASS
+S1_quit_smoking,lifestyle,0.05,36,"[20, 45]","Critchley & Capewell, JAMA 2003",⚠️ OUTSIDE RANGE
+S2_exercise,lifestyle,1.86,14,"[8, 20]","Chomistek et al., Circulation 2011",⚠️ OUTSIDE RANGE
+S3_weight_loss_5pct,lifestyle,2.16,4,"[2, 7]",Multiple meta-analyses,✅
+S3_weight_loss_5pct,clinical,1.51,4,"[2, 7]",Multiple meta-analyses,⚠️ OUTSIDE RANGE
+S4_quit_alcohol,lifestyle,0.04,5,"[2, 10]",BP/CV risk reduction literature,⚠️ OUTSIDE RANGE
+S5_combined_smoke_exercise,lifestyle,1.91,40,"[25, 50]",Must exceed either alone,⚠️ OUTSIDE RANGE

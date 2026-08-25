@@ -1,0 +1,45 @@
+{
+  "provenance_method": "5-fold cross-validation on clinical training fold (n=952)",
+  "test_used_for_tuning": false,
+  "optimization_metric": "roc_auc",
+  "selection_rule": "argmax_cv_auc",
+  "candidate_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "canonical_weights": {
+    "w_diagnostic": 0.6,
+    "w_baseline": 0.4
+  },
+  "training_cv_performance": {
+    "cv_folds": 5,
+    "train_sample_count": 952,
+    "mean_cv_auc": 0.8853,
+    "evaluation_grid": {
+      "w_diag_0.50_w_base_0.50": {
+        "cv_auc": 0.8838,
+        "cv_brier": 0.1423
+      },
+      "w_diag_0.60_w_base_0.40": {
+        "cv_auc": 0.8853,
+        "cv_brier": 0.1414,
+        "selected": true
+      },
+      "w_diag_0.70_w_base_0.30": {
+        "cv_auc": 0.8843,
+        "cv_brier": 0.1411
+      },
+      "w_diag_0.80_w_base_0.20": {
+        "cv_auc": 0.8833,
+        "cv_brier": 0.1414
+      },
+      "w_diag_0.90_w_base_0.10": {
+        "cv_auc": 0.8819,
+        "cv_brier": 0.1422
+      }
+    }
+  }
+}

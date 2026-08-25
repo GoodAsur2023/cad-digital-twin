@@ -1,0 +1,14 @@
+test,category,cohort,expected_direction,actual_direction,p_before,p_after,delta,PASS
+Sedentary (0) -> Active (1),Category A: Intervention Plausibility,lifestyle,DECREASE,DECREASE,0.5284,0.4867,-0.0417,✅
+Healthy BMI (22) -> Overweight (28),Category A: Intervention Plausibility,lifestyle,INCREASE,INCREASE,0.4661,0.5067,0.0406,✅
+Healthy BMI (22) -> Obese (35),Category A: Intervention Plausibility,lifestyle,INCREASE,INCREASE,0.4661,0.5366,0.0705,✅
+Smoker+Sedentary -> Smoke-free+Active,Category A: Intervention Plausibility,lifestyle,DECREASE,DECREASE,0.5319,0.4865,-0.0454,✅
+Smoking Cessation + BP Restoration,Category A: Intervention Plausibility,lifestyle,DECREASE,DECREASE,0.7417,0.4176,-0.3242,✅
+Heavy Alcohol (1) -> Abstinence (0),Category A: Intervention Plausibility,lifestyle,DECREASE,DECREASE,0.6362,0.4176,-0.2186,✅
+Normal BP (120) -> Hypertensive (160),Category B: Model Sensitivity,clinical,INCREASE,INCREASE,0.5141,0.5781,0.064,✅
+Hypertensive (160) -> Normal BP (120),Category B: Model Sensitivity,clinical,DECREASE,DECREASE,0.5781,0.5141,-0.064,✅
+Low Chol (160) -> High Chol (260),Category B: Model Sensitivity,clinical,INCREASE,INCREASE,0.4775,0.5511,0.0736,✅
+High Chol (260) -> Low Chol (160),Category B: Model Sensitivity,clinical,DECREASE,DECREASE,0.5511,0.4775,-0.0736,✅
+Low Max HR (110) -> High Max HR (170),Category B: Model Sensitivity,clinical,DECREASE,DECREASE,0.6516,0.3994,-0.2522,✅
+High Oldpeak (2.5) -> Zero Oldpeak (0),Category B: Model Sensitivity,clinical,DECREASE,DECREASE,0.6407,0.4935,-0.1472,✅
+Comprehensive Risk Factor Normalization,Category B: Model Sensitivity,clinical,DECREASE,DECREASE,0.7715,0.2824,-0.4891,✅

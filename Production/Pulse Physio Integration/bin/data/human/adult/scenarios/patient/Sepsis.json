@@ -1,0 +1,24 @@
+{
+  "Name": "Sepsis",
+  "Description": "",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": 
+    { 
+      "AnyCondition": 
+      [
+        { "PatientCondition": { "Sepsis": 
+        {
+          "Severity": { "Scalar0To1": { "Value": 0.5 }}
+        }}}
+      ]
+    }
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": { "Time": { "ScalarTime": { "Value": 2.0, "Unit": "min" }}}}
+  ]
+}

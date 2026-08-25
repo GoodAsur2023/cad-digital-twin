@@ -1,0 +1,143 @@
+{
+  "Name": "EnvironmentExposure",
+  "Description": "Showcase scenario: Patient is exposed to sub-zero temperatures and develops hypothermia.",
+  "PatientConfiguration": { "PatientFile": "Jane.json" },
+  "DataRequestManager": {
+    "DataRequest": [{
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "TotalMetabolicRate",
+      "Unit": "kcal/day"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "Physiology",
+      "PropertyName": "OxygenConsumptionRate",
+      "Unit": "mL/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "MeanArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "SkinTemperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "HeartRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "SystolicArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "DiastolicArterialPressure",
+      "Unit": "mmHg"
+    }, {
+      "DecimalFormat": {
+        "Precision": 2
+      },
+      "Category": "Physiology",
+      "PropertyName": "RespirationRate",
+      "Unit": "1/min"
+    }, {
+      "DecimalFormat": {
+        "Precision": 1
+      },
+      "Category": "Physiology",
+      "PropertyName": "CoreTemperature",
+      "Unit": "degC"
+    }, {
+      "DecimalFormat": {
+      },
+      "Category": "Physiology",
+      "PropertyName": "CarbonDioxideProductionRate",
+      "Unit": "mL/min"
+    }]
+  },
+  "AnyAction": [{
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 1.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditionsFile": "./environments/AnchorageDecember.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 40.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ChangeEnvironmentalConditions": {
+        "EnvironmentalConditionsFile": "./environments/AnchorageInside.json"
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 0.5,
+          "Unit": "min"
+        }
+      }
+    }
+  }, {
+    "EnvironmentAction": {
+      "ThermalApplication": {
+        "ActiveHeating": {
+          "Power": {
+            "ScalarPower": {
+              "Value": 100.0,
+              "Unit": "W"
+            }
+          },
+          "SurfaceAreaFraction": {
+            "Scalar0To1": {
+              "Value": 0.1
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "AdvanceTime": {
+      "Time": {
+        "ScalarTime": {
+          "Value": 10.0,
+          "Unit": "min"
+        }
+      }
+    }
+  }]
+}

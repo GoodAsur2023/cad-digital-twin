@@ -1,0 +1,27 @@
+{
+  "Name": "ZeroAnemia",
+  "Description": "Ensure a 0 severity has no impact on the patient",
+  "PatientConfiguration": {
+    "PatientFile": "StandardMale.json",
+    "Conditions": { "AnyCondition": [{
+      "PatientCondition": {
+        "ChronicAnemia": {
+          "ReductionFactor": {
+            "Scalar0To1": {
+              "Value": 0.0
+            }
+          }
+        }
+      }
+    }]}
+  },
+  "DataRequestFile": [
+    "StandardDataRequests.json"
+  ],
+  "AnyAction":
+  [
+    { "AdvanceTime": {
+    "Action": { "Comment": "Advance some time" },
+    "Time": { "ScalarTime": { "Value": 2, "Unit": "min" }}}}
+  ]
+}
